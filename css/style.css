@@ -1,0 +1,250 @@
+:root {
+  --bg: #f7f3ec;
+  --surface: #ffffff;
+  --text: #22201c;
+  --muted: #6f6a62;
+  --line: #e3ddd2;
+  --accent: #b23a32;
+  --accent-text: #ffffff;
+  --good: #2e7d4f;
+  --good-bg: #e3f3e8;
+  --bad: #b23a32;
+  --bad-bg: #fbe5e3;
+  --radius: 14px;
+  --ja: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171614;
+    --surface: #23211e;
+    --text: #eeeae3;
+    --muted: #a39d93;
+    --line: #38352f;
+    --accent: #e06b5f;
+    --accent-text: #1a1210;
+    --good: #7fd19c;
+    --good-bg: #1d3326;
+    --bad: #f08a80;
+    --bad-bg: #3a201d;
+  }
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0 auto;
+  max-width: 520px;
+  min-height: 100dvh;
+  padding: 0 16px calc(24px + env(safe-area-inset-bottom));
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+[lang="ja"] { font-family: var(--ja); }
+
+h2, h3 { margin: 0; }
+
+.muted { color: var(--muted); font-weight: normal; }
+
+/* ---- Top bar ---- */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 -16px;
+  padding: calc(10px + env(safe-area-inset-top)) 16px 10px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar h1 { margin: 0; font-size: 1.1rem; }
+.stats { flex: 1; margin: 0; font-size: 0.85rem; color: var(--muted); text-align: right; }
+
+.icon-btn {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.3rem;
+}
+
+/* ---- Buttons ---- */
+
+.btn {
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.primary { background: var(--accent); color: var(--accent-text); }
+.btn.secondary { background: var(--surface); color: var(--text); border-color: var(--line); }
+.btn.secondary.on { background: var(--good-bg); color: var(--good); border-color: var(--good); }
+.btn.danger { background: transparent; color: var(--bad); border-color: var(--bad); width: 100%; margin-top: 16px; }
+.btn.small { min-height: 36px; padding: 0 12px; font-size: 0.9rem; }
+
+.link-btn {
+  padding: 8px 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.row { display: flex; gap: 10px; }
+.row > .btn { flex: 1; }
+
+/* ---- Quiz card ---- */
+
+.card {
+  margin: 16px 0;
+  padding: 12px 0 8px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.kanji { font-size: clamp(6rem, 32vw, 9rem); line-height: 1.15; }
+.session { min-height: 1.4em; margin: 0; font-size: 0.85rem; color: var(--muted); }
+
+/* ---- Answer area ---- */
+
+.choices { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+
+.choice {
+  min-height: 52px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1.25;
+  cursor: pointer;
+}
+
+.choice:disabled { opacity: 0.55; cursor: default; }
+.choice.correct { opacity: 1; background: var(--good-bg); border-color: var(--good); color: var(--good); font-weight: 600; }
+.choice.wrong { opacity: 1; background: var(--bad-bg); border-color: var(--bad); color: var(--bad); }
+
+.type-form { display: grid; gap: 10px; }
+
+.type-form input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 1.1rem; /* >=16px stops iOS zooming in on focus */
+}
+
+/* ---- Reveal ---- */
+
+.reveal {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  scroll-margin-top: 80px;
+}
+
+.verdict { margin: 0 0 12px; padding: 8px 12px; border-radius: 10px; font-weight: 600; }
+.verdict.good { background: var(--good-bg); color: var(--good); }
+.verdict.bad { background: var(--bad-bg); color: var(--bad); }
+
+.answer-head { display: flex; align-items: center; gap: 14px; }
+.reveal-kanji { font-size: 3.2rem; line-height: 1; }
+.meanings { font-size: 1.25rem; }
+
+.readings {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 12px;
+  margin: 12px 0 4px;
+}
+.readings dt { color: var(--muted); font-size: 0.85rem; padding-top: 2px; }
+.readings dd { margin: 0; }
+
+.reveal h3 {
+  margin-top: 16px;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.origin { margin: 4px 0 0; }
+
+.example { margin-top: 4px; }
+.ex-jp { margin: 0; font-size: 1.25rem; }
+.ex-kana { margin: 2px 0 0; color: var(--muted); font-size: 0.95rem; }
+.ex-en { margin: 4px 0 0; font-style: italic; }
+
+.actions { margin-top: 16px; }
+
+/* ---- Done / errors ---- */
+
+.done, .load-error { margin-top: 24px; text-align: center; }
+.done-title { font-family: var(--ja); font-size: 2rem; margin: 0 0 8px; }
+.load-error { color: var(--bad); }
+
+/* ---- Menu ---- */
+
+.menu h2 { margin: 24px 0 10px; font-size: 1.05rem; }
+.back { margin-top: 16px; }
+
+.segmented {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4px;
+  gap: 4px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.segmented input { position: absolute; opacity: 0; pointer-events: none; }
+.segmented span {
+  display: block;
+  padding: 10px;
+  border-radius: 9px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+.segmented input:checked + span { background: var(--accent); color: var(--accent-text); }
+.segmented input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.learned-list { list-style: none; margin: 0; padding: 0; }
+.learned-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+.learned-list .glyph { font-size: 1.8rem; width: 2.2rem; text-align: center; }
+.learned-list .label { flex: 1; }

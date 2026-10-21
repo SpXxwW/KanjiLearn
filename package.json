@@ -1,0 +1,10 @@
+{
+  "name": "kanjilearn",
+  "private": true,
+  "type": "module",
+  "description": "A tiny offline kanji quiz app for your phone.",
+  "scripts": {
+    "start": "npx --yes serve -l 8080 .",
+    "test": "node --test"
+  }
+}
