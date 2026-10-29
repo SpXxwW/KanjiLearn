@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildChoices, checkAnswer, formatKun, normalize, pickNext } from '../js/quiz.js';
+import { buildChoices, checkAnswer, formatKun, kanaLabel, normalize, pickNext, toHiragana } from '../js/quiz.js';
 
 const sun = { kanji: '日', meanings: ['sun', 'day'] };
 const elec = { kanji: '電', meanings: ['electricity', 'lightning'] };
@@ -41,6 +41,37 @@ test('buildChoices skips distractors that share a meaning', () => {
     const choices = buildChoices(word, [word, say, ...pool], 10);
     assert.ok(!choices.some((c) => c.kanji === '言'));
   }
+});
+
+test('buildChoices honours the requested number of choices', () => {
+  for (const count of [2, 4, 7, 12]) {
+    assert.equal(buildChoices(pool[0], pool, count).length, count);
+  }
+});
+
+const high = { kanji: '高', meanings: ['tall'], on: ['コウ'], kun: ['たか.い'] };
+const school = { kanji: '校', meanings: ['school'], on: ['コウ'], kun: [] };
+const kanaPool = Array.from({ length: 30 }, (_, i) => ({
+  kanji: `k${i}`, meanings: [`m${i}`], on: [`ア${'イ'.repeat(i)}`], kun: [],
+}));
+
+test('kanaLabel shows the main on and kun reading', () => {
+  assert.equal(kanaLabel(high), 'コウ・たか(い)');
+  assert.equal(kanaLabel(school), 'コウ');
+  assert.equal(kanaLabel({ on: [], kun: ['-び'] }), 'び');
+});
+
+test('kana choices never repeat a reading of the answer', () => {
+  for (let i = 0; i < 20; i++) {
+    const choices = buildChoices(high, [high, school, ...kanaPool], 6, 'kana');
+    assert.equal(choices.length, 6);
+    assert.ok(!choices.some((c) => c.kanji === '校'));
+    assert.equal(choices.find((c) => c.correct).label, 'コウ・たか(い)');
+  }
+});
+
+test('toHiragana converts katakana only', () => {
+  assert.equal(toHiragana('コウ・たか'), 'こう・たか');
 });
 
 test('buildChoices copes with fewer kanji than choices', () => {

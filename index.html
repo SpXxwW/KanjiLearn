@@ -69,7 +69,7 @@
 
     <section id="done" class="done" hidden>
       <p class="done-title">全部できた！</p>
-      <p>Every kanji is marked as learned. Unmark some in the menu to keep practising.</p>
+      <p>Every kanji in the chosen levels is marked as learned. Unmark some or add a level in the menu to keep practising.</p>
       <button id="done-menu" type="button" class="btn primary">Open menu</button>
     </section>
 
@@ -79,10 +79,27 @@
   <section id="menu-screen" class="screen menu" hidden>
     <button id="back-btn" type="button" class="btn secondary back">← Back to quiz</button>
 
+    <h2>Kanji to practise</h2>
+    <div class="segmented">
+      <label><input type="checkbox" name="level" value="N5"><span>JLPT N5</span></label>
+      <label><input type="checkbox" name="level" value="N4"><span>JLPT N4</span></label>
+    </div>
+
     <h2>Answer mode</h2>
     <div class="segmented" role="radiogroup">
-      <label><input type="radio" name="mode" value="choice"><span>Pick from 10</span></label>
+      <label><input type="radio" name="mode" value="choice"><span>Multiple choice</span></label>
       <label><input type="radio" name="mode" value="type"><span>Type it</span></label>
+    </div>
+
+    <div id="choice-settings">
+      <h2><label for="choice-count">Number of choices</label> <span id="choice-count-value" class="muted"></span></h2>
+      <input id="choice-count" class="range" type="range" min="2" max="12" step="1">
+
+      <h2>Choices show</h2>
+      <div class="segmented" role="radiogroup">
+        <label><input type="radio" name="choice-style" value="en"><span>English meaning</span></label>
+        <label><input type="radio" name="choice-style" value="kana"><span lang="ja">Kana reading</span></label>
+      </div>
     </div>
 
     <h2>Learned kanji <span id="learned-count" class="muted"></span></h2>
