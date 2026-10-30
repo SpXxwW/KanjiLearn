@@ -1,7 +1,6 @@
 import { buildChoices, checkAnswer, choiceLabel, formatKun, pickNext } from './quiz.js';
 import { loadLearned, loadSettings, saveLearned, saveSettings } from './storage.js';
 
-const CHOICE_COUNT = 10;
 const RECENT_SIZE = 5;
 
 const $ = (id) => document.getElementById(id);
@@ -17,7 +16,9 @@ const state = {
   session: { correct: 0, total: 0 },
 };
 
-const unlearned = () => state.kanji.filter((k) => !state.learned.has(k.kanji));
+// Kanji in the levels chosen in the menu.
+const active = () => state.kanji.filter((k) => state.settings.levels.includes(k.level));
+const unlearned = () => active().filter((k) => !state.learned.has(k.kanji));
 const learnedEntries = () => state.kanji.filter((k) => state.learned.has(k.kanji));
 
 function persistLearned() {
@@ -27,7 +28,9 @@ function persistLearned() {
 }
 
 function renderStats() {
-  $('stats').textContent = `${unlearned().length} to learn · ${learnedEntries().length} learned`;
+  const pool = active();
+  const learned = pool.filter((k) => state.learned.has(k.kanji)).length;
+  $('stats').textContent = `${pool.length - learned} to learn · ${learned} learned`;
 }
 
 function renderSession() {
@@ -73,10 +76,12 @@ function renderAnswerArea() {
 }
 
 function renderChoices() {
-  const buttons = buildChoices(state.current, state.kanji, CHOICE_COUNT).map((choice) => {
+  const { choiceCount, choiceStyle } = state.settings;
+  const buttons = buildChoices(state.current, active(), choiceCount, choiceStyle).map((choice) => {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'choice';
+    if (choiceStyle === 'kana') btn.lang = 'ja';
     btn.textContent = choice.label;
     btn.dataset.correct = choice.correct;
     btn.addEventListener('click', () => answerChoice(btn, choice));
@@ -176,6 +181,14 @@ function showMenu() {
   for (const radio of document.querySelectorAll('input[name="mode"]')) {
     radio.checked = radio.value === state.settings.mode;
   }
+  for (const radio of document.querySelectorAll('input[name="choice-style"]')) {
+    radio.checked = radio.value === state.settings.choiceStyle;
+  }
+  for (const box of document.querySelectorAll('input[name="level"]')) {
+    box.checked = state.settings.levels.includes(box.value);
+  }
+  $('choice-count').value = state.settings.choiceCount;
+  renderChoiceSettings();
   renderLearnedList();
   window.scrollTo(0, 0);
 }
@@ -192,10 +205,28 @@ function hideMenu() {
   else renderStats();
 }
 
-function changeMode(event) {
-  state.settings.mode = event.target.value;
+function renderChoiceSettings() {
+  $('choice-settings').hidden = state.settings.mode !== 'choice';
+  $('choice-count-value').textContent = `(${state.settings.choiceCount})`;
+}
+
+function changeSetting(key, value) {
+  state.settings[key] = value;
   saveSettings(state.settings);
+  renderChoiceSettings();
   if (state.current && !state.answered) renderAnswerArea();
+}
+
+function changeLevels(event) {
+  const levels = [...document.querySelectorAll('input[name="level"]:checked')].map((box) => box.value);
+  if (levels.length === 0) {
+    event.target.checked = true; // keep at least one level
+    return;
+  }
+  state.settings.levels = levels;
+  saveSettings(state.settings);
+  // The current kanji may no longer be in the chosen levels.
+  if (state.current && !levels.includes(state.current.level)) state.current = null;
 }
 
 function renderLearnedList() {
@@ -252,7 +283,14 @@ function bindEvents() {
   $('back-btn').addEventListener('click', closeMenu);
   $('unmark-all').addEventListener('click', unmarkAll);
   for (const radio of document.querySelectorAll('input[name="mode"]')) {
-    radio.addEventListener('change', changeMode);
+    radio.addEventListener('change', (e) => changeSetting('mode', e.target.value));
+  }
+  for (const radio of document.querySelectorAll('input[name="choice-style"]')) {
+    radio.addEventListener('change', (e) => changeSetting('choiceStyle', e.target.value));
+  }
+  $('choice-count').addEventListener('input', (e) => changeSetting('choiceCount', Number(e.target.value)));
+  for (const box of document.querySelectorAll('input[name="level"]')) {
+    box.addEventListener('change', changeLevels);
   }
   // Android back button / swipe closes the menu instead of leaving the app.
   window.addEventListener('popstate', () => {

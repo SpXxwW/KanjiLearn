@@ -56,23 +56,46 @@ export function choiceLabel(entry) {
   return entry.meanings.slice(0, 2).join(', ');
 }
 
-// One correct answer plus distractors drawn from the whole set (learned kanji
-// included). No two choices may share a meaning, so "word" can never appear
-// as both a right and a wrong answer.
-export function buildChoices(entry, all, count, rng = Math.random) {
-  const taken = new Set(entry.meanings.map(normalize));
+export function toHiragana(text) {
+  return text.replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
+}
+
+// Main on and kun reading, e.g. "コウ・たか(い)". "-" (used in suffix/prefix
+// readings like "-び") is dropped for display.
+export function kanaLabel(entry) {
+  const on = entry.on[0];
+  const kun = entry.kun[0] && formatKun(entry.kun[0].replace(/-/g, ''));
+  return [on, kun].filter(Boolean).join('・');
+}
+
+// Every reading of a kanji without okurigana, in hiragana: 高 -> こう, たか.
+function readingKeys(entry) {
+  return [...entry.on, ...entry.kun].map((r) => toHiragana(r.replace(/-/g, '').split('.')[0]));
+}
+
+const CHOICE_STYLES = {
+  en: { label: choiceLabel, keys: (e) => e.meanings.map(normalize) },
+  kana: { label: kanaLabel, keys: readingKeys },
+};
+
+// One correct answer plus distractors drawn from `all`. No two choices may
+// share a meaning (or, for kana choices, a reading), so "word" or "コウ" can
+// never appear as both a right and a wrong answer.
+export function buildChoices(entry, all, count, style = 'en', rng = Math.random) {
+  const { label, keys } = CHOICE_STYLES[style];
+  const taken = new Set(keys(entry));
   const distractors = [];
   for (const candidate of shuffle(all, rng)) {
     if (distractors.length === count - 1) break;
     if (candidate === entry) continue;
-    const meanings = candidate.meanings.map(normalize);
-    if (meanings.some((m) => taken.has(m))) continue;
+    const candidateKeys = keys(candidate);
+    if (candidateKeys.some((k) => taken.has(k))) continue;
     distractors.push(candidate);
-    meanings.forEach((m) => taken.add(m));
+    candidateKeys.forEach((k) => taken.add(k));
   }
   return shuffle([entry, ...distractors], rng).map((e) => ({
     kanji: e.kanji,
-    label: choiceLabel(e),
+    label: label(e),
     correct: e === entry,
   }));
 }

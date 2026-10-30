@@ -1,6 +1,6 @@
 [
   {
-    "kanji": "一", "meanings": ["one"], "on": ["イチ", "イツ"], "kun": ["ひと", "ひと.つ"],
+    "kanji": "一", "level": "N5", "meanings": ["one"], "on": ["イチ", "イツ"], "kun": ["ひと", "ひと.つ"],
     "origin": "A single horizontal line. One of the oldest and simplest signs: counting with strokes.",
     "examples": [
       { "jp": "一つください。", "kana": "ひとつください。", "en": "One, please." },
@@ -9,7 +9,7 @@
     ]
   },
   {
-    "kanji": "二", "meanings": ["two"], "on": ["ニ", "ジ"], "kun": ["ふた", "ふた.つ"],
+    "kanji": "二", "level": "N5", "meanings": ["two"], "on": ["ニ", "ジ"], "kun": ["ふた", "ふた.つ"],
     "origin": "Two horizontal lines. The bottom one is longer, as with most stacked horizontal strokes in kanji.",
     "examples": [
       { "jp": "りんごを二つ買いました。", "kana": "りんごをふたつかいました。", "en": "I bought two apples." },
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "kanji": "三", "meanings": ["three"], "on": ["サン"], "kun": ["み", "み.つ", "みっ.つ"],
+    "kanji": "三", "level": "N5", "meanings": ["three"], "on": ["サン"], "kun": ["み", "み.つ", "みっ.つ"],
     "origin": "Three horizontal lines. Beyond three, stacked lines become hard to count at a glance, which is likely why four and up use other shapes.",
     "examples": [
       { "jp": "三時に会いましょう。", "kana": "さんじにあいましょう。", "en": "Let's meet at three o'clock." },
@@ -27,7 +27,7 @@
     ]
   },
   {
-    "kanji": "四", "meanings": ["four"], "on": ["シ"], "kun": ["よ", "よ.つ", "よっ.つ", "よん"],
+    "kanji": "四", "level": "N5", "meanings": ["four"], "on": ["シ"], "kun": ["よ", "よ.つ", "よっ.つ", "よん"],
     "origin": "Four was first written as four lines (亖), like 一二三. The current shape was borrowed later. It may have pictured breath coming out of a mouth or nose, but the origin is debated.",
     "examples": [
       { "jp": "四月に学校が始まります。", "kana": "しがつにがっこうがはじまります。", "en": "School starts in April." },
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "kanji": "五", "meanings": ["five"], "on": ["ゴ"], "kun": ["いつ", "いつ.つ"],
+    "kanji": "五", "level": "N5", "meanings": ["five"], "on": ["ゴ"], "kun": ["いつ", "いつ.つ"],
     "origin": "The ancient form was an X between two horizontal lines. What it originally showed is uncertain (perhaps crossing or interlocking); it was borrowed for the number five.",
     "examples": [
       { "jp": "五分待ってください。", "kana": "ごふんまってください。", "en": "Please wait five minutes." },
@@ -45,7 +45,7 @@
     ]
   },
   {
-    "kanji": "六", "meanings": ["six"], "on": ["ロク"], "kun": ["む", "む.つ", "むっ.つ", "むい"],
+    "kanji": "六", "level": "N5", "meanings": ["six"], "on": ["ロク"], "kun": ["む", "む.つ", "むっ.つ", "むい"],
     "origin": "Thought to picture a simple hut or roof. It was borrowed for its sound to write the number six.",
     "examples": [
       { "jp": "六時に起きます。", "kana": "ろくじにおきます。", "en": "I get up at six." },
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "kanji": "七", "meanings": ["seven"], "on": ["シチ"], "kun": ["なな", "なな.つ", "なの"],
+    "kanji": "七", "level": "N5", "meanings": ["seven"], "on": ["シチ"], "kun": ["なな", "なな.つ", "なの"],
     "origin": "Originally a cross showing something being cut. It looked too much like 十 (ten), so the vertical stroke was bent. The 'cut' meaning moved to 切 (七 + 刀 knife).",
     "examples": [
       { "jp": "七時に晩ご飯を食べます。", "kana": "しちじにばんごはんをたべます。", "en": "I eat dinner at seven." },
@@ -63,7 +63,7 @@
     ]
   },
   {
-    "kanji": "八", "meanings": ["eight"], "on": ["ハチ"], "kun": ["や", "や.つ", "やっ.つ", "よう"],
+    "kanji": "八", "level": "N5", "meanings": ["eight"], "on": ["ハチ"], "kun": ["や", "や.つ", "やっ.つ", "よう"],
     "origin": "Two lines bending away from each other: splitting apart. That 'divide' idea survives in 分 (divide). The number meaning was borrowed.",
     "examples": [
       { "jp": "八時に家を出ます。", "kana": "はちじにいえをでます。", "en": "I leave home at eight." },
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "kanji": "九", "meanings": ["nine"], "on": ["キュウ", "ク"], "kun": ["ここの", "ここの.つ"],
+    "kanji": "九", "level": "N5", "meanings": ["nine"], "on": ["キュウ", "ク"], "kun": ["ここの", "ここの.つ"],
     "origin": "The origin is debated: it may show a bent arm or elbow, or a hook. It was borrowed to write the number nine.",
     "examples": [
       { "jp": "九時からしごとです。", "kana": "くじからしごとです。", "en": "Work starts at nine." },
@@ -81,7 +81,7 @@
     ]
   },
   {
-    "kanji": "十", "meanings": ["ten"], "on": ["ジュウ", "ジッ"], "kun": ["とお", "と"],
+    "kanji": "十", "level": "N5", "meanings": ["ten"], "on": ["ジュウ", "ジッ"], "kun": ["とお", "と"],
     "origin": "In the oldest writing, ten was a single vertical line. A dot added in the middle later grew into a horizontal stroke, making a cross.",
     "examples": [
       { "jp": "十分ぐらいかかります。", "kana": "じゅっぷんぐらいかかります。", "en": "It takes about ten minutes." },
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "kanji": "百", "meanings": ["hundred"], "on": ["ヒャク"], "kun": ["もも"],
+    "kanji": "百", "level": "N5", "meanings": ["hundred"], "on": ["ヒャク"], "kun": ["もも"],
     "origin": "一 (one) on top of 白 (white). 白 was used for its sound, and the line on top marks 'one hundred'.",
     "examples": [
       { "jp": "このペンは百円です。", "kana": "このペンはひゃくえんです。", "en": "This pen is 100 yen." },
@@ -99,7 +99,7 @@
     ]
   },
   {
-    "kanji": "千", "meanings": ["thousand"], "on": ["セン"], "kun": ["ち"],
+    "kanji": "千", "level": "N5", "meanings": ["thousand"], "on": ["セン"], "kun": ["ち"],
     "origin": "人 (person) with an extra horizontal line. 人 supplied the sound, and the line marked a number: 'one thousand'.",
     "examples": [
       { "jp": "千円あります。", "kana": "せんえんあります。", "en": "I have a thousand yen." },
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "kanji": "万", "meanings": ["ten thousand", "all"], "on": ["マン", "バン"], "kun": ["よろず"],
+    "kanji": "万", "level": "N5", "meanings": ["ten thousand", "all"], "on": ["マン", "バン"], "kun": ["よろず"],
     "origin": "A simplified form of 萬, which was a drawing of a scorpion. The word for scorpion sounded like the word for ten thousand, so the character was borrowed. It can also mean 'all, everything'.",
     "examples": [
       { "jp": "一万円です。", "kana": "いちまんえんです。", "en": "It's ten thousand yen." },
@@ -117,7 +117,7 @@
     ]
   },
   {
-    "kanji": "円", "meanings": ["yen", "circle", "round"], "on": ["エン"], "kun": ["まる.い"],
+    "kanji": "円", "level": "N5", "meanings": ["yen", "circle", "round"], "on": ["エン"], "kun": ["まる.い"],
     "origin": "Simplified from 圓, meaning 'round'. Coins are round, so it became the name of Japan's currency. The outer frame is the enclosure; the inside is a heavily simplified part.",
     "examples": [
       { "jp": "全部で五百円です。", "kana": "ぜんぶでごひゃくえんです。", "en": "That's 500 yen in total." },
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "kanji": "日", "meanings": ["sun", "day"], "on": ["ニチ", "ジツ"], "kun": ["ひ", "-び", "-か"],
+    "kanji": "日", "level": "N5", "meanings": ["sun", "day"], "on": ["ニチ", "ジツ"], "kun": ["ひ", "-び", "-か"],
     "origin": "A picture of the sun: a circle with a dot in the middle. Circles were hard to carve and brush, so it became square. The sun marks each day, so it also means 'day'. 日本 literally means 'origin of the sun'.",
     "examples": [
       { "jp": "今日は日曜日です。", "kana": "きょうはにちようびです。", "en": "Today is Sunday." },
@@ -135,7 +135,7 @@
     ]
   },
   {
-    "kanji": "月", "meanings": ["moon", "month"], "on": ["ゲツ", "ガツ"], "kun": ["つき"],
+    "kanji": "月", "level": "N5", "meanings": ["moon", "month"], "on": ["ゲツ", "ガツ"], "kun": ["つき"],
     "origin": "A crescent moon. Months followed the moon's cycle, so it also means 'month'. Careful: on the left side of kanji like 腕 (arm) it usually comes from 肉 (flesh) and marks body parts.",
     "examples": [
       { "jp": "月がきれいですね。", "kana": "つきがきれいですね。", "en": "The moon is beautiful, isn't it?" },
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "kanji": "火", "meanings": ["fire"], "on": ["カ"], "kun": ["ひ", "-び", "ほ"],
+    "kanji": "火", "level": "N5", "meanings": ["fire"], "on": ["カ"], "kun": ["ひ", "-び", "ほ"],
     "origin": "Flames rising up; the short strokes on the sides are sparks. 火曜日 (Tuesday) is named after Mars, the 'fire star' 火星.",
     "examples": [
       { "jp": "火をつけてください。", "kana": "ひをつけてください。", "en": "Please light the fire." },
@@ -153,7 +153,7 @@
     ]
   },
   {
-    "kanji": "水", "meanings": ["water"], "on": ["スイ"], "kun": ["みず"],
+    "kanji": "水", "level": "N5", "meanings": ["water"], "on": ["スイ"], "kun": ["みず"],
     "origin": "Flowing water: a central stream with ripples or splashes on both sides. On the left side of other kanji it becomes 氵 (three drops), as in 海 (sea) and 泳 (swim).",
     "examples": [
       { "jp": "水をください。", "kana": "みずをください。", "en": "Water, please." },
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "kanji": "木", "meanings": ["tree", "wood"], "on": ["ボク", "モク"], "kun": ["き", "こ"],
+    "kanji": "木", "level": "N5", "meanings": ["tree", "wood"], "on": ["ボク", "モク"], "kun": ["き", "こ"],
     "origin": "A tree: the trunk, branches spreading at the top and roots at the bottom. Two trees make 林 (grove) and three make 森 (forest).",
     "examples": [
       { "jp": "大きい木の下で休みました。", "kana": "おおきいきのしたでやすみました。", "en": "I rested under a big tree." },
@@ -171,7 +171,7 @@
     ]
   },
   {
-    "kanji": "金", "meanings": ["gold", "money", "metal"], "on": ["キン", "コン"], "kun": ["かね", "かな"],
+    "kanji": "金", "level": "N5", "meanings": ["gold", "money", "metal"], "on": ["キン", "コン"], "kun": ["かね", "かな"],
     "origin": "The oldest forms are debated. A common explanation is nuggets of ore (the two dots) buried in the earth (土) under a cover. 金曜日 (Friday) is named after Venus, the 'metal star' 金星.",
     "examples": [
       { "jp": "お金がありません。", "kana": "おかねがありません。", "en": "I don't have any money." },
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "kanji": "土", "meanings": ["earth", "soil", "ground"], "on": ["ド", "ト"], "kun": ["つち"],
+    "kanji": "土", "level": "N5", "meanings": ["earth", "soil", "ground"], "on": ["ド", "ト"], "kun": ["つち"],
     "origin": "A lump of earth sitting on the ground. Early forms show a mound on a line, sometimes with dots of dust around it.",
     "examples": [
       { "jp": "土曜日は休みです。", "kana": "どようびはやすみです。", "en": "Saturday is a day off." },
@@ -189,7 +189,7 @@
     ]
   },
   {
-    "kanji": "山", "meanings": ["mountain"], "on": ["サン"], "kun": ["やま"],
+    "kanji": "山", "level": "N5", "meanings": ["mountain"], "on": ["サン"], "kun": ["やま"],
     "origin": "Three mountain peaks, with the middle one tallest.",
     "examples": [
       { "jp": "富士山に登りたいです。", "kana": "ふじさんにのぼりたいです。", "en": "I want to climb Mount Fuji." },
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "kanji": "川", "meanings": ["river"], "on": ["セン"], "kun": ["かわ"],
+    "kanji": "川", "level": "N5", "meanings": ["river"], "on": ["セン"], "kun": ["かわ"],
     "origin": "Water flowing between two banks, or simply three streams of running water.",
     "examples": [
       { "jp": "川で泳ぎました。", "kana": "かわでおよぎました。", "en": "I swam in the river." },
@@ -207,7 +207,7 @@
     ]
   },
   {
-    "kanji": "田", "meanings": ["rice field", "rice paddy"], "on": ["デン"], "kun": ["た"],
+    "kanji": "田", "level": "N4", "meanings": ["rice field", "rice paddy"], "on": ["デン"], "kun": ["た"],
     "origin": "A field seen from above, divided into plots by paths or irrigation channels.",
     "examples": [
       { "jp": "田んぼで米を作ります。", "kana": "たんぼでこめをつくります。", "en": "Rice is grown in the paddy." },
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "kanji": "天", "meanings": ["heaven", "sky"], "on": ["テン"], "kun": ["あめ", "あま"],
+    "kanji": "天", "level": "N5", "meanings": ["heaven", "sky"], "on": ["テン"], "kun": ["あめ", "あま"],
     "origin": "A person standing with arms spread (大) with the head emphasized by the line on top. The 'top of the head' came to mean what is above everyone: the sky, heaven.",
     "examples": [
       { "jp": "天気がいいです。", "kana": "てんきがいいです。", "en": "The weather is nice." },
@@ -225,7 +225,7 @@
     ]
   },
   {
-    "kanji": "気", "meanings": ["spirit", "energy", "air", "mood"], "on": ["キ", "ケ"], "kun": [],
+    "kanji": "気", "level": "N5", "meanings": ["spirit", "mind", "air", "mood"], "on": ["キ", "ケ"], "kun": [],
     "origin": "Simplified from 氣: 气 is vapor rising in wavy lines, and 米 is rice, so steam rising from cooking rice. From 'vapor, breath' it grew to mean air, energy, spirit and feelings. Japanese simplified 米 to メ.",
     "examples": [
       { "jp": "お元気ですか。", "kana": "おげんきですか。", "en": "How are you?" },
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "kanji": "雨", "meanings": ["rain"], "on": ["ウ"], "kun": ["あめ", "あま"],
+    "kanji": "雨", "level": "N5", "meanings": ["rain"], "on": ["ウ"], "kun": ["あめ", "あま"],
     "origin": "Raindrops falling from a cloud, with the sky as the top line. 雨 sits on top of many weather kanji: 雪 (snow), 雲 (cloud), 電 (lightning, electricity).",
     "examples": [
       { "jp": "雨がふっています。", "kana": "あめがふっています。", "en": "It's raining." },
@@ -243,7 +243,7 @@
     ]
   },
   {
-    "kanji": "花", "meanings": ["flower"], "on": ["カ"], "kun": ["はな"],
+    "kanji": "花", "level": "N4", "meanings": ["flower"], "on": ["カ"], "kun": ["はな"],
     "origin": "艹 (grass, plant) on top of 化 (change). 化 gives the sound and hints at a plant that transforms when it blooms.",
     "examples": [
       { "jp": "花がさきました。", "kana": "はながさきました。", "en": "The flowers bloomed." },
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "kanji": "犬", "meanings": ["dog"], "on": ["ケン"], "kun": ["いぬ"],
+    "kanji": "犬", "level": "N4", "meanings": ["dog"], "on": ["ケン"], "kun": ["いぬ"],
     "origin": "A dog drawn standing up on its side, with legs and tail; the dot is often explained as its ear. On the left of other kanji it becomes 犭 (animal), as in 猫 (cat).",
     "examples": [
       { "jp": "犬をかっています。", "kana": "いぬをかっています。", "en": "I have a dog." },
@@ -261,7 +261,7 @@
     ]
   },
   {
-    "kanji": "魚", "meanings": ["fish"], "on": ["ギョ"], "kun": ["さかな", "うお"],
+    "kanji": "魚", "level": "N4", "meanings": ["fish"], "on": ["ギョ"], "kun": ["さかな", "うお"],
     "origin": "A fish standing on its tail: the head at the top, the scaly body (田) in the middle and the tail fins as the four dots.",
     "examples": [
       { "jp": "魚が好きです。", "kana": "さかながすきです。", "en": "I like fish." },
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "kanji": "鳥", "meanings": ["bird"], "on": ["チョウ"], "kun": ["とり"],
+    "kanji": "鳥", "level": "N4", "meanings": ["bird"], "on": ["チョウ"], "kun": ["とり"],
     "origin": "A bird in profile: the head and eye on top, then the body and wing feathers. The four dots at the bottom are its tail feathers or feet.",
     "examples": [
       { "jp": "鳥が飛んでいます。", "kana": "とりがとんでいます。", "en": "A bird is flying." },
@@ -279,7 +279,7 @@
     ]
   },
   {
-    "kanji": "年", "meanings": ["year"], "on": ["ネン"], "kun": ["とし"],
+    "kanji": "年", "level": "N5", "meanings": ["year"], "on": ["ネン"], "kun": ["とし"],
     "origin": "Originally a person (人) carrying a bundle of ripe grain (禾) on their back. The harvest came once a year, so it came to mean 'year'.",
     "examples": [
       { "jp": "来年、日本へ行きます。", "kana": "らいねん、にほんへいきます。", "en": "I'm going to Japan next year." },
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "kanji": "時", "meanings": ["time", "hour", "o'clock"], "on": ["ジ"], "kun": ["とき"],
+    "kanji": "時", "level": "N5", "meanings": ["time", "hour", "o'clock"], "on": ["ジ"], "kun": ["とき"],
     "origin": "日 (sun) + 寺 (temple, used for its sound). Time was measured by the movement of the sun.",
     "examples": [
       { "jp": "今、何時ですか。", "kana": "いま、なんじですか。", "en": "What time is it now?" },
@@ -297,16 +297,16 @@
     ]
   },
   {
-    "kanji": "分", "meanings": ["minute", "part", "divide", "understand"], "on": ["ブン", "フン", "ブ"], "kun": ["わ.ける", "わ.かる"],
+    "kanji": "分", "level": "N5", "meanings": ["minute", "part", "divide", "understand"], "on": ["ブン", "フン", "ブ"], "kun": ["わ.ける", "わ.かる"],
     "origin": "八 (two lines splitting apart) over 刀 (knife): cutting something into parts. From 'divide' come 'part' and 'minute' (a division of the hour). 分かる (understand) is often explained as being able to separate things clearly in your mind.",
     "examples": [
       { "jp": "分かりました。", "kana": "わかりました。", "en": "I understand. / Got it." },
-      { "jp": "十分待ちました。", "kana": "じゅっぷんまちました。", "en": "I waited ten minutes." },
+      { "jp": "十五分待ちました。", "kana": "じゅうごふんまちました。", "en": "I waited fifteen minutes." },
       { "jp": "ケーキを二つに分けました。", "kana": "ケーキをふたつにわけました。", "en": "I cut the cake in two." }
     ]
   },
   {
-    "kanji": "半", "meanings": ["half"], "on": ["ハン"], "kun": ["なか.ば"],
+    "kanji": "半", "level": "N5", "meanings": ["half"], "on": ["ハン"], "kun": ["なか.ば"],
     "origin": "Traditionally explained as 八 (split) + 牛 (ox): splitting an ox down the middle. The shape has been simplified since.",
     "examples": [
       { "jp": "七時半に起きました。", "kana": "しちじはんにおきました。", "en": "I got up at 7:30." },
@@ -315,7 +315,7 @@
     ]
   },
   {
-    "kanji": "今", "meanings": ["now", "present"], "on": ["コン", "キン"], "kun": ["いま"],
+    "kanji": "今", "level": "N5", "meanings": ["now", "present"], "on": ["コン", "キン"], "kun": ["いま"],
     "origin": "The origin is unclear. The old form looks like a lid or roof over a short stroke, and one theory is that it showed something being covered, but no explanation is widely agreed on. Watch the special readings 今日 (きょう) and 今年 (ことし).",
     "examples": [
       { "jp": "今、忙しいです。", "kana": "いま、いそがしいです。", "en": "I'm busy right now." },
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "kanji": "午", "meanings": ["noon"], "on": ["ゴ"], "kun": ["うま"],
+    "kanji": "午", "level": "N5", "meanings": ["noon"], "on": ["ゴ"], "kun": ["うま"],
     "origin": "Originally a picture of a pestle for pounding grain. It was borrowed for the 7th of the twelve Earthly Branches (the Horse), which covered the hours around midday, so 午 came to mean noon. 午前 = a.m., 午後 = p.m.",
     "examples": [
       { "jp": "午前中は家にいます。", "kana": "ごぜんちゅうはいえにいます。", "en": "I'll be home in the morning." },
@@ -333,7 +333,7 @@
     ]
   },
   {
-    "kanji": "間", "meanings": ["between", "interval", "space"], "on": ["カン", "ケン"], "kun": ["あいだ", "ま"],
+    "kanji": "間", "level": "N5", "meanings": ["between", "interval", "space"], "on": ["カン", "ケン"], "kun": ["あいだ", "ま"],
     "origin": "門 (gate) + 日 (sun): light shining through the gap between two gate doors, meaning a gap, space or interval. The oldest form used 月 (moon) instead of 日.",
     "examples": [
       { "jp": "一時間待ちました。", "kana": "いちじかんまちました。", "en": "I waited one hour." },
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "kanji": "週", "meanings": ["week"], "on": ["シュウ"], "kun": [],
+    "kanji": "週", "level": "N4", "meanings": ["week"], "on": ["シュウ"], "kun": [],
     "origin": "辶 (moving along a road) + 周 (around, which also gives the sound). A week is one full cycle 'going around' the days.",
     "examples": [
       { "jp": "来週、テストがあります。", "kana": "らいしゅう、テストがあります。", "en": "There's a test next week." },
@@ -351,7 +351,7 @@
     ]
   },
   {
-    "kanji": "毎", "meanings": ["every", "each"], "on": ["マイ"], "kun": ["ごと"],
+    "kanji": "毎", "level": "N5", "meanings": ["every", "each"], "on": ["マイ"], "kun": ["ごと"],
     "origin": "The old form shows a woman with an ornament in her hair. It was borrowed for its sound to mean 'every'; the original meaning is debated.",
     "examples": [
       { "jp": "毎日、朝ご飯を食べます。", "kana": "まいにち、あさごはんをたべます。", "en": "I eat breakfast every day." },
@@ -360,7 +360,7 @@
     ]
   },
   {
-    "kanji": "人", "meanings": ["person", "people"], "on": ["ジン", "ニン"], "kun": ["ひと"],
+    "kanji": "人", "level": "N5", "meanings": ["person", "people"], "on": ["ジン", "ニン"], "kun": ["ひと"],
     "origin": "A person seen from the side, standing or walking: you can see the body and the legs.",
     "examples": [
       { "jp": "あの人はだれですか。", "kana": "あのひとはだれですか。", "en": "Who is that person?" },
@@ -369,7 +369,7 @@
     ]
   },
   {
-    "kanji": "男", "meanings": ["man", "male"], "on": ["ダン", "ナン"], "kun": ["おとこ"],
+    "kanji": "男", "level": "N5", "meanings": ["man", "male"], "on": ["ダン", "ナン"], "kun": ["おとこ"],
     "origin": "田 (rice field) + 力 (strength; originally a plow): the one who works the fields with his strength, reflecting ancient farming roles.",
     "examples": [
       { "jp": "男の人が来ました。", "kana": "おとこのひとがきました。", "en": "A man came." },
@@ -378,7 +378,7 @@
     ]
   },
   {
-    "kanji": "女", "meanings": ["woman", "female"], "on": ["ジョ", "ニョ"], "kun": ["おんな", "め"],
+    "kanji": "女", "level": "N5", "meanings": ["woman", "female"], "on": ["ジョ", "ニョ"], "kun": ["おんな", "め"],
     "origin": "A woman kneeling with her arms crossed in front of her.",
     "examples": [
       { "jp": "女の人がいます。", "kana": "おんなのひとがいます。", "en": "There's a woman." },
@@ -387,7 +387,7 @@
     ]
   },
   {
-    "kanji": "子", "meanings": ["child"], "on": ["シ", "ス"], "kun": ["こ"],
+    "kanji": "子", "level": "N5", "meanings": ["child"], "on": ["シ", "ス"], "kun": ["こ"],
     "origin": "A baby with a big head and arms reaching out. The legs are wrapped in swaddling cloth, so there is just one line at the bottom.",
     "examples": [
       { "jp": "子どもが好きです。", "kana": "こどもがすきです。", "en": "I like children." },
@@ -396,7 +396,7 @@
     ]
   },
   {
-    "kanji": "母", "meanings": ["mother"], "on": ["ボ"], "kun": ["はは"],
+    "kanji": "母", "level": "N5", "meanings": ["mother"], "on": ["ボ"], "kun": ["はは"],
     "origin": "女 (woman) with two dots added for breasts: a woman nursing a child.",
     "examples": [
       { "jp": "母は料理が上手です。", "kana": "はははりょうりがじょうずです。", "en": "My mother is good at cooking." },
@@ -405,7 +405,7 @@
     ]
   },
   {
-    "kanji": "父", "meanings": ["father"], "on": ["フ"], "kun": ["ちち"],
+    "kanji": "父", "level": "N5", "meanings": ["father"], "on": ["フ"], "kun": ["ちち"],
     "origin": "A hand holding a stone axe or a stick, a symbol of work and authority.",
     "examples": [
       { "jp": "父は会社員です。", "kana": "ちちはかいしゃいんです。", "en": "My father is an office worker." },
@@ -414,7 +414,7 @@
     ]
   },
   {
-    "kanji": "友", "meanings": ["friend"], "on": ["ユウ"], "kun": ["とも"],
+    "kanji": "友", "level": "N5", "meanings": ["friend"], "on": ["ユウ"], "kun": ["とも"],
     "origin": "Two right hands (又) together: people helping each other.",
     "examples": [
       { "jp": "友だちと遊びます。", "kana": "ともだちとあそびます。", "en": "I'm hanging out with friends." },
@@ -423,7 +423,7 @@
     ]
   },
   {
-    "kanji": "力", "meanings": ["power", "strength"], "on": ["リョク", "リキ"], "kun": ["ちから"],
+    "kanji": "力", "level": "N4", "meanings": ["power", "strength"], "on": ["リョク", "リキ"], "kun": ["ちから"],
     "origin": "Usually explained as a plow (a digging stick with a footrest), or as an arm with a flexed muscle. Either way: effort and strength.",
     "examples": [
       { "jp": "力がありますね。", "kana": "ちからがありますね。", "en": "You're strong, aren't you?" },
@@ -432,7 +432,7 @@
     ]
   },
   {
-    "kanji": "上", "meanings": ["up", "above", "top"], "on": ["ジョウ"], "kun": ["うえ", "うわ", "かみ", "あ.げる", "あ.がる", "のぼ.る"],
+    "kanji": "上", "level": "N5", "meanings": ["up", "above", "top"], "on": ["ジョウ"], "kun": ["うえ", "うわ", "かみ", "あ.げる", "あ.がる", "のぼ.る"],
     "origin": "A short mark above a longer line: 'above'. It is a symbol for an idea rather than a picture of a thing.",
     "examples": [
       { "jp": "机の上に本があります。", "kana": "つくえのうえにほんがあります。", "en": "There's a book on the desk." },
@@ -441,7 +441,7 @@
     ]
   },
   {
-    "kanji": "下", "meanings": ["down", "below", "under"], "on": ["カ", "ゲ"], "kun": ["した", "しも", "さ.げる", "さ.がる", "くだ.さる", "お.りる"],
+    "kanji": "下", "level": "N5", "meanings": ["down", "below", "under"], "on": ["カ", "ゲ"], "kun": ["した", "しも", "さ.げる", "さ.がる", "くだ.さる", "お.りる"],
     "origin": "A mark below a line: the mirror image of 上.",
     "examples": [
       { "jp": "いすの下にねこがいます。", "kana": "いすのしたにねこがいます。", "en": "There's a cat under the chair." },
@@ -450,7 +450,7 @@
     ]
   },
   {
-    "kanji": "中", "meanings": ["middle", "inside", "center"], "on": ["チュウ"], "kun": ["なか"],
+    "kanji": "中", "level": "N5", "meanings": ["middle", "inside", "center"], "on": ["チュウ"], "kun": ["なか"],
     "origin": "A line through the middle of a box. Often explained as a flagpole at the center of a camp, or an arrow hitting the center of a target.",
     "examples": [
       { "jp": "かばんの中に何がありますか。", "kana": "かばんのなかになにがありますか。", "en": "What's in the bag?" },
@@ -459,7 +459,7 @@
     ]
   },
   {
-    "kanji": "外", "meanings": ["outside", "foreign"], "on": ["ガイ", "ゲ"], "kun": ["そと", "ほか", "はず.す"],
+    "kanji": "外", "level": "N5", "meanings": ["outside", "other"], "on": ["ガイ", "ゲ"], "kun": ["そと", "ほか", "はず.す"],
     "origin": "夕 (evening) + 卜 (a crack used in fortune-telling). A traditional explanation: divination was done in the morning, so doing it in the evening was 'outside' the rules. The real origin is uncertain.",
     "examples": [
       { "jp": "外は寒いです。", "kana": "そとはさむいです。", "en": "It's cold outside." },
@@ -468,7 +468,7 @@
     ]
   },
   {
-    "kanji": "左", "meanings": ["left"], "on": ["サ"], "kun": ["ひだり"],
+    "kanji": "左", "level": "N5", "meanings": ["left"], "on": ["サ"], "kun": ["ひだり"],
     "origin": "A left hand (ナ) holding a tool (工, a carpenter's square). The left hand is the one that steadies the tool.",
     "examples": [
       { "jp": "左に曲がってください。", "kana": "ひだりにまがってください。", "en": "Please turn left." },
@@ -477,7 +477,7 @@
     ]
   },
   {
-    "kanji": "右", "meanings": ["right"], "on": ["ウ", "ユウ"], "kun": ["みぎ"],
+    "kanji": "右", "level": "N5", "meanings": ["right"], "on": ["ウ", "ユウ"], "kun": ["みぎ"],
     "origin": "A right hand (ナ) with 口 (mouth). Traditionally explained as the hand that brings food to your mouth. Compare 左: the same hand shape, a different object.",
     "examples": [
       { "jp": "右に曲がってください。", "kana": "みぎにまがってください。", "en": "Please turn right." },
@@ -486,7 +486,7 @@
     ]
   },
   {
-    "kanji": "前", "meanings": ["before", "front", "ago"], "on": ["ゼン"], "kun": ["まえ"],
+    "kanji": "前", "level": "N5", "meanings": ["before", "front", "ago"], "on": ["ゼン"], "kun": ["まえ"],
     "origin": "Old forms show a foot (止) on a boat (舟): moving forward. A knife (刂) was added later, and the parts are hard to recognize in the modern shape.",
     "examples": [
       { "jp": "駅の前で会いましょう。", "kana": "えきのまえであいましょう。", "en": "Let's meet in front of the station." },
@@ -495,7 +495,7 @@
     ]
   },
   {
-    "kanji": "後", "meanings": ["after", "behind", "later"], "on": ["ゴ", "コウ"], "kun": ["うし.ろ", "あと", "のち"],
+    "kanji": "後", "level": "N5", "meanings": ["after", "behind", "later"], "on": ["ゴ", "コウ"], "kun": ["うし.ろ", "あと", "のち"],
     "origin": "彳 (road, going) + 幺 (thread) + 夂 (dragging feet): walking with tied-up feet, so you fall behind. Hence 'behind' and 'after'.",
     "examples": [
       { "jp": "後ろを見てください。", "kana": "うしろをみてください。", "en": "Please look behind you." },
@@ -504,7 +504,7 @@
     ]
   },
   {
-    "kanji": "大", "meanings": ["big", "large"], "on": ["ダイ", "タイ"], "kun": ["おお", "おお.きい"],
+    "kanji": "大", "level": "N5", "meanings": ["big", "large"], "on": ["ダイ", "タイ"], "kun": ["おお", "おお.きい"],
     "origin": "A person standing face-on with arms and legs stretched out wide, as big as possible.",
     "examples": [
       { "jp": "大きい犬ですね。", "kana": "おおきいいぬですね。", "en": "That's a big dog." },
@@ -513,7 +513,7 @@
     ]
   },
   {
-    "kanji": "小", "meanings": ["small", "little"], "on": ["ショウ"], "kun": ["ちい.さい", "こ", "お"],
+    "kanji": "小", "level": "N5", "meanings": ["small", "little"], "on": ["ショウ"], "kun": ["ちい.さい", "こ", "お"],
     "origin": "Three small dots, like grains or tiny particles: small.",
     "examples": [
       { "jp": "小さい店です。", "kana": "ちいさいみせです。", "en": "It's a small shop." },
@@ -522,7 +522,7 @@
     ]
   },
   {
-    "kanji": "高", "meanings": ["tall", "high", "expensive"], "on": ["コウ"], "kun": ["たか.い"],
+    "kanji": "高", "level": "N5", "meanings": ["tall", "high", "expensive"], "on": ["コウ"], "kun": ["たか.い"],
     "origin": "A tall tower or multi-story building on a high base, with an entrance (口).",
     "examples": [
       { "jp": "このかばんは高いです。", "kana": "このかばんはたかいです。", "en": "This bag is expensive." },
@@ -531,7 +531,7 @@
     ]
   },
   {
-    "kanji": "安", "meanings": ["cheap", "peaceful", "safe"], "on": ["アン"], "kun": ["やす.い"],
+    "kanji": "安", "level": "N4", "meanings": ["cheap", "peaceful", "relax"], "on": ["アン"], "kun": ["やす.い"],
     "origin": "宀 (roof) over 女 (woman): a woman at home under a roof, a picture of calm and safety. Japanese also uses it to mean 'cheap'.",
     "examples": [
       { "jp": "この店は安いです。", "kana": "このみせはやすいです。", "en": "This store is cheap." },
@@ -540,7 +540,7 @@
     ]
   },
   {
-    "kanji": "新", "meanings": ["new"], "on": ["シン"], "kun": ["あたら.しい", "あら.た", "にい"],
+    "kanji": "新", "level": "N4", "meanings": ["new"], "on": ["シン"], "kun": ["あたら.しい", "あら.た", "にい"],
     "origin": "辛 (a blade; also the sound) + 木 (tree) + 斤 (axe): wood freshly cut with an axe, so 'new'.",
     "examples": [
       { "jp": "新しい車を買いました。", "kana": "あたらしいくるまをかいました。", "en": "I bought a new car." },
@@ -549,7 +549,7 @@
     ]
   },
   {
-    "kanji": "古", "meanings": ["old"], "on": ["コ"], "kun": ["ふる.い"],
+    "kanji": "古", "level": "N4", "meanings": ["old"], "on": ["コ"], "kun": ["ふる.い"],
     "origin": "A popular memory aid reads it as 十 (ten) + 口 (mouth): a story passed through ten mouths, from generation to generation. Scholars are not sure of the real origin.",
     "examples": [
       { "jp": "古い本です。", "kana": "ふるいほんです。", "en": "It's an old book." },
@@ -558,7 +558,7 @@
     ]
   },
   {
-    "kanji": "長", "meanings": ["long", "chief", "leader"], "on": ["チョウ"], "kun": ["なが.い"],
+    "kanji": "長", "level": "N5", "meanings": ["long", "chief", "leader"], "on": ["チョウ"], "kun": ["なが.い"],
     "origin": "An old person with long flowing hair, sometimes leaning on a staff. From 'long hair' came 'long', and from 'elder' came 'chief, head'.",
     "examples": [
       { "jp": "長い時間待ちました。", "kana": "ながいじかんまちました。", "en": "I waited a long time." },
@@ -567,7 +567,7 @@
     ]
   },
   {
-    "kanji": "白", "meanings": ["white"], "on": ["ハク", "ビャク"], "kun": ["しろ", "しろ.い"],
+    "kanji": "白", "level": "N5", "meanings": ["white"], "on": ["ハク", "ビャク"], "kun": ["しろ", "しろ.い"],
     "origin": "The origin is debated. Proposals include an acorn, a thumbnail, a skull, or the glow of the sun or a candle. It appears as a part in other kanji, such as 百.",
     "examples": [
       { "jp": "白いシャツを着ています。", "kana": "しろいシャツをきています。", "en": "I'm wearing a white shirt." },
@@ -576,7 +576,7 @@
     ]
   },
   {
-    "kanji": "多", "meanings": ["many", "much"], "on": ["タ"], "kun": ["おお.い"],
+    "kanji": "多", "level": "N4", "meanings": ["many", "much"], "on": ["タ"], "kun": ["おお.い"],
     "origin": "Two pieces of meat stacked up (the 夕 shape here originally drew a slab of meat): plenty.",
     "examples": [
       { "jp": "人が多いです。", "kana": "ひとがおおいです。", "en": "There are a lot of people." },
@@ -585,7 +585,7 @@
     ]
   },
   {
-    "kanji": "少", "meanings": ["few", "a little"], "on": ["ショウ"], "kun": ["すく.ない", "すこ.し"],
+    "kanji": "少", "level": "N4", "meanings": ["few", "a little"], "on": ["ショウ"], "kun": ["すく.ない", "すこ.し"],
     "origin": "小 (small) with an extra stroke, cutting it down even further: few, a little.",
     "examples": [
       { "jp": "少し待ってください。", "kana": "すこしまってください。", "en": "Please wait a moment." },
@@ -594,7 +594,7 @@
     ]
   },
   {
-    "kanji": "口", "meanings": ["mouth", "opening"], "on": ["コウ", "ク"], "kun": ["くち"],
+    "kanji": "口", "level": "N4", "meanings": ["mouth", "opening"], "on": ["コウ", "ク"], "kun": ["くち"],
     "origin": "An open mouth. It also means openings in general: 入口 (entrance), 出口 (exit).",
     "examples": [
       { "jp": "口を開けてください。", "kana": "くちをあけてください。", "en": "Please open your mouth." },
@@ -603,7 +603,7 @@
     ]
   },
   {
-    "kanji": "目", "meanings": ["eye"], "on": ["モク"], "kun": ["め"],
+    "kanji": "目", "level": "N4", "meanings": ["eye"], "on": ["モク"], "kun": ["め"],
     "origin": "An eye with the pupil in the middle. It was first drawn sideways and later turned upright to fit narrow columns of text.",
     "examples": [
       { "jp": "目が大きいですね。", "kana": "めがおおきいですね。", "en": "You have big eyes." },
@@ -612,7 +612,7 @@
     ]
   },
   {
-    "kanji": "耳", "meanings": ["ear"], "on": ["ジ"], "kun": ["みみ"],
+    "kanji": "耳", "level": "N4", "meanings": ["ear"], "on": ["ジ"], "kun": ["みみ"],
     "origin": "An ear: the outer curve with the folds inside.",
     "examples": [
       { "jp": "耳が痛いです。", "kana": "みみがいたいです。", "en": "My ear hurts." },
@@ -621,7 +621,7 @@
     ]
   },
   {
-    "kanji": "手", "meanings": ["hand"], "on": ["シュ"], "kun": ["て"],
+    "kanji": "手", "level": "N4", "meanings": ["hand"], "on": ["シュ"], "kun": ["て"],
     "origin": "A hand with the fingers spread out above the wrist.",
     "examples": [
       { "jp": "手を洗いましょう。", "kana": "てをあらいましょう。", "en": "Let's wash our hands." },
@@ -630,7 +630,7 @@
     ]
   },
   {
-    "kanji": "足", "meanings": ["foot", "leg", "be enough"], "on": ["ソク"], "kun": ["あし", "た.りる", "た.す"],
+    "kanji": "足", "level": "N4", "meanings": ["foot", "leg", "be enough"], "on": ["ソク"], "kun": ["あし", "た.りる", "た.す"],
     "origin": "The 口 at the top is the kneecap (or the round thigh) and below it is 止, a foot. It also means 'to be enough' (足りる) and 'to add' (足す).",
     "examples": [
       { "jp": "足が痛いです。", "kana": "あしがいたいです。", "en": "My leg hurts." },
@@ -639,7 +639,7 @@
     ]
   },
   {
-    "kanji": "学", "meanings": ["study", "learning"], "on": ["ガク"], "kun": ["まな.ぶ"],
+    "kanji": "学", "level": "N5", "meanings": ["study", "learning"], "on": ["ガク"], "kun": ["まな.ぶ"],
     "origin": "Simplified from 學: two hands (臼) teaching knots or counting marks (爻) to a child (子) under a roof (冖). A school.",
     "examples": [
       { "jp": "大学生です。", "kana": "だいがくせいです。", "en": "I'm a university student." },
@@ -648,7 +648,7 @@
     ]
   },
   {
-    "kanji": "校", "meanings": ["school"], "on": ["コウ"], "kun": [],
+    "kanji": "校", "level": "N5", "meanings": ["school"], "on": ["コウ"], "kun": [],
     "origin": "木 (wood) + 交 (crossing, which also gives the sound). Originally a fence or frame of crossed timbers; later it came to mean 'school', and also 'to check' as in 校正 (proofreading).",
     "examples": [
       { "jp": "毎日、学校に行きます。", "kana": "まいにち、がっこうにいきます。", "en": "I go to school every day." },
@@ -657,7 +657,7 @@
     ]
   },
   {
-    "kanji": "先", "meanings": ["ahead", "previous", "tip"], "on": ["セン"], "kun": ["さき"],
+    "kanji": "先", "level": "N5", "meanings": ["ahead", "previous", "tip"], "on": ["セン"], "kun": ["さき"],
     "origin": "A foot (from 止) placed in front of a person (儿): going ahead of others. From 'ahead' come 'previous' (先週, last week) and 'tip, end'.",
     "examples": [
       { "jp": "先生、質問があります。", "kana": "せんせい、しつもんがあります。", "en": "Teacher, I have a question." },
@@ -666,7 +666,7 @@
     ]
   },
   {
-    "kanji": "生", "meanings": ["life", "birth", "raw"], "on": ["セイ", "ショウ"], "kun": ["い.きる", "う.まれる", "なま", "は.える"],
+    "kanji": "生", "level": "N5", "meanings": ["life", "birth", "raw"], "on": ["セイ", "ショウ"], "kun": ["い.きる", "う.まれる", "なま", "は.える"],
     "origin": "A sprout growing up out of the ground (土): life, being born, growing. It has more readings than almost any other kanji.",
     "examples": [
       { "jp": "私の誕生日は五月です。", "kana": "わたしのたんじょうびはごがつです。", "en": "My birthday is in May." },
@@ -675,7 +675,7 @@
     ]
   },
   {
-    "kanji": "名", "meanings": ["name", "famous"], "on": ["メイ", "ミョウ"], "kun": ["な"],
+    "kanji": "名", "level": "N5", "meanings": ["name", "famous"], "on": ["メイ", "ミョウ"], "kun": ["な"],
     "origin": "夕 (evening) + 口 (mouth). The traditional explanation: in the dark of evening people couldn't see each other, so they called out their names.",
     "examples": [
       { "jp": "お名前は何ですか。", "kana": "おなまえはなんですか。", "en": "What's your name?" },
@@ -684,7 +684,7 @@
     ]
   },
   {
-    "kanji": "語", "meanings": ["language", "word"], "on": ["ゴ"], "kun": ["かた.る"],
+    "kanji": "語", "level": "N5", "meanings": ["language", "word"], "on": ["ゴ"], "kun": ["かた.る"],
     "origin": "言 (words, speech) + 吾 (I, me; used for the sound): speaking, words, language.",
     "examples": [
       { "jp": "日本語が好きです。", "kana": "にほんごがすきです。", "en": "I like Japanese." },
@@ -693,7 +693,7 @@
     ]
   },
   {
-    "kanji": "本", "meanings": ["book", "origin", "main", "real"], "on": ["ホン"], "kun": ["もと"],
+    "kanji": "本", "level": "N5", "meanings": ["book", "origin", "main", "real"], "on": ["ホン"], "kun": ["もと"],
     "origin": "木 (tree) with a mark at the bottom pointing to the roots: the root, the origin. From 'origin, basis' came 'main', 'real' and 'book'. It is also the counter for long thin things (ペン一本).",
     "examples": [
       { "jp": "この本はおもしろいです。", "kana": "このほんはおもしろいです。", "en": "This book is interesting." },
@@ -702,7 +702,7 @@
     ]
   },
   {
-    "kanji": "書", "meanings": ["write"], "on": ["ショ"], "kun": ["か.く"],
+    "kanji": "書", "level": "N5", "meanings": ["write"], "on": ["ショ"], "kun": ["か.く"],
     "origin": "聿 (a hand holding a writing brush) above 曰 (which came from 者, giving the sound): writing.",
     "examples": [
       { "jp": "手紙を書きます。", "kana": "てがみをかきます。", "en": "I'm going to write a letter." },
@@ -711,7 +711,7 @@
     ]
   },
   {
-    "kanji": "読", "meanings": ["read"], "on": ["ドク", "トク"], "kun": ["よ.む"],
+    "kanji": "読", "level": "N5", "meanings": ["read"], "on": ["ドク", "トク"], "kun": ["よ.む"],
     "origin": "言 (words) + 売 (simplified from 賣, used for the sound). It first meant 'to read aloud, recite'.",
     "examples": [
       { "jp": "本を読むのが好きです。", "kana": "ほんをよむのがすきです。", "en": "I like reading books." },
@@ -720,7 +720,7 @@
     ]
   },
   {
-    "kanji": "聞", "meanings": ["hear", "listen", "ask"], "on": ["ブン", "モン"], "kun": ["き.く", "き.こえる"],
+    "kanji": "聞", "level": "N5", "meanings": ["hear", "listen", "ask"], "on": ["ブン", "モン"], "kun": ["き.く", "き.こえる"],
     "origin": "耳 (ear) inside 門 (gate, which gives the sound): an ear at the gate, listening.",
     "examples": [
       { "jp": "音楽を聞きます。", "kana": "おんがくをききます。", "en": "I listen to music." },
@@ -729,7 +729,7 @@
     ]
   },
   {
-    "kanji": "見", "meanings": ["see", "look"], "on": ["ケン"], "kun": ["み.る", "み.える", "み.せる"],
+    "kanji": "見", "level": "N5", "meanings": ["see", "look"], "on": ["ケン"], "kun": ["み.る", "み.える", "み.せる"],
     "origin": "A big eye (目) on top of a person's legs (儿): a person whose main action is looking.",
     "examples": [
       { "jp": "テレビを見ます。", "kana": "テレビをみます。", "en": "I watch TV." },
@@ -738,7 +738,7 @@
     ]
   },
   {
-    "kanji": "言", "meanings": ["say", "words"], "on": ["ゲン", "ゴン"], "kun": ["い.う", "こと"],
+    "kanji": "言", "level": "N4", "meanings": ["say", "words"], "on": ["ゲン", "ゴン"], "kun": ["い.う", "こと"],
     "origin": "A mouth (口) with lines above it for words or sound coming out. Some scholars think it shows a mouth playing a flute. On the left of other kanji (訁) it marks things to do with speech.",
     "examples": [
       { "jp": "何と言いましたか。", "kana": "なんといいましたか。", "en": "What did you say?" },
@@ -747,7 +747,7 @@
     ]
   },
   {
-    "kanji": "話", "meanings": ["talk", "speak", "story"], "on": ["ワ"], "kun": ["はな.す", "はなし"],
+    "kanji": "話", "level": "N5", "meanings": ["talk", "speak", "story"], "on": ["ワ"], "kun": ["はな.す", "はなし"],
     "origin": "言 (words) + 舌 (tongue): talking.",
     "examples": [
       { "jp": "友だちと話しました。", "kana": "ともだちとはなしました。", "en": "I talked with a friend." },
@@ -756,7 +756,7 @@
     ]
   },
   {
-    "kanji": "行", "meanings": ["go", "carry out", "line"], "on": ["コウ", "ギョウ"], "kun": ["い.く", "ゆ.く", "おこな.う"],
+    "kanji": "行", "level": "N5", "meanings": ["go", "carry out", "line"], "on": ["コウ", "ギョウ"], "kun": ["い.く", "ゆ.く", "おこな.う"],
     "origin": "A crossroads seen from above, with streets going in four directions. From 'road' came 'to go'.",
     "examples": [
       { "jp": "明日、学校に行きます。", "kana": "あした、がっこうにいきます。", "en": "I'm going to school tomorrow." },
@@ -765,7 +765,7 @@
     ]
   },
   {
-    "kanji": "来", "meanings": ["come", "next"], "on": ["ライ"], "kun": ["く.る"],
+    "kanji": "来", "level": "N5", "meanings": ["come", "next"], "on": ["ライ"], "kun": ["く.る"],
     "origin": "Simplified from 來, a picture of a wheat or barley plant. The word for wheat sounded like 'come', so it was borrowed, and 麦 came to be used for wheat instead.",
     "examples": [
       { "jp": "友だちが来ます。", "kana": "ともだちがきます。", "en": "A friend is coming." },
@@ -774,7 +774,7 @@
     ]
   },
   {
-    "kanji": "出", "meanings": ["exit", "go out", "leave"], "on": ["シュツ"], "kun": ["で.る", "だ.す"],
+    "kanji": "出", "level": "N5", "meanings": ["exit", "go out", "leave"], "on": ["シュツ"], "kun": ["で.る", "だ.す"],
     "origin": "A foot (止) stepping out of a hollow or pit: going out.",
     "examples": [
       { "jp": "七時に家を出ます。", "kana": "しちじにいえをでます。", "en": "I leave the house at seven." },
@@ -783,7 +783,7 @@
     ]
   },
   {
-    "kanji": "入", "meanings": ["enter", "put in"], "on": ["ニュウ"], "kun": ["い.る", "い.れる", "はい.る"],
+    "kanji": "入", "level": "N5", "meanings": ["enter", "put in"], "on": ["ニュウ"], "kun": ["い.る", "い.れる", "はい.る"],
     "origin": "Possibly an arrowhead or wedge pointing inward, or an entrance; the original picture is debated. Don't confuse it with 人 (person): the strokes are mirrored.",
     "examples": [
       { "jp": "部屋に入ってください。", "kana": "へやにはいってください。", "en": "Please come into the room." },
@@ -792,7 +792,7 @@
     ]
   },
   {
-    "kanji": "食", "meanings": ["eat", "food"], "on": ["ショク", "ジキ"], "kun": ["た.べる", "く.う"],
+    "kanji": "食", "level": "N5", "meanings": ["eat", "food"], "on": ["ショク", "ジキ"], "kun": ["た.べる", "く.う"],
     "origin": "A container full of food with a lid on top, standing on a base: a meal.",
     "examples": [
       { "jp": "朝ご飯を食べました。", "kana": "あさごはんをたべました。", "en": "I ate breakfast." },
@@ -801,7 +801,7 @@
     ]
   },
   {
-    "kanji": "飲", "meanings": ["drink"], "on": ["イン"], "kun": ["の.む"],
+    "kanji": "飲", "level": "N4", "meanings": ["drink"], "on": ["イン"], "kun": ["の.む"],
     "origin": "食 (food, eating) + 欠 (a person with the mouth wide open): drinking.",
     "examples": [
       { "jp": "水を飲みます。", "kana": "みずをのみます。", "en": "I drink water." },
@@ -810,7 +810,7 @@
     ]
   },
   {
-    "kanji": "休", "meanings": ["rest", "day off"], "on": ["キュウ"], "kun": ["やす.む", "やす.み"],
+    "kanji": "休", "level": "N5", "meanings": ["rest", "day off"], "on": ["キュウ"], "kun": ["やす.む", "やす.まる"],
     "origin": "亻 (person) leaning against 木 (tree): taking a rest.",
     "examples": [
       { "jp": "少し休みましょう。", "kana": "すこしやすみましょう。", "en": "Let's take a short break." },
@@ -819,7 +819,7 @@
     ]
   },
   {
-    "kanji": "買", "meanings": ["buy"], "on": ["バイ"], "kun": ["か.う"],
+    "kanji": "買", "level": "N4", "meanings": ["buy"], "on": ["バイ"], "kun": ["か.う"],
     "origin": "罒 (a net) over 貝 (a cowrie shell, used as money in ancient China): gathering up shells, that is, money. Trading, buying.",
     "examples": [
       { "jp": "パンを買いました。", "kana": "パンをかいました。", "en": "I bought bread." },
@@ -828,7 +828,7 @@
     ]
   },
   {
-    "kanji": "立", "meanings": ["stand"], "on": ["リツ", "リュウ"], "kun": ["た.つ", "た.てる"],
+    "kanji": "立", "level": "N4", "meanings": ["stand"], "on": ["リツ", "リュウ"], "kun": ["た.つ", "た.てる"],
     "origin": "A person (大) standing on the ground (the bottom line).",
     "examples": [
       { "jp": "立ってください。", "kana": "たってください。", "en": "Please stand up." },
@@ -837,7 +837,7 @@
     ]
   },
   {
-    "kanji": "東", "meanings": ["east"], "on": ["トウ"], "kun": ["ひがし"],
+    "kanji": "東", "level": "N5", "meanings": ["east"], "on": ["トウ"], "kun": ["ひがし"],
     "origin": "Scholars see a sack tied at both ends, borrowed for its sound. A popular memory aid reads it as the sun (日) rising behind a tree (木), in the east.",
     "examples": [
       { "jp": "東京に住んでいます。", "kana": "とうきょうにすんでいます。", "en": "I live in Tokyo." },
@@ -846,7 +846,7 @@
     ]
   },
   {
-    "kanji": "西", "meanings": ["west"], "on": ["セイ", "サイ"], "kun": ["にし"],
+    "kanji": "西", "level": "N5", "meanings": ["west"], "on": ["セイ", "サイ"], "kun": ["にし"],
     "origin": "Thought to be a bird's nest or a basket. The traditional story: birds return to their nests when the sun sets in the west.",
     "examples": [
       { "jp": "西の空が赤いです。", "kana": "にしのそらがあかいです。", "en": "The western sky is red." },
@@ -855,7 +855,7 @@
     ]
   },
   {
-    "kanji": "南", "meanings": ["south"], "on": ["ナン"], "kun": ["みなみ"],
+    "kanji": "南", "level": "N5", "meanings": ["south"], "on": ["ナン"], "kun": ["みなみ"],
     "origin": "Probably a hanging bell or a drum-like musical instrument, borrowed for its sound to mean 'south'. The exact picture is debated.",
     "examples": [
       { "jp": "南の島に行きたいです。", "kana": "みなみのしまにいきたいです。", "en": "I want to go to a southern island." },
@@ -864,7 +864,7 @@
     ]
   },
   {
-    "kanji": "北", "meanings": ["north"], "on": ["ホク"], "kun": ["きた"],
+    "kanji": "北", "level": "N5", "meanings": ["north"], "on": ["ホク"], "kun": ["きた"],
     "origin": "Two people sitting back to back. It first meant 'back' (now written 背). Houses and palaces faced south, so north was the direction at your back.",
     "examples": [
       { "jp": "北海道は寒いです。", "kana": "ほっかいどうはさむいです。", "en": "Hokkaido is cold." },
@@ -873,7 +873,7 @@
     ]
   },
   {
-    "kanji": "国", "meanings": ["country"], "on": ["コク"], "kun": ["くに"],
+    "kanji": "国", "level": "N5", "meanings": ["country"], "on": ["コク"], "kun": ["くに"],
     "origin": "Simplified from 國: an enclosure (囗) around 或 (land guarded by a weapon). The simplified form puts 玉 (jewel, treasure) inside the border instead.",
     "examples": [
       { "jp": "どこの国から来ましたか。", "kana": "どこのくにからきましたか。", "en": "What country are you from?" },
@@ -882,7 +882,7 @@
     ]
   },
   {
-    "kanji": "電", "meanings": ["electricity", "lightning"], "on": ["デン"], "kun": [],
+    "kanji": "電", "level": "N5", "meanings": ["electricity", "lightning"], "on": ["デン"], "kun": [],
     "origin": "雨 (rain, weather) + 申 (originally a picture of a lightning bolt). Lightning later came to mean electricity.",
     "examples": [
       { "jp": "電車で行きます。", "kana": "でんしゃでいきます。", "en": "I'll go by train." },
@@ -891,7 +891,7 @@
     ]
   },
   {
-    "kanji": "車", "meanings": ["car", "vehicle", "wheel"], "on": ["シャ"], "kun": ["くるま"],
+    "kanji": "車", "level": "N5", "meanings": ["car", "vehicle", "wheel"], "on": ["シャ"], "kun": ["くるま"],
     "origin": "A cart or chariot seen from above: the box in the middle and the axle with a wheel at each end (now drawn as the top and bottom lines).",
     "examples": [
       { "jp": "車で行きましょう。", "kana": "くるまでいきましょう。", "en": "Let's go by car." },
@@ -900,7 +900,7 @@
     ]
   },
   {
-    "kanji": "駅", "meanings": ["station"], "on": ["エキ"], "kun": [],
+    "kanji": "駅", "level": "N4", "meanings": ["station"], "on": ["エキ"], "kun": [],
     "origin": "馬 (horse) + 尺 (a simplified sound part, from 睪). Originally a post station where messengers changed horses; today, a train station.",
     "examples": [
       { "jp": "駅はどこですか。", "kana": "えきはどこですか。", "en": "Where is the station?" },
@@ -909,7 +909,7 @@
     ]
   },
   {
-    "kanji": "道", "meanings": ["road", "way", "path"], "on": ["ドウ"], "kun": ["みち"],
+    "kanji": "道", "level": "N4", "meanings": ["road", "way", "path"], "on": ["ドウ"], "kun": ["みち"],
     "origin": "辶 (moving along) + 首 (head): leading the way, a road. It also means a 'way' of life or an art: 柔道 (judo), 茶道 (tea ceremony).",
     "examples": [
       { "jp": "この道はせまいです。", "kana": "このみちはせまいです。", "en": "This road is narrow." },
@@ -918,7 +918,7 @@
     ]
   },
   {
-    "kanji": "社", "meanings": ["company", "shrine", "society"], "on": ["シャ"], "kun": ["やしろ"],
+    "kanji": "社", "level": "N4", "meanings": ["company", "shrine", "society"], "on": ["シャ"], "kun": ["やしろ"],
     "origin": "示 (altar) + 土 (earth): an altar to the god of the land, a shrine. People gathered at the shrine, so it came to mean 'society', and later 'company'.",
     "examples": [
       { "jp": "会社に行きます。", "kana": "かいしゃにいきます。", "en": "I'm going to the office." },
@@ -927,7 +927,7 @@
     ]
   },
   {
-    "kanji": "店", "meanings": ["shop", "store"], "on": ["テン"], "kun": ["みせ"],
+    "kanji": "店", "level": "N4", "meanings": ["shop", "store"], "on": ["テン"], "kun": ["みせ"],
     "origin": "广 (a building open on one side, like a stall) + 占 (gives the sound): a shop.",
     "examples": [
       { "jp": "この店はおいしいです。", "kana": "このみせはおいしいです。", "en": "The food at this place is good." },
@@ -936,7 +936,7 @@
     ]
   },
   {
-    "kanji": "会", "meanings": ["meet", "meeting", "association"], "on": ["カイ", "エ"], "kun": ["あ.う"],
+    "kanji": "会", "level": "N4", "meanings": ["meet", "meeting", "association"], "on": ["カイ", "エ"], "kun": ["あ.う"],
     "origin": "Simplified from 會: a lid on a pot of food, with things coming together inside. People coming together means 'to meet'.",
     "examples": [
       { "jp": "明日、友だちに会います。", "kana": "あした、ともだちにあいます。", "en": "I'm meeting a friend tomorrow." },
@@ -945,12 +945,1281 @@
     ]
   },
   {
-    "kanji": "何", "meanings": ["what"], "on": ["カ"], "kun": ["なに", "なん"],
+    "kanji": "何", "level": "N5", "meanings": ["what"], "on": ["カ"], "kun": ["なに", "なん"],
     "origin": "亻 (person) + 可 (sound). It first showed a person carrying a load on their shoulder. That meaning moved to 荷 (luggage), and 何 was borrowed for 'what'.",
     "examples": [
       { "jp": "これは何ですか。", "kana": "これはなんですか。", "en": "What is this?" },
       { "jp": "何を食べますか。", "kana": "なにをたべますか。", "en": "What will you eat?" },
       { "jp": "何人いますか。", "kana": "なんにんいますか。", "en": "How many people are there?" }
+    ]
+  },
+  {
+    "kanji": "夕", "level": "N4", "meanings": ["evening"], "on": ["セキ"], "kun": ["ゆう"],
+    "origin": "A crescent moon, close to 月 (moon) but with one stroke fewer: the moon as it looks in the early evening.",
+    "examples": [
+      { "jp": "夕方に帰ります。", "kana": "ゆうがたにかえります。", "en": "I'll be home in the evening." },
+      { "jp": "夕飯は何ですか。", "kana": "ゆうはんはなんですか。", "en": "What's for dinner?" },
+      { "jp": "夕日がきれいです。", "kana": "ゆうひがきれいです。", "en": "The evening sun is beautiful." }
+    ]
+  },
+  {
+    "kanji": "朝", "level": "N4", "meanings": ["morning"], "on": ["チョウ"], "kun": ["あさ"],
+    "origin": "Usually explained as the sun (日) rising between plants (十 above and below) while the moon (月) is still in the sky. In the oldest forms the right side was probably water (the morning tide); it later came to be written 月.",
+    "examples": [
+      { "jp": "毎朝、六時に起きます。", "kana": "まいあさ、ろくじにおきます。", "en": "I get up at six every morning." },
+      { "jp": "朝ご飯を食べましたか。", "kana": "あさごはんをたべましたか。", "en": "Did you eat breakfast?" },
+      { "jp": "今朝は寒かったです。", "kana": "けさはさむかったです。", "en": "It was cold this morning." }
+    ]
+  },
+  {
+    "kanji": "昼", "level": "N4", "meanings": ["daytime", "noon"], "on": ["チュウ"], "kun": ["ひる"],
+    "origin": "The traditional form 晝 combines 日 (sun) with part of 畫 (marking a boundary): the daylight hours, marked off from the night. 昼 is the simplified form used in Japan.",
+    "examples": [
+      { "jp": "昼ご飯を食べましょう。", "kana": "ひるごはんをたべましょう。", "en": "Let's eat lunch." },
+      { "jp": "昼休みは一時までです。", "kana": "ひるやすみはいちじまでです。", "en": "The lunch break is until one o'clock." },
+      { "jp": "昼間は暖かいです。", "kana": "ひるまはあたたかいです。", "en": "It's warm during the day." }
+    ]
+  },
+  {
+    "kanji": "夜", "level": "N4", "meanings": ["night", "evening"], "on": ["ヤ"], "kun": ["よる", "よ"],
+    "origin": "夕 (crescent moon) + 亦 (a person with arms spread, here mainly for its sound): the time when the moon is out.",
+    "examples": [
+      { "jp": "夜、雨がふりました。", "kana": "よる、あめがふりました。", "en": "It rained during the night." },
+      { "jp": "昨日の夜はよく寝ました。", "kana": "きのうのよるはよくねました。", "en": "I slept well last night." },
+      { "jp": "今夜は月がきれいです。", "kana": "こんやはつきがきれいです。", "en": "The moon is beautiful tonight." }
+    ]
+  },
+  {
+    "kanji": "春", "level": "N4", "meanings": ["spring"], "on": ["シュン"], "kun": ["はる"],
+    "origin": "The old form combined grass (艸), the sun (日) and 屯, a sprout pushing through the ground, which also gave the sound: plants starting to grow as the sun warms up. The top later merged into one shape.",
+    "examples": [
+      { "jp": "春になりました。", "kana": "はるになりました。", "en": "Spring has come." },
+      { "jp": "春休みに京都へ行きます。", "kana": "はるやすみにきょうとへいきます。", "en": "I'm going to Kyoto over spring break." },
+      { "jp": "春は暖かいです。", "kana": "はるはあたたかいです。", "en": "Spring is warm." }
+    ]
+  },
+  {
+    "kanji": "夏", "level": "N4", "meanings": ["summer"], "on": ["カ", "ゲ"], "kun": ["なつ"],
+    "origin": "Pictures a person with a big head, arms and feet, perhaps a dancer in a ritual. How it came to mean summer is not known for certain.",
+    "examples": [
+      { "jp": "夏は暑いです。", "kana": "なつはあついです。", "en": "Summer is hot." },
+      { "jp": "夏休みに海へ行きました。", "kana": "なつやすみにうみへいきました。", "en": "I went to the sea over summer vacation." },
+      { "jp": "今年の夏は雨が多かったです。", "kana": "ことしのなつはあめがおおかったです。", "en": "There was a lot of rain this summer." }
+    ]
+  },
+  {
+    "kanji": "秋", "level": "N4", "meanings": ["autumn", "fall"], "on": ["シュウ"], "kun": ["あき"],
+    "origin": "禾 (grain plant) + 火 (fire). Usually explained as harvest time, when grain ripens and stubble is burned off. Some of the oldest forms show an insect, perhaps a locust, over fire.",
+    "examples": [
+      { "jp": "秋は涼しいです。", "kana": "あきはすずしいです。", "en": "Autumn is cool." },
+      { "jp": "秋になると、木の葉が赤くなります。", "kana": "あきになると、このはがあかくなります。", "en": "In autumn the leaves turn red." },
+      { "jp": "今年の秋、日本へ行きます。", "kana": "ことしのあき、にほんへいきます。", "en": "I'm going to Japan this autumn." }
+    ]
+  },
+  {
+    "kanji": "冬", "level": "N4", "meanings": ["winter"], "on": ["トウ"], "kun": ["ふゆ"],
+    "origin": "The top shows the knotted end of a thread (an end, as in 終 'finish'); the two dots below are ice (冫). The end of the year, when water freezes.",
+    "examples": [
+      { "jp": "冬は寒いです。", "kana": "ふゆはさむいです。", "en": "Winter is cold." },
+      { "jp": "冬休みに家族と旅行します。", "kana": "ふゆやすみにかぞくとりょこうします。", "en": "I'm traveling with my family over winter break." },
+      { "jp": "北海道の冬は長いです。", "kana": "ほっかいどうのふゆはながいです。", "en": "Winters in Hokkaido are long." }
+    ]
+  },
+  {
+    "kanji": "曜", "level": "N4", "meanings": ["weekday"], "on": ["ヨウ"], "kun": [],
+    "origin": "日 (sun) + 翟 (a pheasant with bright feathers, for the sound): shining. It named the bright bodies in the sky, the sun, moon and five planets, which give the seven days of the week their names.",
+    "examples": [
+      { "jp": "今日は何曜日ですか。", "kana": "きょうはなんようびですか。", "en": "What day of the week is it today?" },
+      { "jp": "日曜日は休みです。", "kana": "にちようびはやすみです。", "en": "Sunday is a day off." },
+      { "jp": "土曜日に映画を見ました。", "kana": "どようびにえいがをみました。", "en": "I watched a movie on Saturday." }
+    ]
+  },
+  {
+    "kanji": "早", "level": "N4", "meanings": ["early", "fast"], "on": ["ソウ", "サッ"], "kun": ["はや.い", "はや.める"],
+    "origin": "Commonly explained as the sun (日) just coming up over the horizon (十). What the lower part first showed is debated.",
+    "examples": [
+      { "jp": "早く起きてください。", "kana": "はやくおきてください。", "en": "Please get up early." },
+      { "jp": "明日は早いです。", "kana": "あしたははやいです。", "en": "I have an early start tomorrow." },
+      { "jp": "早速、始めましょう。", "kana": "さっそく、はじめましょう。", "en": "Let's get started right away." }
+    ]
+  },
+  {
+    "kanji": "兄", "level": "N4", "meanings": ["older brother"], "on": ["ケイ", "キョウ"], "kun": ["あに"],
+    "origin": "A mouth (口) on top of a person (儿): the one who speaks, for example leading prayers for the family. From this came the eldest brother.",
+    "examples": [
+      { "jp": "兄は大学生です。", "kana": "あにはだいがくせいです。", "en": "My older brother is a university student." },
+      { "jp": "お兄さんはいますか。", "kana": "おにいさんはいますか。", "en": "Do you have an older brother?" },
+      { "jp": "兄弟は何人ですか。", "kana": "きょうだいはなんにんですか。", "en": "How many brothers and sisters do you have?" }
+    ]
+  },
+  {
+    "kanji": "弟", "level": "N4", "meanings": ["younger brother"], "on": ["テイ", "ダイ", "デ"], "kun": ["おとうと"],
+    "origin": "A cord wound around a stick, turn after turn: order, sequence. From 'next in order' came the younger brother.",
+    "examples": [
+      { "jp": "弟は八歳です。", "kana": "おとうとははっさいです。", "en": "My younger brother is eight." },
+      { "jp": "弟とゲームをしました。", "kana": "おとうととゲームをしました。", "en": "I played games with my younger brother." },
+      { "jp": "兄と弟がいます。", "kana": "あにとおとうとがいます。", "en": "I have an older brother and a younger brother." }
+    ]
+  },
+  {
+    "kanji": "姉", "level": "N4", "meanings": ["older sister"], "on": ["シ"], "kun": ["あね"],
+    "origin": "女 (woman) + 市 (for the sound). An older sister.",
+    "examples": [
+      { "jp": "姉は銀行で働いています。", "kana": "あねはぎんこうではたらいています。", "en": "My older sister works at a bank." },
+      { "jp": "お姉さんは何歳ですか。", "kana": "おねえさんはなんさいですか。", "en": "How old is your older sister?" },
+      { "jp": "姉に本を借りました。", "kana": "あねにほんをかりました。", "en": "I borrowed a book from my older sister." }
+    ]
+  },
+  {
+    "kanji": "妹", "level": "N4", "meanings": ["younger sister"], "on": ["マイ"], "kun": ["いもうと"],
+    "origin": "女 (woman) + 未 (not yet; also the sound): the girl who is not yet grown, the younger sister.",
+    "examples": [
+      { "jp": "妹はピアノが上手です。", "kana": "いもうとはピアノがじょうずです。", "en": "My younger sister is good at the piano." },
+      { "jp": "妹と買い物に行きました。", "kana": "いもうととかいものにいきました。", "en": "I went shopping with my younger sister." },
+      { "jp": "姉妹はいますか。", "kana": "しまいはいますか。", "en": "Do you have any sisters?" }
+    ]
+  },
+  {
+    "kanji": "親", "level": "N4", "meanings": ["parent", "intimate", "relative"], "on": ["シン"], "kun": ["おや", "した.しい"],
+    "origin": "見 (see) + 亲 (for the sound): seeing someone up close. From being close came parents and relatives.",
+    "examples": [
+      { "jp": "親に電話しました。", "kana": "おやにでんわしました。", "en": "I called my parents." },
+      { "jp": "両親は大阪に住んでいます。", "kana": "りょうしんはおおさかにすんでいます。", "en": "My parents live in Osaka." },
+      { "jp": "親切な人ですね。", "kana": "しんせつなひとですね。", "en": "What a kind person." }
+    ]
+  },
+  {
+    "kanji": "族", "level": "N4", "meanings": ["family", "tribe"], "on": ["ゾク"], "kun": [],
+    "origin": "A flag (㫃) over an arrow (矢): people gathered under one banner, a clan.",
+    "examples": [
+      { "jp": "家族は四人です。", "kana": "かぞくはよにんです。", "en": "There are four people in my family." },
+      { "jp": "家族と旅行しました。", "kana": "かぞくとりょこうしました。", "en": "I went on a trip with my family." },
+      { "jp": "水族館に行きたいです。", "kana": "すいぞくかんにいきたいです。", "en": "I want to go to the aquarium." }
+    ]
+  },
+  {
+    "kanji": "家", "level": "N4", "meanings": ["house", "home", "expert"], "on": ["カ", "ケ"], "kun": ["いえ", "や", "うち"],
+    "origin": "A roof (宀) over a pig (豕). Pigs were kept in or under the house, so this is usually read as 'home', though other explanations exist.",
+    "examples": [
+      { "jp": "家に帰ります。", "kana": "いえにかえります。", "en": "I'm going home." },
+      { "jp": "新しい家を買いました。", "kana": "あたらしいいえをかいました。", "en": "We bought a new house." },
+      { "jp": "兄は作家です。", "kana": "あにはさっかです。", "en": "My older brother is a writer." }
+    ]
+  },
+  {
+    "kanji": "私", "level": "N4", "meanings": ["I", "private"], "on": ["シ"], "kun": ["わたし", "わたくし"],
+    "origin": "禾 (grain) + ム (one's own, also the sound): your own share of the harvest. From 'private, one's own' came 'I'.",
+    "examples": [
+      { "jp": "私は学生です。", "kana": "わたしはがくせいです。", "en": "I'm a student." },
+      { "jp": "私の名前は田中です。", "kana": "わたしのなまえはたなかです。", "en": "My name is Tanaka." },
+      { "jp": "これは私の本です。", "kana": "これはわたしのほんです。", "en": "This is my book." }
+    ]
+  },
+  {
+    "kanji": "自", "level": "N4", "meanings": ["oneself", "self"], "on": ["ジ", "シ"], "kun": ["みずか.ら"],
+    "origin": "A picture of a nose. People point at their nose to mean 'me', which gave 'self'. (Nose is now written 鼻, with 自 on top.)",
+    "examples": [
+      { "jp": "自分で作りました。", "kana": "じぶんでつくりました。", "en": "I made it myself." },
+      { "jp": "自転車で学校に行きます。", "kana": "じてんしゃでがっこうにいきます。", "en": "I go to school by bicycle." },
+      { "jp": "自由な時間がありません。", "kana": "じゆうなじかんがありません。", "en": "I don't have any free time." }
+    ]
+  },
+  {
+    "kanji": "主", "level": "N4", "meanings": ["master", "main", "lord"], "on": ["シュ", "ス"], "kun": ["ぬし", "おも"],
+    "origin": "An oil lamp with its flame (丶) on top. The lamp stands at the center of the room, which led to 'master, main'.",
+    "examples": [
+      { "jp": "主人は会社員です。", "kana": "しゅじんはかいしゃいんです。", "en": "My husband is an office worker." },
+      { "jp": "この話の主人公はねこです。", "kana": "このはなしのしゅじんこうはねこです。", "en": "The main character of this story is a cat." },
+      { "jp": "主に日本語を話します。", "kana": "おもににほんごをはなします。", "en": "I mostly speak Japanese." }
+    ]
+  },
+  {
+    "kanji": "者", "level": "N4", "meanings": ["someone", "person"], "on": ["シャ"], "kun": ["もの"],
+    "origin": "Thought to show firewood burning over a stove (an early form of 煮 'boil'). It was borrowed as an ending meaning 'the one who', and so came to mean a person.",
+    "examples": [
+      { "jp": "父は医者です。", "kana": "ちちはいしゃです。", "en": "My father is a doctor." },
+      { "jp": "若者が多い町です。", "kana": "わかものがおおいまちです。", "en": "It's a town with a lot of young people." },
+      { "jp": "学者になりたいです。", "kana": "がくしゃになりたいです。", "en": "I want to become a scholar." }
+    ]
+  },
+  {
+    "kanji": "員", "level": "N4", "meanings": ["member", "employee"], "on": ["イン"], "kun": [],
+    "origin": "口 (a round opening) over 貝 (originally 鼎, a cooking pot): a round pot. It came to mean a count or number, and then a member counted in a group.",
+    "examples": [
+      { "jp": "姉は銀行員です。", "kana": "あねはぎんこういんです。", "en": "My older sister is a bank clerk." },
+      { "jp": "店員に聞いてください。", "kana": "てんいんにきいてください。", "en": "Please ask a store clerk." },
+      { "jp": "会員になりました。", "kana": "かいいんになりました。", "en": "I became a member." }
+    ]
+  },
+  {
+    "kanji": "体", "level": "N4", "meanings": ["body"], "on": ["タイ", "テイ"], "kun": ["からだ"],
+    "origin": "The traditional form is 體: 骨 (bone) + 豊 (for the sound). 体 (人 person + 本 root) was originally a separate, rare character that came to be used as a simpler way to write it.",
+    "examples": [
+      { "jp": "体に気をつけてください。", "kana": "からだにきをつけてください。", "en": "Please take care of yourself." },
+      { "jp": "体が大きいですね。", "kana": "からだがおおきいですね。", "en": "You're really big, aren't you?" },
+      { "jp": "体育の時間です。", "kana": "たいいくのじかんです。", "en": "It's time for PE." }
+    ]
+  },
+  {
+    "kanji": "心", "level": "N4", "meanings": ["heart", "mind"], "on": ["シン"], "kun": ["こころ"],
+    "origin": "A picture of the heart. Thoughts and feelings were thought to live there, so it also means mind.",
+    "examples": [
+      { "jp": "心から感謝します。", "kana": "こころからかんしゃします。", "en": "I thank you from the bottom of my heart." },
+      { "jp": "心配しないでください。", "kana": "しんぱいしないでください。", "en": "Please don't worry." },
+      { "jp": "彼は心のやさしい人です。", "kana": "かれはこころのやさしいひとです。", "en": "He is a kind-hearted person." }
+    ]
+  },
+  {
+    "kanji": "空", "level": "N4", "meanings": ["sky", "empty"], "on": ["クウ"], "kun": ["そら", "あ.く", "から"],
+    "origin": "穴 (hole) + 工 (for the sound): a hollow, emptiness. The empty space above gave 'sky'.",
+    "examples": [
+      { "jp": "空が青いです。", "kana": "そらがあおいです。", "en": "The sky is blue." },
+      { "jp": "この席は空いていますか。", "kana": "このせきはあいていますか。", "en": "Is this seat free?" },
+      { "jp": "空港まで行きます。", "kana": "くうこうまでいきます。", "en": "I'm going to the airport." }
+    ]
+  },
+  {
+    "kanji": "海", "level": "N4", "meanings": ["sea", "ocean"], "on": ["カイ"], "kun": ["うみ"],
+    "origin": "氵 (water) + 毎 (for the sound): the sea. 毎 may also hint at darkness, the dark open water.",
+    "examples": [
+      { "jp": "海で泳ぎました。", "kana": "うみでおよぎました。", "en": "I swam in the sea." },
+      { "jp": "海外に行ったことがありますか。", "kana": "かいがいにいったことがありますか。", "en": "Have you ever been abroad?" },
+      { "jp": "海の近くに住みたいです。", "kana": "うみのちかくにすみたいです。", "en": "I want to live near the sea." }
+    ]
+  },
+  {
+    "kanji": "地", "level": "N4", "meanings": ["ground", "earth"], "on": ["チ", "ジ"], "kun": [],
+    "origin": "土 (earth) + 也 (for the sound): the ground.",
+    "examples": [
+      { "jp": "地図を見てください。", "kana": "ちずをみてください。", "en": "Please look at the map." },
+      { "jp": "地下鉄に乗ります。", "kana": "ちかてつにのります。", "en": "I'll take the subway." },
+      { "jp": "地震がありました。", "kana": "じしんがありました。", "en": "There was an earthquake." }
+    ]
+  },
+  {
+    "kanji": "風", "level": "N4", "meanings": ["wind", "style"], "on": ["フウ", "フ"], "kun": ["かぜ"],
+    "origin": "The oldest forms used a phoenix-like bird to write 'wind'. Later forms took 凡 for the sound and added 虫 (a creature), since wind was linked with living things.",
+    "examples": [
+      { "jp": "風が強いです。", "kana": "かぜがつよいです。", "en": "The wind is strong." },
+      { "jp": "台風が来ます。", "kana": "たいふうがきます。", "en": "A typhoon is coming." },
+      { "jp": "お風呂に入ります。", "kana": "おふろにはいります。", "en": "I'm going to take a bath." }
+    ]
+  },
+  {
+    "kanji": "野", "level": "N4", "meanings": ["field", "plains"], "on": ["ヤ"], "kun": ["の"],
+    "origin": "里 (village with fields) + 予 (for the sound): the open land outside the village.",
+    "examples": [
+      { "jp": "野菜を食べてください。", "kana": "やさいをたべてください。", "en": "Please eat your vegetables." },
+      { "jp": "野球が好きです。", "kana": "やきゅうがすきです。", "en": "I like baseball." },
+      { "jp": "野原で遊びました。", "kana": "のはらであそびました。", "en": "We played in a field." }
+    ]
+  },
+  {
+    "kanji": "牛", "level": "N4", "meanings": ["cow", "cattle"], "on": ["ギュウ"], "kun": ["うし"],
+    "origin": "The head of an ox seen from the front, with its two horns.",
+    "examples": [
+      { "jp": "牛乳を飲みます。", "kana": "ぎゅうにゅうをのみます。", "en": "I drink milk." },
+      { "jp": "牛が草を食べています。", "kana": "うしがくさをたべています。", "en": "The cows are eating grass." },
+      { "jp": "牛肉が好きです。", "kana": "ぎゅうにくがすきです。", "en": "I like beef." }
+    ]
+  },
+  {
+    "kanji": "肉", "level": "N4", "meanings": ["meat"], "on": ["ニク"], "kun": [],
+    "origin": "A piece of meat with lines of muscle. As part of other kanji it is written 月, which is why many body parts (腕 arm, 脚 leg, 腹 belly) contain 月.",
+    "examples": [
+      { "jp": "肉と魚とどちらが好きですか。", "kana": "にくとさかなとどちらがすきですか。", "en": "Which do you like better, meat or fish?" },
+      { "jp": "肉を焼きました。", "kana": "にくをやきました。", "en": "I grilled some meat." },
+      { "jp": "豚肉を買ってください。", "kana": "ぶたにくをかってください。", "en": "Please buy some pork." }
+    ]
+  },
+  {
+    "kanji": "茶", "level": "N4", "meanings": ["tea"], "on": ["チャ", "サ"], "kun": [],
+    "origin": "艹 (plant) + 余 (for the sound). It was first written 荼, the name of a bitter plant; the form with one stroke fewer, 茶, became the standard way to write 'tea' in Tang-dynasty China.",
+    "examples": [
+      { "jp": "お茶を飲みませんか。", "kana": "おちゃをのみませんか。", "en": "Would you like some tea?" },
+      { "jp": "喫茶店で会いましょう。", "kana": "きっさてんであいましょう。", "en": "Let's meet at the café." },
+      { "jp": "茶色のかばんです。", "kana": "ちゃいろのかばんです。", "en": "It's a brown bag." }
+    ]
+  },
+  {
+    "kanji": "赤", "level": "N4", "meanings": ["red"], "on": ["セキ"], "kun": ["あか", "あか.い"],
+    "origin": "大 (a person) over 火 (fire): someone by a fire, glowing red.",
+    "examples": [
+      { "jp": "赤いりんごです。", "kana": "あかいりんごです。", "en": "It's a red apple." },
+      { "jp": "赤ちゃんが寝ています。", "kana": "あかちゃんがねています。", "en": "The baby is sleeping." },
+      { "jp": "信号が赤です。", "kana": "しんごうがあかです。", "en": "The light is red." }
+    ]
+  },
+  {
+    "kanji": "青", "level": "N4", "meanings": ["blue", "green"], "on": ["セイ", "ショウ"], "kun": ["あお", "あお.い"],
+    "origin": "生 (a growing plant) above 丹 (a mineral pigment; now written 月): the color of fresh plants and of blue-green pigment. In Japanese 青 covers both blue and green, as in a green traffic light.",
+    "examples": [
+      { "jp": "青い空ですね。", "kana": "あおいそらですね。", "en": "What a blue sky." },
+      { "jp": "信号が青になりました。", "kana": "しんごうがあおになりました。", "en": "The light turned green." },
+      { "jp": "青年が二人来ました。", "kana": "せいねんがふたりきました。", "en": "Two young men came." }
+    ]
+  },
+  {
+    "kanji": "黒", "level": "N4", "meanings": ["black"], "on": ["コク"], "kun": ["くろ", "くろ.い"],
+    "origin": "Often explained as soot from a fire (灬) rising up through a chimney or window: black. Some scholars read the ancient form as a person with a tattooed face.",
+    "examples": [
+      { "jp": "黒いねこがいます。", "kana": "くろいねこがいます。", "en": "There's a black cat." },
+      { "jp": "黒板に書いてください。", "kana": "こくばんにかいてください。", "en": "Please write it on the blackboard." },
+      { "jp": "髪が黒いです。", "kana": "かみがくろいです。", "en": "My hair is black." }
+    ]
+  },
+  {
+    "kanji": "色", "level": "N4", "meanings": ["color"], "on": ["ショク", "シキ"], "kun": ["いろ"],
+    "origin": "Two people, one above the other. It first referred to the look on a person's face (and to love); from 'appearance' came 'color'.",
+    "examples": [
+      { "jp": "何色が好きですか。", "kana": "なにいろがすきですか。", "en": "What color do you like?" },
+      { "jp": "色々な国に行きました。", "kana": "いろいろなくににいきました。", "en": "I've been to all sorts of countries." },
+      { "jp": "景色がきれいです。", "kana": "けしきがきれいです。", "en": "The scenery is beautiful." }
+    ]
+  },
+  {
+    "kanji": "町", "level": "N4", "meanings": ["town"], "on": ["チョウ"], "kun": ["まち"],
+    "origin": "田 (rice field) + 丁 (for the sound): a path between fields. In Japan it came to mean a town, or a block of a city.",
+    "examples": [
+      { "jp": "静かな町です。", "kana": "しずかなまちです。", "en": "It's a quiet town." },
+      { "jp": "町を歩きました。", "kana": "まちをあるきました。", "en": "I walked around town." },
+      { "jp": "町長に会いました。", "kana": "ちょうちょうにあいました。", "en": "I met the town mayor." }
+    ]
+  },
+  {
+    "kanji": "京", "level": "N4", "meanings": ["capital"], "on": ["キョウ", "ケイ"], "kun": ["みやこ"],
+    "origin": "A tall building on a raised base, such as a watchtower or palace. Buildings like this stood in the capital.",
+    "examples": [
+      { "jp": "東京は大きい町です。", "kana": "とうきょうはおおきいまちです。", "en": "Tokyo is a big city." },
+      { "jp": "京都でお寺を見ました。", "kana": "きょうとでおてらをみました。", "en": "I saw temples in Kyoto." },
+      { "jp": "十八歳で上京しました。", "kana": "じゅうはっさいでじょうきょうしました。", "en": "I moved to Tokyo when I was eighteen." }
+    ]
+  },
+  {
+    "kanji": "場", "level": "N4", "meanings": ["place", "location"], "on": ["ジョウ", "チョウ"], "kun": ["ば"],
+    "origin": "土 (earth) + 昜 (for the sound): a flat, open piece of ground, first used for rituals.",
+    "examples": [
+      { "jp": "駐車場はどこですか。", "kana": "ちゅうしゃじょうはどこですか。", "en": "Where's the parking lot?" },
+      { "jp": "会う場所を決めましょう。", "kana": "あうばしょをきめましょう。", "en": "Let's decide where to meet." },
+      { "jp": "ここは子どもの遊び場です。", "kana": "ここはこどものあそびばです。", "en": "This is a play area for children." }
+    ]
+  },
+  {
+    "kanji": "室", "level": "N4", "meanings": ["room"], "on": ["シツ"], "kun": ["むろ"],
+    "origin": "宀 (roof) + 至 (reach; also the sound): the inner room you reach at the back of a house.",
+    "examples": [
+      { "jp": "教室に入ってください。", "kana": "きょうしつにはいってください。", "en": "Please come into the classroom." },
+      { "jp": "会議室は二階です。", "kana": "かいぎしつはにかいです。", "en": "The meeting room is on the second floor." },
+      { "jp": "和室で寝ます。", "kana": "わしつでねます。", "en": "I sleep in the Japanese-style room." }
+    ]
+  },
+  {
+    "kanji": "屋", "level": "N4", "meanings": ["roof", "shop", "dealer"], "on": ["オク"], "kun": ["や"],
+    "origin": "尸 (here a covering) + 至 (reach): a place you reach and rest under, a house with a roof. In Japanese 〜屋 also means a shop or the person who runs it.",
+    "examples": [
+      { "jp": "部屋がきれいです。", "kana": "へやがきれいです。", "en": "The room is clean." },
+      { "jp": "本屋で辞書を買いました。", "kana": "ほんやでじしょをかいました。", "en": "I bought a dictionary at the bookstore." },
+      { "jp": "屋上に上がりましょう。", "kana": "おくじょうにあがりましょう。", "en": "Let's go up to the roof." }
+    ]
+  },
+  {
+    "kanji": "院", "level": "N4", "meanings": ["institution"], "on": ["イン"], "kun": [],
+    "origin": "阝 (a mound, here walls) + 完 (for the sound): a courtyard surrounded by walls, a large walled building.",
+    "examples": [
+      { "jp": "病院はどこですか。", "kana": "びょういんはどこですか。", "en": "Where's the hospital?" },
+      { "jp": "大学院で勉強しています。", "kana": "だいがくいんでべんきょうしています。", "en": "I'm studying in graduate school." },
+      { "jp": "美容院で髪を切りました。", "kana": "びよういんでかみをきりました。", "en": "I had my hair cut at the salon." }
+    ]
+  },
+  {
+    "kanji": "館", "level": "N4", "meanings": ["building", "mansion"], "on": ["カン"], "kun": ["やかた"],
+    "origin": "食 (food) + 官 (officials; also the sound): a lodge where traveling officials were fed and housed. Now a large public building.",
+    "examples": [
+      { "jp": "図書館は駅の近くです。", "kana": "としょかんはえきのちかくです。", "en": "The library is near the station." },
+      { "jp": "映画館に行きましょう。", "kana": "えいがかんにいきましょう。", "en": "Let's go to the movie theater." },
+      { "jp": "美術館は月曜日が休みです。", "kana": "びじゅつかんはげつようびがやすみです。", "en": "The art museum is closed on Mondays." }
+    ]
+  },
+  {
+    "kanji": "堂", "level": "N4", "meanings": ["hall"], "on": ["ドウ"], "kun": [],
+    "origin": "土 (earth) + 尚 (raised; also the sound): a hall built on a raised earth platform.",
+    "examples": [
+      { "jp": "食堂はどこですか。", "kana": "しょくどうはどこですか。", "en": "Where's the cafeteria?" },
+      { "jp": "講堂に集まってください。", "kana": "こうどうにあつまってください。", "en": "Please gather in the auditorium." },
+      { "jp": "公会堂でコンサートがあります。", "kana": "こうかいどうでコンサートがあります。", "en": "There's a concert at the public hall." }
+    ]
+  },
+  {
+    "kanji": "世", "level": "N4", "meanings": ["world", "generation", "society"], "on": ["セイ", "セ"], "kun": ["よ"],
+    "origin": "Three tens (十) joined together: thirty years, one generation. From generations came 'the world' and 'society'.",
+    "examples": [
+      { "jp": "世界で一番高い山です。", "kana": "せかいでいちばんたかいやまです。", "en": "It's the highest mountain in the world." },
+      { "jp": "お世話になりました。", "kana": "おせわになりました。", "en": "Thank you for everything you've done for me." },
+      { "jp": "この世の中にはいろいろな人がいます。", "kana": "このよのなかにはいろいろなひとがいます。", "en": "There are all kinds of people in this world." }
+    ]
+  },
+  {
+    "kanji": "界", "level": "N4", "meanings": ["boundary", "world"], "on": ["カイ"], "kun": [],
+    "origin": "田 (fields) + 介 (between; also the sound): the line between fields. From the area inside a boundary came 'world, circle'.",
+    "examples": [
+      { "jp": "世界は広いです。", "kana": "せかいはひろいです。", "en": "The world is a big place." },
+      { "jp": "世界中を旅行したいです。", "kana": "せかいじゅうをりょこうしたいです。", "en": "I want to travel all over the world." },
+      { "jp": "もう限界です。", "kana": "もうげんかいです。", "en": "I've reached my limit." }
+    ]
+  },
+  {
+    "kanji": "作", "level": "N4", "meanings": ["make", "produce"], "on": ["サク", "サ"], "kun": ["つく.る"],
+    "origin": "人 (person) + 乍 (for the sound; its old form pictured cutting or sewing): a person making something.",
+    "examples": [
+      { "jp": "母が料理を作りました。", "kana": "ははがりょうりをつくりました。", "en": "My mother cooked." },
+      { "jp": "作文を書きました。", "kana": "さくぶんをかきました。", "en": "I wrote an essay." },
+      { "jp": "作品を見せてください。", "kana": "さくひんをみせてください。", "en": "Please show me your work." }
+    ]
+  },
+  {
+    "kanji": "使", "level": "N4", "meanings": ["use", "messenger"], "on": ["シ"], "kun": ["つか.う"],
+    "origin": "人 (person) + 吏 (an official; also the sound): a person an official sends on an errand. From 'send someone to do something' came 'use'.",
+    "examples": [
+      { "jp": "このペンを使ってもいいですか。", "kana": "このペンをつかってもいいですか。", "en": "May I use this pen?" },
+      { "jp": "はしを使って食べます。", "kana": "はしをつかってたべます。", "en": "I eat with chopsticks." },
+      { "jp": "大使館はどこですか。", "kana": "たいしかんはどこですか。", "en": "Where's the embassy?" }
+    ]
+  },
+  {
+    "kanji": "用", "level": "N4", "meanings": ["task", "use", "errand"], "on": ["ヨウ"], "kun": ["もち.いる"],
+    "origin": "Thought to picture a fence or a wooden bucket. It was borrowed early on to mean 'use'.",
+    "examples": [
+      { "jp": "用事があります。", "kana": "ようじがあります。", "en": "I have something to take care of." },
+      { "jp": "このはさみは子ども用です。", "kana": "このはさみはこどもようです。", "en": "These scissors are for children." },
+      { "jp": "用意ができました。", "kana": "よういができました。", "en": "Everything's ready." }
+    ]
+  },
+  {
+    "kanji": "始", "level": "N4", "meanings": ["begin", "start"], "on": ["シ"], "kun": ["はじ.める", "はじ.まる"],
+    "origin": "女 (woman) + 台 (for the sound). Often explained as a woman's first pregnancy or the first ancestor; from this came 'beginning'.",
+    "examples": [
+      { "jp": "授業は九時に始まります。", "kana": "じゅぎょうはくじにはじまります。", "en": "Class begins at nine." },
+      { "jp": "去年、日本語を始めました。", "kana": "きょねん、にほんごをはじめました。", "en": "I started learning Japanese last year." },
+      { "jp": "始めましょう。", "kana": "はじめましょう。", "en": "Let's begin." }
+    ]
+  },
+  {
+    "kanji": "終", "level": "N4", "meanings": ["end", "finish"], "on": ["シュウ"], "kun": ["お.わる", "お.える"],
+    "origin": "糸 (thread) + 冬 (for the sound; its old form showed the knotted end of a thread): the end of a thread, the end.",
+    "examples": [
+      { "jp": "仕事が終わりました。", "kana": "しごとがおわりました。", "en": "Work is over." },
+      { "jp": "終電に乗りました。", "kana": "しゅうでんにのりました。", "en": "I caught the last train." },
+      { "jp": "宿題を終えました。", "kana": "しゅくだいをおえました。", "en": "I finished my homework." }
+    ]
+  },
+  {
+    "kanji": "持", "level": "N4", "meanings": ["hold", "have"], "on": ["ジ"], "kun": ["も.つ"],
+    "origin": "扌 (hand) + 寺 (for the sound): to hold in the hand.",
+    "examples": [
+      { "jp": "かさを持っていますか。", "kana": "かさをもっていますか。", "en": "Do you have an umbrella?" },
+      { "jp": "荷物を持ちましょうか。", "kana": "にもつをもちましょうか。", "en": "Shall I carry your bag?" },
+      { "jp": "気持ちがいいです。", "kana": "きもちがいいです。", "en": "It feels good." }
+    ]
+  },
+  {
+    "kanji": "待", "level": "N4", "meanings": ["wait"], "on": ["タイ"], "kun": ["ま.つ"],
+    "origin": "彳 (going, a road) + 寺 (for the sound): to stand by the road and wait.",
+    "examples": [
+      { "jp": "ちょっと待ってください。", "kana": "ちょっとまってください。", "en": "Please wait a moment." },
+      { "jp": "駅で友だちを待ちます。", "kana": "えきでともだちをまちます。", "en": "I'll wait for my friend at the station." },
+      { "jp": "友だちをパーティーに招待しました。", "kana": "ともだちをパーティーにしょうたいしました。", "en": "I invited my friends to the party." }
+    ]
+  },
+  {
+    "kanji": "送", "level": "N4", "meanings": ["send"], "on": ["ソウ"], "kun": ["おく.る"],
+    "origin": "辶 (moving along a road) + hands holding something up: carrying something along, seeing someone off.",
+    "examples": [
+      { "jp": "メールを送りました。", "kana": "メールをおくりました。", "en": "I sent an email." },
+      { "jp": "駅まで送ります。", "kana": "えきまでおくります。", "en": "I'll take you to the station." },
+      { "jp": "荷物を送ってください。", "kana": "にもつをおくってください。", "en": "Please send the package." }
+    ]
+  },
+  {
+    "kanji": "帰", "level": "N4", "meanings": ["return", "go home"], "on": ["キ"], "kun": ["かえ.る", "かえ.す"],
+    "origin": "The traditional form 歸 includes 止 (foot) and 帚 (broom, standing for a wife). Usually explained as a bride going to her new home; from this came 'go home'.",
+    "examples": [
+      { "jp": "何時に帰りますか。", "kana": "なんじにかえりますか。", "en": "What time are you going home?" },
+      { "jp": "国へ帰ります。", "kana": "くにへかえります。", "en": "I'm going back to my country." },
+      { "jp": "先週、帰国しました。", "kana": "せんしゅう、きこくしました。", "en": "I came back to my home country last week." }
+    ]
+  },
+  {
+    "kanji": "起", "level": "N4", "meanings": ["wake up", "rise"], "on": ["キ"], "kun": ["お.きる", "お.こす", "お.こる"],
+    "origin": "走 (run, move) + 己 (for the sound): to rise and start moving.",
+    "examples": [
+      { "jp": "毎朝七時に起きます。", "kana": "まいあさしちじにおきます。", "en": "I get up at seven every morning." },
+      { "jp": "母を起こしてください。", "kana": "ははをおこしてください。", "en": "Please wake my mother up." },
+      { "jp": "事故が起きました。", "kana": "じこがおきました。", "en": "There was an accident." }
+    ]
+  },
+  {
+    "kanji": "走", "level": "N4", "meanings": ["run"], "on": ["ソウ"], "kun": ["はし.る"],
+    "origin": "A person swinging their arms (top) above a foot (止, bottom): running.",
+    "examples": [
+      { "jp": "公園を走ります。", "kana": "こうえんをはしります。", "en": "I run in the park." },
+      { "jp": "走らないでください。", "kana": "はしらないでください。", "en": "Please don't run." },
+      { "jp": "犬が走ってきました。", "kana": "いぬがはしってきました。", "en": "The dog came running." }
+    ]
+  },
+  {
+    "kanji": "歩", "level": "N4", "meanings": ["walk"], "on": ["ホ", "ブ"], "kun": ["ある.く"],
+    "origin": "Two footprints, one ahead of the other (止 on top, a reversed 止 below): walking.",
+    "examples": [
+      { "jp": "毎日一時間歩きます。", "kana": "まいにちいちじかんあるきます。", "en": "I walk for an hour every day." },
+      { "jp": "散歩に行きましょう。", "kana": "さんぽにいきましょう。", "en": "Let's go for a walk." },
+      { "jp": "歩いて学校に行きます。", "kana": "あるいてがっこうにいきます。", "en": "I walk to school." }
+    ]
+  },
+  {
+    "kanji": "止", "level": "N4", "meanings": ["stop"], "on": ["シ"], "kun": ["と.まる", "と.める"],
+    "origin": "A picture of a foot planted on the ground: to stop.",
+    "examples": [
+      { "jp": "車が止まりました。", "kana": "くるまがとまりました。", "en": "The car stopped." },
+      { "jp": "ここに車を止めないでください。", "kana": "ここにくるまをとめないでください。", "en": "Please don't park here." },
+      { "jp": "雨で試合が中止になりました。", "kana": "あめでしあいがちゅうしになりました。", "en": "The game was called off because of rain." }
+    ]
+  },
+  {
+    "kanji": "動", "level": "N4", "meanings": ["move", "motion"], "on": ["ドウ"], "kun": ["うご.く", "うご.かす"],
+    "origin": "力 (strength) + 重 (heavy; also the sound): using strength to move something heavy.",
+    "examples": [
+      { "jp": "動かないでください。", "kana": "うごかないでください。", "en": "Please don't move." },
+      { "jp": "動物が好きです。", "kana": "どうぶつがすきです。", "en": "I like animals." },
+      { "jp": "毎日運動しています。", "kana": "まいにちうんどうしています。", "en": "I exercise every day." }
+    ]
+  },
+  {
+    "kanji": "運", "level": "N4", "meanings": ["carry", "luck"], "on": ["ウン"], "kun": ["はこ.ぶ"],
+    "origin": "辶 (moving along a road) + 軍 (army; also the sound): an army on the move, carrying things. Luck is how your life gets carried along.",
+    "examples": [
+      { "jp": "机を運んでください。", "kana": "つくえをはこんでください。", "en": "Please carry the desk." },
+      { "jp": "運転できますか。", "kana": "うんてんできますか。", "en": "Can you drive?" },
+      { "jp": "運がいいですね。", "kana": "うんがいいですね。", "en": "You're lucky." }
+    ]
+  },
+  {
+    "kanji": "転", "level": "N4", "meanings": ["revolve", "turn", "roll"], "on": ["テン"], "kun": ["ころ.ぶ", "ころ.がる"],
+    "origin": "車 (wheel, cart) + 云 (for the sound; short for 專, turning): wheels turning.",
+    "examples": [
+      { "jp": "道で転びました。", "kana": "みちでころびました。", "en": "I fell over in the street." },
+      { "jp": "自転車に乗れますか。", "kana": "じてんしゃにのれますか。", "en": "Can you ride a bicycle?" },
+      { "jp": "運転手さんに聞きました。", "kana": "うんてんしゅさんにききました。", "en": "I asked the driver." }
+    ]
+  },
+  {
+    "kanji": "開", "level": "N4", "meanings": ["open"], "on": ["カイ"], "kun": ["あ.ける", "あ.く", "ひら.く"],
+    "origin": "門 (gate) with two hands lifting the bar across it: opening the gate.",
+    "examples": [
+      { "jp": "窓を開けてください。", "kana": "まどをあけてください。", "en": "Please open the window." },
+      { "jp": "ドアが開きました。", "kana": "ドアがあきました。", "en": "The door opened." },
+      { "jp": "本を開いてください。", "kana": "ほんをひらいてください。", "en": "Please open your books." }
+    ]
+  },
+  {
+    "kanji": "集", "level": "N4", "meanings": ["gather", "collect"], "on": ["シュウ"], "kun": ["あつ.まる", "あつ.める"],
+    "origin": "Birds (隹; in old forms three of them) gathered on a tree (木).",
+    "examples": [
+      { "jp": "切手を集めています。", "kana": "きってをあつめています。", "en": "I collect stamps." },
+      { "jp": "駅前に集まりましょう。", "kana": "えきまえにあつまりましょう。", "en": "Let's meet in front of the station." },
+      { "jp": "写真集を買いました。", "kana": "しゃしんしゅうをかいました。", "en": "I bought a photo book." }
+    ]
+  },
+  {
+    "kanji": "住", "level": "N4", "meanings": ["live", "dwell"], "on": ["ジュウ"], "kun": ["す.む"],
+    "origin": "人 (person) + 主 (a lamp that stays in one place; also the sound): a person staying in one place.",
+    "examples": [
+      { "jp": "どこに住んでいますか。", "kana": "どこにすんでいますか。", "en": "Where do you live?" },
+      { "jp": "住所を書いてください。", "kana": "じゅうしょをかいてください。", "en": "Please write your address." },
+      { "jp": "大阪に住みたいです。", "kana": "おおさかにすみたいです。", "en": "I want to live in Osaka." }
+    ]
+  },
+  {
+    "kanji": "借", "level": "N4", "meanings": ["borrow", "rent"], "on": ["シャク"], "kun": ["か.りる"],
+    "origin": "人 (person) + 昔 (for the sound): to borrow, to rely on another person.",
+    "examples": [
+      { "jp": "ペンを借りてもいいですか。", "kana": "ペンをかりてもいいですか。", "en": "Can I borrow a pen?" },
+      { "jp": "図書館で本を借りました。", "kana": "としょかんでほんをかりました。", "en": "I borrowed a book from the library." },
+      { "jp": "部屋を借りています。", "kana": "へやをかりています。", "en": "I'm renting a room." }
+    ]
+  },
+  {
+    "kanji": "貸", "level": "N4", "meanings": ["lend"], "on": ["タイ"], "kun": ["か.す"],
+    "origin": "貝 (shell, money) + 代 (in place of; also the sound): handing over money in place of something, lending.",
+    "examples": [
+      { "jp": "かさを貸してください。", "kana": "かさをかしてください。", "en": "Please lend me an umbrella." },
+      { "jp": "友だちに本を貸しました。", "kana": "ともだちにほんをかしました。", "en": "I lent a book to a friend." },
+      { "jp": "その本は貸し出し中です。", "kana": "そのほんはかしだしちゅうです。", "en": "That book is checked out." }
+    ]
+  },
+  {
+    "kanji": "売", "level": "N4", "meanings": ["sell"], "on": ["バイ"], "kun": ["う.る", "う.れる"],
+    "origin": "The traditional form 賣 is 出 (go out) over 買 (buy): letting goods go out to buyers, selling.",
+    "examples": [
+      { "jp": "駅で新聞を売っています。", "kana": "えきでしんぶんをうっています。", "en": "They sell newspapers at the station." },
+      { "jp": "切符売り場はどこですか。", "kana": "きっぷうりばはどこですか。", "en": "Where's the ticket counter?" },
+      { "jp": "この本はよく売れています。", "kana": "このほんはよくうれています。", "en": "This book is selling well." }
+    ]
+  },
+  {
+    "kanji": "知", "level": "N4", "meanings": ["know"], "on": ["チ"], "kun": ["し.る", "し.らせる"],
+    "origin": "矢 (arrow) + 口 (mouth): words that hit the mark like an arrow; knowing.",
+    "examples": [
+      { "jp": "田中さんを知っていますか。", "kana": "たなかさんをしっていますか。", "en": "Do you know Tanaka-san?" },
+      { "jp": "知りません。", "kana": "しりません。", "en": "I don't know." },
+      { "jp": "結果を知らせてください。", "kana": "けっかをしらせてください。", "en": "Please let me know the results." }
+    ]
+  },
+  {
+    "kanji": "思", "level": "N4", "meanings": ["think"], "on": ["シ"], "kun": ["おも.う"],
+    "origin": "心 (heart) under 囟 (the top of the head, later written 田): thinking with head and heart.",
+    "examples": [
+      { "jp": "明日は雨だと思います。", "kana": "あしたはあめだとおもいます。", "en": "I think it will rain tomorrow." },
+      { "jp": "日本に行きたいと思っています。", "kana": "にほんにいきたいとおもっています。", "en": "I'm thinking of going to Japan." },
+      { "jp": "いい思い出がたくさんあります。", "kana": "いいおもいでがたくさんあります。", "en": "I have lots of good memories." }
+    ]
+  },
+  {
+    "kanji": "考", "level": "N4", "meanings": ["consider", "think over"], "on": ["コウ"], "kun": ["かんが.える"],
+    "origin": "An old person with long hair and a walking stick, close to 老 (old), with 丂 for the sound. It first meant a long-lived elder; 'think carefully' is a later, borrowed meaning.",
+    "examples": [
+      { "jp": "よく考えてください。", "kana": "よくかんがえてください。", "en": "Please think it over carefully." },
+      { "jp": "何を考えていますか。", "kana": "なにをかんがえていますか。", "en": "What are you thinking about?" },
+      { "jp": "それはいい考えですね。", "kana": "それはいいかんがえですね。", "en": "That's a good idea." }
+    ]
+  },
+  {
+    "kanji": "答", "level": "N4", "meanings": ["answer", "reply"], "on": ["トウ"], "kun": ["こた.える", "こた.え"],
+    "origin": "竹 (bamboo) + 合 (fit together; also the sound): bamboo slips that fit together; a reply that matches the question.",
+    "examples": [
+      { "jp": "質問に答えてください。", "kana": "しつもんにこたえてください。", "en": "Please answer the question." },
+      { "jp": "答えが分かりません。", "kana": "こたえがわかりません。", "en": "I don't know the answer." },
+      { "jp": "解答用紙に書いてください。", "kana": "かいとうようしにかいてください。", "en": "Please write on the answer sheet." }
+    ]
+  },
+  {
+    "kanji": "問", "level": "N4", "meanings": ["question", "problem"], "on": ["モン"], "kun": ["と.う", "と.い"],
+    "origin": "口 (mouth) at a 門 (gate; also the sound): asking at someone's door.",
+    "examples": [
+      { "jp": "問題がありますか。", "kana": "もんだいがありますか。", "en": "Is there a problem?" },
+      { "jp": "次の問いに答えなさい。", "kana": "つぎのといにこたえなさい。", "en": "Answer the following questions." },
+      { "jp": "先生の家を訪問しました。", "kana": "せんせいのいえをほうもんしました。", "en": "I visited my teacher's house." }
+    ]
+  },
+  {
+    "kanji": "習", "level": "N4", "meanings": ["learn"], "on": ["シュウ"], "kun": ["なら.う"],
+    "origin": "羽 (wings) over 白 (in old forms 日 or 自): a young bird flapping its wings again and again, practicing to fly.",
+    "examples": [
+      { "jp": "ピアノを習っています。", "kana": "ピアノをならっています。", "en": "I'm taking piano lessons." },
+      { "jp": "毎日漢字を練習します。", "kana": "まいにちかんじをれんしゅうします。", "en": "I practice kanji every day." },
+      { "jp": "予習と復習をしましょう。", "kana": "よしゅうとふくしゅうをしましょう。", "en": "Let's prepare for class and review afterwards." }
+    ]
+  },
+  {
+    "kanji": "教", "level": "N4", "meanings": ["teach"], "on": ["キョウ"], "kun": ["おし.える", "おそ.わる"],
+    "origin": "A child (子) with counting sticks (爻), and a hand holding a stick (攵): teaching, with discipline.",
+    "examples": [
+      { "jp": "道を教えてください。", "kana": "みちをおしえてください。", "en": "Could you tell me the way?" },
+      { "jp": "母は英語を教えています。", "kana": "はははえいごをおしえています。", "en": "My mother teaches English." },
+      { "jp": "教科書を忘れました。", "kana": "きょうかしょをわすれました。", "en": "I forgot my textbook." }
+    ]
+  },
+  {
+    "kanji": "研", "level": "N4", "meanings": ["polish", "sharpen", "study"], "on": ["ケン"], "kun": ["と.ぐ"],
+    "origin": "石 (stone) + 幵 (for the sound; making two things even): grinding something smooth on a stone. Sharpening a skill led to 'study'.",
+    "examples": [
+      { "jp": "大学で研究しています。", "kana": "だいがくでけんきゅうしています。", "en": "I do research at a university." },
+      { "jp": "研究室に行きます。", "kana": "けんきゅうしつにいきます。", "en": "I'm going to the lab." },
+      { "jp": "包丁を研ぎました。", "kana": "ほうちょうをとぎました。", "en": "I sharpened the kitchen knife." }
+    ]
+  },
+  {
+    "kanji": "究", "level": "N4", "meanings": ["research", "investigate"], "on": ["キュウ"], "kun": ["きわ.める"],
+    "origin": "穴 (hole, cave) + 九 (for the sound; also 'to the very end'): going to the very bottom of a hole, investigating thoroughly.",
+    "examples": [
+      { "jp": "日本の歴史を研究しています。", "kana": "にほんのれきしをけんきゅうしています。", "en": "I'm researching Japanese history." },
+      { "jp": "研究者になりたいです。", "kana": "けんきゅうしゃになりたいです。", "en": "I want to become a researcher." },
+      { "jp": "研究はおもしろいです。", "kana": "けんきゅうはおもしろいです。", "en": "Research is interesting." }
+    ]
+  },
+  {
+    "kanji": "勉", "level": "N4", "meanings": ["exertion", "effort"], "on": ["ベン"], "kun": ["つと.める"],
+    "origin": "力 (strength) + 免 (for the sound; often explained as a woman straining in childbirth): making a great effort.",
+    "examples": [
+      { "jp": "毎日勉強します。", "kana": "まいにちべんきょうします。", "en": "I study every day." },
+      { "jp": "図書館で勉強しましょう。", "kana": "としょかんでべんきょうしましょう。", "en": "Let's study at the library." },
+      { "jp": "勉強は楽しいです。", "kana": "べんきょうはたのしいです。", "en": "Studying is fun." }
+    ]
+  },
+  {
+    "kanji": "歌", "level": "N4", "meanings": ["song", "sing"], "on": ["カ"], "kun": ["うた", "うた.う"],
+    "origin": "欠 (a person with mouth open) + 哥 (for the sound; a voice rising): singing.",
+    "examples": [
+      { "jp": "歌を歌いましょう。", "kana": "うたをうたいましょう。", "en": "Let's sing a song." },
+      { "jp": "彼女は歌が上手です。", "kana": "かのじょはうたがじょうずです。", "en": "She's a good singer." },
+      { "jp": "カラオケで歌いました。", "kana": "カラオケでうたいました。", "en": "We sang karaoke." }
+    ]
+  },
+  {
+    "kanji": "写", "level": "N4", "meanings": ["copy", "photograph"], "on": ["シャ"], "kun": ["うつ.す", "うつ.る"],
+    "origin": "The traditional form 寫 is 宀 (roof) + 舄 (for the sound): moving something from one place to another. From this came copying, and later photographs.",
+    "examples": [
+      { "jp": "写真をとりましょう。", "kana": "しゃしんをとりましょう。", "en": "Let's take a picture." },
+      { "jp": "ノートを写させてください。", "kana": "ノートをうつさせてください。", "en": "Please let me copy your notes." },
+      { "jp": "黒板の字を写します。", "kana": "こくばんのじをうつします。", "en": "I copy what's written on the blackboard." }
+    ]
+  },
+  {
+    "kanji": "映", "level": "N4", "meanings": ["reflect", "project"], "on": ["エイ"], "kun": ["うつ.る", "うつ.す", "は.える"],
+    "origin": "日 (sun) + 央 (center; also the sound): light shining and reflecting.",
+    "examples": [
+      { "jp": "映画を見に行きましょう。", "kana": "えいがをみにいきましょう。", "en": "Let's go see a movie." },
+      { "jp": "山が湖に映っています。", "kana": "やまがみずうみにうつっています。", "en": "The mountain is reflected in the lake." },
+      { "jp": "テレビに映りました。", "kana": "テレビにうつりました。", "en": "I was on TV." }
+    ]
+  },
+  {
+    "kanji": "着", "level": "N4", "meanings": ["wear", "arrive"], "on": ["チャク"], "kun": ["き.る", "つ.く"],
+    "origin": "A later variant of 著, meaning 'attach'. From 'attach' came 'put on clothes' and 'reach, arrive'.",
+    "examples": [
+      { "jp": "コートを着てください。", "kana": "コートをきてください。", "en": "Please put on your coat." },
+      { "jp": "駅に着きました。", "kana": "えきにつきました。", "en": "I've arrived at the station." },
+      { "jp": "着物を着ました。", "kana": "きものをきました。", "en": "I wore a kimono." }
+    ]
+  },
+  {
+    "kanji": "死", "level": "N4", "meanings": ["death", "die"], "on": ["シ"], "kun": ["し.ぬ"],
+    "origin": "歹 (bones) + 匕 (a person kneeling): a person mourning beside the remains of the dead.",
+    "examples": [
+      { "jp": "祖父が死にました。", "kana": "そふがしにました。", "en": "My grandfather died." },
+      { "jp": "金魚が死んでしまいました。", "kana": "きんぎょがしんでしまいました。", "en": "My goldfish died." },
+      { "jp": "死ぬほど疲れました。", "kana": "しぬほどつかれました。", "en": "I'm dead tired." }
+    ]
+  },
+  {
+    "kanji": "発", "level": "N4", "meanings": ["departure", "emit", "discharge"], "on": ["ハツ", "ホツ"], "kun": [],
+    "origin": "The traditional form 發 is 癶 (two feet) + 弓 (bow) + 殳 (for the sound): shooting an arrow, setting off. From this came 'start, depart, give off'.",
+    "examples": [
+      { "jp": "電車は九時に発車します。", "kana": "でんしゃはくじにはっしゃします。", "en": "The train leaves at nine." },
+      { "jp": "発音が難しいです。", "kana": "はつおんがむずかしいです。", "en": "The pronunciation is difficult." },
+      { "jp": "発表は明日です。", "kana": "はっぴょうはあしたです。", "en": "The presentation is tomorrow." }
+    ]
+  },
+  {
+    "kanji": "通", "level": "N4", "meanings": ["pass through", "commute", "traffic"], "on": ["ツウ"], "kun": ["とお.る", "とお.り", "かよ.う"],
+    "origin": "辶 (moving along a road) + 甬 (for the sound; a hollow tube): going through without being blocked.",
+    "examples": [
+      { "jp": "毎日バスで学校に通っています。", "kana": "まいにちバスでがっこうにかよっています。", "en": "I go to school by bus every day." },
+      { "jp": "この道は車がたくさん通ります。", "kana": "このみちはくるまがたくさんとおります。", "en": "A lot of cars use this road." },
+      { "jp": "大きい通りに出ました。", "kana": "おおきいとおりにでました。", "en": "We came out onto a big street." }
+    ]
+  },
+  {
+    "kanji": "去", "level": "N4", "meanings": ["past", "leave"], "on": ["キョ", "コ"], "kun": ["さ.る"],
+    "origin": "Usually explained as a person (大, now written 土) walking away from an opening (ム). Some scholars read it as a vessel with a lid.",
+    "examples": [
+      { "jp": "去年、日本に来ました。", "kana": "きょねん、にほんにきました。", "en": "I came to Japan last year." },
+      { "jp": "それは過去の話です。", "kana": "それはかこのはなしです。", "en": "That's all in the past." },
+      { "jp": "台風が去りました。", "kana": "たいふうがさりました。", "en": "The typhoon has passed." }
+    ]
+  },
+  {
+    "kanji": "切", "level": "N4", "meanings": ["cut"], "on": ["セツ", "サイ"], "kun": ["き.る", "き.れる"],
+    "origin": "刀 (knife) + 七 (for the sound; 七 first meant 'cut'): cutting with a knife.",
+    "examples": [
+      { "jp": "はさみで紙を切りました。", "kana": "はさみでかみをきりました。", "en": "I cut the paper with scissors." },
+      { "jp": "大切な本です。", "kana": "たいせつなほんです。", "en": "It's a precious book." },
+      { "jp": "切手を買いました。", "kana": "きってをかいました。", "en": "I bought stamps." }
+    ]
+  },
+  {
+    "kanji": "建", "level": "N4", "meanings": ["build"], "on": ["ケン", "コン"], "kun": ["た.てる", "た.つ"],
+    "origin": "廴 (a long stride) + 聿 (a hand holding a brush): drawing up a plan and setting it in place. From this came 'build'.",
+    "examples": [
+      { "jp": "新しい家を建てました。", "kana": "あたらしいいえをたてました。", "en": "We built a new house." },
+      { "jp": "駅前にビルが建ちました。", "kana": "えきまえにビルがたちました。", "en": "A building went up in front of the station." },
+      { "jp": "古い建物です。", "kana": "ふるいたてものです。", "en": "It's an old building." }
+    ]
+  },
+  {
+    "kanji": "仕", "level": "N4", "meanings": ["serve", "do"], "on": ["シ", "ジ"], "kun": ["つか.える"],
+    "origin": "人 (person) + 士 (a man of rank; also the sound): a person in service.",
+    "examples": [
+      { "jp": "仕事が忙しいです。", "kana": "しごとがいそがしいです。", "en": "I'm busy with work." },
+      { "jp": "仕方がありません。", "kana": "しかたがありません。", "en": "It can't be helped." },
+      { "jp": "宿題を仕上げました。", "kana": "しゅくだいをしあげました。", "en": "I finished off my homework." }
+    ]
+  },
+  {
+    "kanji": "旅", "level": "N4", "meanings": ["trip", "travel"], "on": ["リョ"], "kun": ["たび"],
+    "origin": "A flag (㫃) with people (从) under it: people traveling together under a banner, originally a unit of soldiers.",
+    "examples": [
+      { "jp": "一人で旅行しました。", "kana": "ひとりでりょこうしました。", "en": "I traveled alone." },
+      { "jp": "旅館に泊まりました。", "kana": "りょかんにとまりました。", "en": "I stayed at a Japanese inn." },
+      { "jp": "長い旅でした。", "kana": "ながいたびでした。", "en": "It was a long trip." }
+    ]
+  },
+  {
+    "kanji": "広", "level": "N4", "meanings": ["wide", "broad", "spacious"], "on": ["コウ"], "kun": ["ひろ.い", "ひろ.げる"],
+    "origin": "The traditional form 廣 is 广 (a building open on one side) + 黄 (for the sound): a large hall without walls; wide.",
+    "examples": [
+      { "jp": "広い部屋ですね。", "kana": "ひろいへやですね。", "en": "What a spacious room." },
+      { "jp": "広島に行きました。", "kana": "ひろしまにいきました。", "en": "I went to Hiroshima." },
+      { "jp": "地図を広げてください。", "kana": "ちずをひろげてください。", "en": "Please spread out the map." }
+    ]
+  },
+  {
+    "kanji": "強", "level": "N4", "meanings": ["strong"], "on": ["キョウ", "ゴウ"], "kun": ["つよ.い"],
+    "origin": "虫 (insect) + 弘 (for the sound): first the name of a hard-shelled insect. It was borrowed to mean 'strong'.",
+    "examples": [
+      { "jp": "兄はテニスが強いです。", "kana": "あにはテニスがつよいです。", "en": "My older brother is good at tennis." },
+      { "jp": "昨日、三時間勉強しました。", "kana": "きのう、さんじかんべんきょうしました。", "en": "I studied for three hours yesterday." },
+      { "jp": "強い人になりたいです。", "kana": "つよいひとになりたいです。", "en": "I want to be a strong person." }
+    ]
+  },
+  {
+    "kanji": "重", "level": "N4", "meanings": ["heavy", "important"], "on": ["ジュウ", "チョウ"], "kun": ["おも.い", "かさ.ねる"],
+    "origin": "A person (人) standing over a heavy sack (東) on the ground (土): carrying something heavy.",
+    "examples": [
+      { "jp": "このかばんは重いです。", "kana": "このかばんはおもいです。", "en": "This bag is heavy." },
+      { "jp": "重要な話があります。", "kana": "じゅうようなはなしがあります。", "en": "I have something important to tell you." },
+      { "jp": "お皿を重ねてください。", "kana": "おさらをかさねてください。", "en": "Please stack the plates." }
+    ]
+  },
+  {
+    "kanji": "近", "level": "N4", "meanings": ["near", "close"], "on": ["キン"], "kun": ["ちか.い"],
+    "origin": "辶 (moving along a road) + 斤 (an axe, for the sound): only a short way to go; near.",
+    "examples": [
+      { "jp": "駅は近いです。", "kana": "えきはちかいです。", "en": "The station is close." },
+      { "jp": "近くにコンビニがありますか。", "kana": "ちかくにコンビニがありますか。", "en": "Is there a convenience store nearby?" },
+      { "jp": "最近、忙しいです。", "kana": "さいきん、いそがしいです。", "en": "I've been busy lately." }
+    ]
+  },
+  {
+    "kanji": "悪", "level": "N4", "meanings": ["bad", "evil"], "on": ["アク", "オ"], "kun": ["わる.い"],
+    "origin": "心 (heart) + 亞 (for the sound; something misshapen or second-rate): a bad heart.",
+    "examples": [
+      { "jp": "天気が悪いです。", "kana": "てんきがわるいです。", "en": "The weather is bad." },
+      { "jp": "気分が悪いです。", "kana": "きぶんがわるいです。", "en": "I feel sick." },
+      { "jp": "彼は悪い人ではありません。", "kana": "かれはわるいひとではありません。", "en": "He's not a bad person." }
+    ]
+  },
+  {
+    "kanji": "同", "level": "N4", "meanings": ["same", "agree"], "on": ["ドウ"], "kun": ["おな.じ"],
+    "origin": "Usually explained as a lid (冂) fitting over an opening (口) so that the two match. Other scholars see a tube, or people gathered together.",
+    "examples": [
+      { "jp": "同じかばんを持っています。", "kana": "おなじかばんをもっています。", "en": "I have the same bag." },
+      { "jp": "彼は同じクラスです。", "kana": "かれはおなじクラスです。", "en": "He's in the same class." },
+      { "jp": "同時に始めましょう。", "kana": "どうじにはじめましょう。", "en": "Let's start at the same time." }
+    ]
+  },
+  {
+    "kanji": "真", "level": "N4", "meanings": ["true", "reality"], "on": ["シン"], "kun": ["ま", "まこと"],
+    "origin": "The ancient form is read either as a spoon (匕) filling a pot (鼎) to the brim or as an upside-down person; the original meaning is debated. It came to mean 'true, genuine'.",
+    "examples": [
+      { "jp": "写真をとってもいいですか。", "kana": "しゃしんをとってもいいですか。", "en": "May I take a picture?" },
+      { "jp": "真ん中に座ってください。", "kana": "まんなかにすわってください。", "en": "Please sit in the middle." },
+      { "jp": "外は真っ暗です。", "kana": "そとはまっくらです。", "en": "It's pitch dark outside." }
+    ]
+  },
+  {
+    "kanji": "正", "level": "N4", "meanings": ["correct", "justice", "proper"], "on": ["セイ", "ショウ"], "kun": ["ただ.しい", "まさ"],
+    "origin": "A foot (止) marching straight toward a walled town (一): heading straight for the target. From 'straight' came 'correct'.",
+    "examples": [
+      { "jp": "正しい答えを選んでください。", "kana": "ただしいこたえをえらんでください。", "en": "Please choose the correct answer." },
+      { "jp": "お正月に家族と会います。", "kana": "おしょうがつにかぞくとあいます。", "en": "I see my family at New Year." },
+      { "jp": "正直に話してください。", "kana": "しょうじきにはなしてください。", "en": "Please be honest." }
+    ]
+  },
+  {
+    "kanji": "特", "level": "N4", "meanings": ["special"], "on": ["トク"], "kun": [],
+    "origin": "牛 (ox) + 寺 (for the sound): a bull, a single outstanding animal. From this came 'special'.",
+    "examples": [
+      { "jp": "特に好きな食べ物はありません。", "kana": "とくにすきなたべものはありません。", "en": "There's no food I especially like." },
+      { "jp": "特急に乗りましょう。", "kana": "とっきゅうにのりましょう。", "en": "Let's take the limited express." },
+      { "jp": "今日は特別な日です。", "kana": "きょうはとくべつなひです。", "en": "Today is a special day." }
+    ]
+  },
+  {
+    "kanji": "別", "level": "N4", "meanings": ["separate", "another", "different"], "on": ["ベツ"], "kun": ["わか.れる"],
+    "origin": "Bones (冎, here written 口 + 力-like strokes) cut apart with a knife (刂): separating.",
+    "examples": [
+      { "jp": "別の日にしましょう。", "kana": "べつのひにしましょう。", "en": "Let's make it another day." },
+      { "jp": "駅で友だちと別れました。", "kana": "えきでともだちとわかれました。", "en": "I said goodbye to my friend at the station." },
+      { "jp": "別々に払いましょう。", "kana": "べつべつにはらいましょう。", "en": "Let's pay separately." }
+    ]
+  },
+  {
+    "kanji": "急", "level": "N4", "meanings": ["hurry", "sudden"], "on": ["キュウ"], "kun": ["いそ.ぐ"],
+    "origin": "心 (heart) + 及 (for the sound; reaching for someone from behind): a heart in a rush, hurrying.",
+    "examples": [
+      { "jp": "急いでください。", "kana": "いそいでください。", "en": "Please hurry." },
+      { "jp": "急に雨がふってきました。", "kana": "きゅうにあめがふってきました。", "en": "It suddenly started to rain." },
+      { "jp": "急行に乗ります。", "kana": "きゅうこうにのります。", "en": "I'll take the express train." }
+    ]
+  },
+  {
+    "kanji": "明", "level": "N4", "meanings": ["bright", "light"], "on": ["メイ", "ミョウ"], "kun": ["あか.るい", "あ.ける", "あき.らか"],
+    "origin": "日 (sun) + 月 (moon): the two brightest things in the sky. In older forms the left side was a window (囧): moonlight shining through a window.",
+    "examples": [
+      { "jp": "明日、また来ます。", "kana": "あした、またきます。", "en": "I'll come again tomorrow." },
+      { "jp": "この部屋は明るいです。", "kana": "このへやはあかるいです。", "en": "This room is bright." },
+      { "jp": "もう一度説明してください。", "kana": "もういちどせつめいしてください。", "en": "Please explain it once more." }
+    ]
+  },
+  {
+    "kanji": "不", "level": "N4", "meanings": ["not", "negative", "non-"], "on": ["フ", "ブ"], "kun": [],
+    "origin": "Thought to picture the base of a flower or a root growing downward. It was borrowed very early as a word meaning 'not'.",
+    "examples": [
+      { "jp": "駅から遠くて不便です。", "kana": "えきからとおくてふべんです。", "en": "It's far from the station, so it's inconvenient." },
+      { "jp": "試験の前は不安です。", "kana": "しけんのまえはふあんです。", "en": "I get nervous before exams." },
+      { "jp": "不思議ですね。", "kana": "ふしぎですね。", "en": "That's strange, isn't it?" }
+    ]
+  },
+  {
+    "kanji": "文", "level": "N4", "meanings": ["sentence", "writing", "literature"], "on": ["ブン", "モン"], "kun": ["ふみ"],
+    "origin": "A person with a pattern, perhaps a tattoo, on their chest. From 'pattern, decoration' came writing and literature.",
+    "examples": [
+      { "jp": "この文を読んでください。", "kana": "このぶんをよんでください。", "en": "Please read this sentence." },
+      { "jp": "日本の文化が好きです。", "kana": "にほんのぶんかがすきです。", "en": "I like Japanese culture." },
+      { "jp": "注文をお願いします。", "kana": "ちゅうもんをおねがいします。", "en": "I'd like to order, please." }
+    ]
+  },
+  {
+    "kanji": "字", "level": "N4", "meanings": ["character", "letter"], "on": ["ジ"], "kun": ["あざ"],
+    "origin": "宀 (roof) + 子 (child; also the sound): a child born in the house. Characters 'born' from combining other characters came to be called 字.",
+    "examples": [
+      { "jp": "きれいな字ですね。", "kana": "きれいなじですね。", "en": "What beautiful handwriting." },
+      { "jp": "漢字が書けますか。", "kana": "かんじがかけますか。", "en": "Can you write kanji?" },
+      { "jp": "名前をローマ字で書いてください。", "kana": "なまえをローマじでかいてください。", "en": "Please write your name in roman letters." }
+    ]
+  },
+  {
+    "kanji": "漢", "level": "N4", "meanings": ["Chinese", "China"], "on": ["カン"], "kun": [],
+    "origin": "氵 (water) + 𦰩 (for the sound): the name of the Han River. The Han dynasty was named after the region, and 漢 came to stand for China.",
+    "examples": [
+      { "jp": "漢字が好きです。", "kana": "かんじがすきです。", "en": "I like kanji." },
+      { "jp": "この漢字は難しいです。", "kana": "このかんじはむずかしいです。", "en": "This kanji is difficult." },
+      { "jp": "漢字の読み方を教えてください。", "kana": "かんじのよみかたをおしえてください。", "en": "Please tell me how to read this kanji." }
+    ]
+  },
+  {
+    "kanji": "英", "level": "N4", "meanings": ["English", "England", "outstanding"], "on": ["エイ"], "kun": [],
+    "origin": "艹 (plant) + 央 (center; also the sound): a flower, the finest part of a plant. Meaning 'outstanding', it was also used for its sound to write England (英国).",
+    "examples": [
+      { "jp": "英語の先生です。", "kana": "えいごのせんせいです。", "en": "I'm an English teacher." },
+      { "jp": "英国に住んでいました。", "kana": "えいこくにすんでいました。", "en": "I used to live in Britain." },
+      { "jp": "英語で何と言いますか。", "kana": "えいごでなんといいますか。", "en": "How do you say it in English?" }
+    ]
+  },
+  {
+    "kanji": "洋", "level": "N4", "meanings": ["ocean", "Western style"], "on": ["ヨウ"], "kun": [],
+    "origin": "氵 (water) + 羊 (for the sound): first the name of a river, later the open ocean. In Japan, 'from across the ocean' came to mean Western.",
+    "examples": [
+      { "jp": "洋服を買いました。", "kana": "ようふくをかいました。", "en": "I bought some clothes." },
+      { "jp": "和食と洋食とどちらがいいですか。", "kana": "わしょくとようしょくとどちらがいいですか。", "en": "Which would you like, Japanese or Western food?" },
+      { "jp": "太平洋は広いです。", "kana": "たいへいようはひろいです。", "en": "The Pacific Ocean is vast." }
+    ]
+  },
+  {
+    "kanji": "題", "level": "N4", "meanings": ["topic", "subject", "title"], "on": ["ダイ"], "kun": [],
+    "origin": "頁 (head) + 是 (for the sound): the forehead, the front of the head. From 'front' came the title or topic at the head of a text.",
+    "examples": [
+      { "jp": "宿題を忘れました。", "kana": "しゅくだいをわすれました。", "en": "I forgot my homework." },
+      { "jp": "問題は何ですか。", "kana": "もんだいはなんですか。", "en": "What's the problem?" },
+      { "jp": "話題を変えましょう。", "kana": "わだいをかえましょう。", "en": "Let's change the subject." }
+    ]
+  },
+  {
+    "kanji": "試", "level": "N4", "meanings": ["try", "attempt"], "on": ["シ"], "kun": ["こころ.みる", "ため.す"],
+    "origin": "言 (words) + 式 (method, rule; also the sound): checking someone with questions, testing.",
+    "examples": [
+      { "jp": "明日、試験があります。", "kana": "あした、しけんがあります。", "en": "I have an exam tomorrow." },
+      { "jp": "この服を試着してもいいですか。", "kana": "このふくをしちゃくしてもいいですか。", "en": "May I try these clothes on?" },
+      { "jp": "新しい方法を試してみます。", "kana": "あたらしいほうほうをためしてみます。", "en": "I'll try a new method." }
+    ]
+  },
+  {
+    "kanji": "験", "level": "N4", "meanings": ["test", "verification", "effect"], "on": ["ケン", "ゲン"], "kun": ["ため.す"],
+    "origin": "馬 (horse) + 僉 (for the sound): first, checking the quality of a horse. From this came testing and proof.",
+    "examples": [
+      { "jp": "試験は難しかったです。", "kana": "しけんはむずかしかったです。", "en": "The exam was hard." },
+      { "jp": "いい経験になりました。", "kana": "いいけいけんになりました。", "en": "It was a good experience." },
+      { "jp": "理科の実験をしました。", "kana": "りかのじっけんをしました。", "en": "We did a science experiment." }
+    ]
+  },
+  {
+    "kanji": "質", "level": "N4", "meanings": ["quality", "substance"], "on": ["シツ", "シチ"], "kun": [],
+    "origin": "貝 (shell, money) + 斦 (two axes, for the sound): goods of equal value left as a pledge. From what something is really worth came 'quality, substance'.",
+    "examples": [
+      { "jp": "質問があります。", "kana": "しつもんがあります。", "en": "I have a question." },
+      { "jp": "質のいい服です。", "kana": "しつのいいふくです。", "en": "These are good-quality clothes." },
+      { "jp": "先生に質問しました。", "kana": "せんせいにしつもんしました。", "en": "I asked the teacher a question." }
+    ]
+  },
+  {
+    "kanji": "意", "level": "N4", "meanings": ["idea", "mind", "thought"], "on": ["イ"], "kun": [],
+    "origin": "音 (sound) + 心 (heart): the voice of the heart, what you mean.",
+    "examples": [
+      { "jp": "この言葉の意味は何ですか。", "kana": "このことばのいみはなんですか。", "en": "What does this word mean?" },
+      { "jp": "意見を聞かせてください。", "kana": "いけんをきかせてください。", "en": "I'd like to hear your opinion." },
+      { "jp": "試験は意外に簡単でした。", "kana": "しけんはいがいにかんたんでした。", "en": "The exam was surprisingly easy." }
+    ]
+  },
+  {
+    "kanji": "味", "level": "N4", "meanings": ["taste", "flavor"], "on": ["ミ"], "kun": ["あじ"],
+    "origin": "口 (mouth) + 未 (for the sound): what the mouth senses, taste.",
+    "examples": [
+      { "jp": "味はどうですか。", "kana": "あじはどうですか。", "en": "How does it taste?" },
+      { "jp": "趣味は何ですか。", "kana": "しゅみはなんですか。", "en": "What are your hobbies?" },
+      { "jp": "意味が分かりません。", "kana": "いみがわかりません。", "en": "I don't understand what it means." }
+    ]
+  },
+  {
+    "kanji": "理", "level": "N4", "meanings": ["reason", "logic"], "on": ["リ"], "kun": [],
+    "origin": "玉 (jade) + 里 (for the sound): working jade along its natural grain. From 'grain, pattern' came 'reason, logic'.",
+    "examples": [
+      { "jp": "料理が好きです。", "kana": "りょうりがすきです。", "en": "I like cooking." },
+      { "jp": "理由を教えてください。", "kana": "りゆうをおしえてください。", "en": "Please tell me the reason." },
+      { "jp": "無理しないでください。", "kana": "むりしないでください。", "en": "Don't push yourself too hard." }
+    ]
+  },
+  {
+    "kanji": "計", "level": "N4", "meanings": ["measure", "plan", "total"], "on": ["ケイ"], "kun": ["はか.る"],
+    "origin": "言 (words) + 十 (ten): counting aloud up to ten; calculating.",
+    "examples": [
+      { "jp": "時計を見てください。", "kana": "とけいをみてください。", "en": "Please look at the clock." },
+      { "jp": "夏休みの計画を立てましょう。", "kana": "なつやすみのけいかくをたてましょう。", "en": "Let's make plans for the summer vacation." },
+      { "jp": "合計でいくらですか。", "kana": "ごうけいでいくらですか。", "en": "How much is it in total?" }
+    ]
+  },
+  {
+    "kanji": "画", "level": "N4", "meanings": ["picture", "drawing", "stroke"], "on": ["ガ", "カク"], "kun": [],
+    "origin": "The traditional form 畫 shows a hand holding a brush (聿) drawing the borders around a field (田): marking out lines, drawing.",
+    "examples": [
+      { "jp": "映画が好きです。", "kana": "えいががすきです。", "en": "I like movies." },
+      { "jp": "漫画を読みます。", "kana": "まんがをよみます。", "en": "I read manga." },
+      { "jp": "この漢字は何画ですか。", "kana": "このかんじはなんかくですか。", "en": "How many strokes does this kanji have?" }
+    ]
+  },
+  {
+    "kanji": "図", "level": "N4", "meanings": ["diagram", "map", "drawing"], "on": ["ズ", "ト"], "kun": ["はか.る"],
+    "origin": "The traditional form 圖 is an enclosure (囗) around 啚, a plan of fields and granaries: a map or plan.",
+    "examples": [
+      { "jp": "地図をかいてください。", "kana": "ちずをかいてください。", "en": "Please draw a map." },
+      { "jp": "図書館はどこですか。", "kana": "としょかんはどこですか。", "en": "Where is the library?" },
+      { "jp": "合図をしたら、始めてください。", "kana": "あいずをしたら、はじめてください。", "en": "Start when I give the signal." }
+    ]
+  },
+  {
+    "kanji": "工", "level": "N4", "meanings": ["craft", "construction"], "on": ["コウ", "ク"], "kun": [],
+    "origin": "A picture of a tool, such as a carpenter's square or a ruler. From 'tool' came craft and construction.",
+    "examples": [
+      { "jp": "父は工場で働いています。", "kana": "ちちはこうじょうではたらいています。", "en": "My father works at a factory." },
+      { "jp": "この道は工事中です。", "kana": "このみちはこうじちゅうです。", "en": "This road is under construction." },
+      { "jp": "大工さんが家を建てました。", "kana": "だいくさんがいえをたてました。", "en": "A carpenter built the house." }
+    ]
+  },
+  {
+    "kanji": "業", "level": "N4", "meanings": ["business", "vocation", "work"], "on": ["ギョウ", "ゴウ"], "kun": ["わざ"],
+    "origin": "A wooden rack with a toothed top for hanging bells and drums. It came to mean a task, work, a trade.",
+    "examples": [
+      { "jp": "授業は何時からですか。", "kana": "じゅぎょうはなんじからですか。", "en": "What time does class start?" },
+      { "jp": "卒業したら、何をしますか。", "kana": "そつぎょうしたら、なにをしますか。", "en": "What will you do after you graduate?" },
+      { "jp": "ここは工業の町です。", "kana": "ここはこうぎょうのまちです。", "en": "This is an industrial town." }
+    ]
+  },
+  {
+    "kanji": "元", "level": "N4", "meanings": ["origin", "beginning", "former"], "on": ["ゲン", "ガン"], "kun": ["もと"],
+    "origin": "A person (儿) with a big head (二) on top. From 'head, top' came 'origin, beginning'.",
+    "examples": [
+      { "jp": "元気な子どもです。", "kana": "げんきなこどもです。", "en": "He's a lively child." },
+      { "jp": "元日は家族と過ごします。", "kana": "がんじつはかぞくとすごします。", "en": "I spend New Year's Day with my family." },
+      { "jp": "元の場所に戻してください。", "kana": "もとのばしょにもどしてください。", "en": "Please put it back where it was." }
+    ]
+  },
+  {
+    "kanji": "公", "level": "N4", "meanings": ["public", "official"], "on": ["コウ", "ク"], "kun": ["おおやけ"],
+    "origin": "Usually explained as 八 (open up, divide) over ム (private): opening up what is private, making it public. Other scholars read it as a palace courtyard.",
+    "examples": [
+      { "jp": "公園で遊びましょう。", "kana": "こうえんであそびましょう。", "en": "Let's play in the park." },
+      { "jp": "公立の学校です。", "kana": "こうりつのがっこうです。", "en": "It's a public school." },
+      { "jp": "公共の場所では静かにしましょう。", "kana": "こうきょうのばしょではしずかにしましょう。", "en": "Let's be quiet in public places." }
+    ]
+  },
+  {
+    "kanji": "方", "level": "N4", "meanings": ["direction", "way", "person"], "on": ["ホウ"], "kun": ["かた"],
+    "origin": "Read as a plough with a handle, or as two boats tied side by side; scholars disagree. It was borrowed for 'direction, side', and later 'way of doing'.",
+    "examples": [
+      { "jp": "駅の方へ歩きました。", "kana": "えきのほうへあるきました。", "en": "I walked toward the station." },
+      { "jp": "使い方を教えてください。", "kana": "つかいかたをおしえてください。", "en": "Please show me how to use it." },
+      { "jp": "あの方はどなたですか。", "kana": "あのかたはどなたですか。", "en": "Who is that person?" }
+    ]
+  },
+  {
+    "kanji": "台", "level": "N4", "meanings": ["pedestal", "stand", "counter for machines"], "on": ["ダイ", "タイ"], "kun": [],
+    "origin": "In Japan 台 is the standard form of 臺, a high flat platform for looking out. 台 itself was originally a different character, used as a simpler substitute.",
+    "examples": [
+      { "jp": "車が二台あります。", "kana": "くるまがにだいあります。", "en": "We have two cars." },
+      { "jp": "台所で料理をします。", "kana": "だいどころでりょうりをします。", "en": "I cook in the kitchen." },
+      { "jp": "台湾に行ったことがあります。", "kana": "たいわんにいったことがあります。", "en": "I've been to Taiwan." }
+    ]
+  },
+  {
+    "kanji": "代", "level": "N4", "meanings": ["substitute", "era", "fee"], "on": ["ダイ", "タイ"], "kun": ["か.わる", "よ", "しろ"],
+    "origin": "人 (person) + 弋 (for the sound): one person taking another's place. From 'replace' came 'generation, era', and 'fee', what you pay in exchange.",
+    "examples": [
+      { "jp": "電気代が高いです。", "kana": "でんきだいがたかいです。", "en": "The electricity bill is high." },
+      { "jp": "二十代の人が多いです。", "kana": "にじゅうだいのひとがおおいです。", "en": "There are a lot of people in their twenties." },
+      { "jp": "父の代わりに来ました。", "kana": "ちちのかわりにきました。", "en": "I came in my father's place." }
+    ]
+  },
+  {
+    "kanji": "以", "level": "N4", "meanings": ["by means of", "compared with", "because"], "on": ["イ"], "kun": ["もっ.て"],
+    "origin": "Thought to picture a plough or a person carrying a tool. It was borrowed as a grammar word meaning 'with, by means of'; in Japanese it marks limits in words like 以上 (or more) and 以内 (within).",
+    "examples": [
+      { "jp": "三人以上で来てください。", "kana": "さんにんいじょうできてください。", "en": "Please come in groups of three or more." },
+      { "jp": "以前、東京に住んでいました。", "kana": "いぜん、とうきょうにすんでいました。", "en": "I used to live in Tokyo." },
+      { "jp": "一時間以内に戻ります。", "kana": "いちじかんいないにもどります。", "en": "I'll be back within an hour." }
+    ]
+  },
+  {
+    "kanji": "有", "level": "N4", "meanings": ["have", "exist", "possess"], "on": ["ユウ", "ウ"], "kun": ["あ.る"],
+    "origin": "A hand (𠂇) holding a piece of meat (月, originally 肉): having, possessing.",
+    "examples": [
+      { "jp": "有名な歌手です。", "kana": "ゆうめいなかしゅです。", "en": "She's a famous singer." },
+      { "jp": "有料ですか、無料ですか。", "kana": "ゆうりょうですか、むりょうですか。", "en": "Is there a charge, or is it free?" },
+      { "jp": "この町は温泉で有名です。", "kana": "このまちはおんせんでゆうめいです。", "en": "This town is famous for its hot springs." }
+    ]
+  },
+  {
+    "kanji": "事", "level": "N4", "meanings": ["matter", "thing", "fact"], "on": ["ジ", "ズ"], "kun": ["こと"],
+    "origin": "A hand holding a writing brush or a flag on a pole: an official's work. From 'work, duty' came 'matter, affair'.",
+    "examples": [
+      { "jp": "仕事は何ですか。", "kana": "しごとはなんですか。", "en": "What do you do for work?" },
+      { "jp": "大事なことです。", "kana": "だいじなことです。", "en": "It's important." },
+      { "jp": "食事に行きましょう。", "kana": "しょくじにいきましょう。", "en": "Let's go out for a meal." }
+    ]
+  },
+  {
+    "kanji": "物", "level": "N4", "meanings": ["thing", "object"], "on": ["ブツ", "モツ"], "kun": ["もの"],
+    "origin": "牛 (ox) + 勿 (for the sound; a flag of mixed colors): an ox of mixed color. From 'all kinds of cattle' came 'things' in general.",
+    "examples": [
+      { "jp": "荷物が重いです。", "kana": "にもつがおもいです。", "en": "My luggage is heavy." },
+      { "jp": "動物園に行きました。", "kana": "どうぶつえんにいきました。", "en": "I went to the zoo." },
+      { "jp": "好きな食べ物は何ですか。", "kana": "すきなたべものはなんですか。", "en": "What's your favorite food?" }
+    ]
+  },
+  {
+    "kanji": "品", "level": "N4", "meanings": ["goods", "article", "refinement"], "on": ["ヒン", "ホン"], "kun": ["しな"],
+    "origin": "Three mouths or containers (口): many things lined up together, goods.",
+    "examples": [
+      { "jp": "この品物はいくらですか。", "kana": "このしなものはいくらですか。", "en": "How much is this item?" },
+      { "jp": "食料品売り場は地下です。", "kana": "しょくりょうひんうりばはちかです。", "en": "The food section is in the basement." },
+      { "jp": "上品な人です。", "kana": "じょうひんなひとです。", "en": "She's an elegant person." }
+    ]
+  },
+  {
+    "kanji": "料", "level": "N4", "meanings": ["fee", "materials"], "on": ["リョウ"], "kun": [],
+    "origin": "米 (rice) + 斗 (a ladle or measure): measuring out rice. From measuring came 'fee' and 'materials'.",
+    "examples": [
+      { "jp": "日本料理が好きです。", "kana": "にほんりょうりがすきです。", "en": "I like Japanese food." },
+      { "jp": "入場料はいくらですか。", "kana": "にゅうじょうりょうはいくらですか。", "en": "How much is the admission fee?" },
+      { "jp": "料金を払いました。", "kana": "りょうきんをはらいました。", "en": "I paid the fee." }
+    ]
+  },
+  {
+    "kanji": "服", "level": "N4", "meanings": ["clothes", "clothing"], "on": ["フク"], "kun": [],
+    "origin": "月 (originally 舟, a boat) + a hand pressing down a kneeling person (also the sound): first 'obey, serve'. Its use for clothing came later.",
+    "examples": [
+      { "jp": "新しい服を買いました。", "kana": "あたらしいふくをかいました。", "en": "I bought new clothes." },
+      { "jp": "学校の制服を着ています。", "kana": "がっこうのせいふくをきています。", "en": "I'm wearing my school uniform." },
+      { "jp": "この服は少し大きいです。", "kana": "このふくはすこしおおきいです。", "en": "These clothes are a little big." }
+    ]
+  },
+  {
+    "kanji": "紙", "level": "N4", "meanings": ["paper"], "on": ["シ"], "kun": ["かみ"],
+    "origin": "糸 (thread, fiber) + 氏 (for the sound): a sheet made from fibers, paper.",
+    "examples": [
+      { "jp": "紙に名前を書いてください。", "kana": "かみになまえをかいてください。", "en": "Please write your name on the paper." },
+      { "jp": "母から手紙が来ました。", "kana": "ははからてがみがきました。", "en": "I got a letter from my mother." },
+      { "jp": "紙ぶくろをください。", "kana": "かみぶくろをください。", "en": "A paper bag, please." }
+    ]
+  },
+  {
+    "kanji": "飯", "level": "N4", "meanings": ["meal", "cooked rice"], "on": ["ハン"], "kun": ["めし"],
+    "origin": "食 (food) + 反 (for the sound): eating; cooked rice, a meal.",
+    "examples": [
+      { "jp": "ご飯を食べましょう。", "kana": "ごはんをたべましょう。", "en": "Let's eat." },
+      { "jp": "晩ご飯は何がいいですか。", "kana": "ばんごはんはなにがいいですか。", "en": "What would you like for dinner?" },
+      { "jp": "昼飯を食べに行こう。", "kana": "ひるめしをたべにいこう。", "en": "Let's go grab some lunch." }
+    ]
+  },
+  {
+    "kanji": "銀", "level": "N4", "meanings": ["silver"], "on": ["ギン"], "kun": [],
+    "origin": "金 (metal) + 艮 (for the sound): the white metal, silver.",
+    "examples": [
+      { "jp": "銀行でお金をおろしました。", "kana": "ぎんこうでおかねをおろしました。", "en": "I withdrew some money at the bank." },
+      { "jp": "銀色の車です。", "kana": "ぎんいろのくるまです。", "en": "It's a silver car." },
+      { "jp": "銀メダルを取りました。", "kana": "ぎんメダルをとりました。", "en": "She won a silver medal." }
+    ]
+  },
+  {
+    "kanji": "音", "level": "N4", "meanings": ["sound", "noise"], "on": ["オン", "イン"], "kun": ["おと", "ね"],
+    "origin": "Like 言 (speak) with an extra stroke in the mouth (口): a sound coming out, a musical note.",
+    "examples": [
+      { "jp": "音楽が好きです。", "kana": "おんがくがすきです。", "en": "I like music." },
+      { "jp": "変な音がします。", "kana": "へんなおとがします。", "en": "I can hear a strange noise." },
+      { "jp": "音を小さくしてください。", "kana": "おとをちいさくしてください。", "en": "Please turn the volume down." }
+    ]
+  },
+  {
+    "kanji": "楽", "level": "N4", "meanings": ["fun", "music", "comfort", "ease"], "on": ["ガク", "ラク"], "kun": ["たの.しい", "たの.しむ"],
+    "origin": "A musical instrument: bells or strings (幺 幺 and 白) on a wooden frame (木). Music brings enjoyment, which led to 'fun, comfort'.",
+    "examples": [
+      { "jp": "パーティーは楽しかったです。", "kana": "パーティーはたのしかったです。", "en": "The party was fun." },
+      { "jp": "音楽を聞きながら勉強します。", "kana": "おんがくをききながらべんきょうします。", "en": "I study while listening to music." },
+      { "jp": "楽な仕事はありません。", "kana": "らくなしごとはありません。", "en": "There's no such thing as an easy job." }
+    ]
+  },
+  {
+    "kanji": "度", "level": "N4", "meanings": ["degrees", "times", "occurrence"], "on": ["ド", "ト", "タク"], "kun": ["たび"],
+    "origin": "又 (hand) + 庶 (shortened; for the sound): measuring with the hand. From 'measure' came degrees and 'times'.",
+    "examples": [
+      { "jp": "もう一度お願いします。", "kana": "もういちどおねがいします。", "en": "Once more, please." },
+      { "jp": "今日は三十度です。", "kana": "きょうはさんじゅうどです。", "en": "It's thirty degrees today." },
+      { "jp": "今度の日曜日はひまですか。", "kana": "こんどのにちようびはひまですか。", "en": "Are you free this Sunday?" }
+    ]
+  },
+  {
+    "kanji": "医", "level": "N4", "meanings": ["doctor", "medicine"], "on": ["イ"], "kun": [],
+    "origin": "The traditional form 醫 is 医 (arrows in a box) + 殳 (striking) + 酉 (a wine jar); wine was used as medicine. On its own, 医 was originally a quiver.",
+    "examples": [
+      { "jp": "医者に行きました。", "kana": "いしゃにいきました。", "en": "I went to the doctor." },
+      { "jp": "医学部の学生です。", "kana": "いがくぶのがくせいです。", "en": "I'm a medical student." },
+      { "jp": "歯医者がきらいです。", "kana": "はいしゃがきらいです。", "en": "I don't like going to the dentist." }
+    ]
+  },
+  {
+    "kanji": "病", "level": "N4", "meanings": ["sick", "illness"], "on": ["ビョウ", "ヘイ"], "kun": ["や.む", "やまい"],
+    "origin": "疒 (a sick person on a bed) + 丙 (for the sound): a serious illness.",
+    "examples": [
+      { "jp": "病気になりました。", "kana": "びょうきになりました。", "en": "I got sick." },
+      { "jp": "祖母は病院にいます。", "kana": "そぼはびょういんにいます。", "en": "My grandmother is in the hospital." },
+      { "jp": "病気の時はゆっくり休んでください。", "kana": "びょうきのときはゆっくりやすんでください。", "en": "When you're sick, get plenty of rest." }
+    ]
+  },
+  {
+    "kanji": "注", "level": "N4", "meanings": ["pour", "notes", "concentrate on"], "on": ["チュウ"], "kun": ["そそ.ぐ"],
+    "origin": "氵 (water) + 主 (a lamp that stays in one spot; also the sound): pouring water into one place. From this came 'focus on' and 'notes'.",
+    "examples": [
+      { "jp": "車に注意してください。", "kana": "くるまにちゅういしてください。", "en": "Watch out for cars." },
+      { "jp": "料理を注文しました。", "kana": "りょうりをちゅうもんしました。", "en": "I ordered some food." },
+      { "jp": "コップに水を注ぎました。", "kana": "コップにみずをそそぎました。", "en": "I poured water into the glass." }
     ]
   }
 ]

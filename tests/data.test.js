@@ -2,7 +2,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { normalize } from '../js/quiz.js';
+import { buildChoices, normalize } from '../js/quiz.js';
+import { LEVELS } from '../js/storage.js';
 
 const kanji = JSON.parse(readFileSync(new URL('../data/kanji.json', import.meta.url), 'utf8'));
 
@@ -31,10 +32,18 @@ test('the label shown as a choice is unique for each kanji', () => {
   }
 });
 
+test('kana choices for every kanji have distinct labels', () => {
+  for (const k of kanji) {
+    const labels = buildChoices(k, kanji, 12, 'kana').map((c) => c.label);
+    assert.equal(new Set(labels).size, labels.length, `${k.kanji}: ${labels}`);
+  }
+});
+
 for (const k of kanji) {
   test(`entry ${k.kanji} is well-formed`, () => {
     assert.equal([...k.kanji].length, 1, 'kanji is a single character');
     assert.ok(KANJI_CHAR.test(k.kanji), 'kanji is a Han character');
+    assert.ok(LEVELS.includes(k.level), `level is one of ${LEVELS}`);
     assert.ok(k.meanings.length > 0 && k.meanings.every((m) => normalize(m)), 'has meanings');
     assert.ok(k.on.every((r) => KATAKANA.test(r)), `on'yomi in katakana: ${k.on}`);
     assert.ok(k.kun.every((r) => HIRAGANA_READING.test(r)), `kun'yomi in hiragana: ${k.kun}`);
