@@ -55,6 +55,7 @@ test('districts are on dry land (islands count) and off the tracks and the river
     ...f.railways.map((l) => ['railway', l]),
     ...f.trams.map((l) => ['tram', l]),
     ...f.streets.map((s) => [s.name, s.points]),
+    ...(f.runways ?? []).map((r) => [r.name, r.points]),
     ['river', f.river.points],
   ];
   for (const d of layout.districts) {

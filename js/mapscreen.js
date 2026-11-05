@@ -10,7 +10,7 @@ import { formatKun, kanaLabel, pickNext } from './quiz.js';
 import { DrawPad, makeSvg, playStrokes, renderKanji } from './tracer.js';
 
 const $ = (id) => document.getElementById(id);
-const MIN_SCALE = 0.1;
+const MIN_SCALE = 0.04;
 const MAX_SCALE = 2.5;
 const RECENT_SIZE = 8;
 
@@ -318,8 +318,10 @@ export function createMap(mapData, ctx) {
     resetTiles();
     if (message) {
       setPanel(h('p', { class: 'map-help' },
-        'Every kanji has a fixed home in this lakeside city. Water kanji live on the island, study kanji at the University, ',
-        'animals at the Zoo. Use the lakes, the rapids, the railway (striped) and the tram (yellow) to find your way. ',
+        'Every kanji has a fixed home in this lakeside city. The N5 and N4 kanji live in the centre: water kanji on the island, ',
+        'study kanji at the University, animals at the Zoo. The harder ones live out in the suburbs, grouped by their radical: ',
+        '氵 water on the Lielahti shore, 馬 horses at Teivo, 辶 roads at the airport, 言 words at the Hervanta campus, 木 trees in Kauppi. ',
+        'Use the lakes, the rapids, the railway (striped) and the tram (yellow) to find your way. ',
         'Drag to move, pinch or use + − to zoom, and tap a kanji to see it.'));
     }
   }
@@ -523,7 +525,8 @@ export function createMap(mapData, ctx) {
     requestAnimationFrame(() => {
       if (firstShow) {
         // Open on the city centre: the rapids, Hämeenkatu and the station.
-        fit({ x: 11 * PITCH, y: 9 * PITCH, w: 21 * PITCH, h: 22 * PITCH }, 1, false);
+        const home = mapData.home;
+        fit({ x: home.x * PITCH, y: home.y * PITCH, w: home.w * PITCH, h: home.h * PITCH }, 1, false);
         firstShow = false;
       }
       start();

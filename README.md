@@ -2,12 +2,24 @@
 
 A small, free, ad-free kanji quiz for your phone.
 
-- Covers the **JLPT N5 and N4** kanji (247 in all). Pick which levels to practise in the ☰ menu.
+- Covers **1,965 kanji**: every JLPT N5 and N4 kanji, and every Jōyō (official everyday-use) kanji on the N3, N2 and N1 lists. Rare N1 kanji used mostly in names (伊, 彦, 智…) are left out. Pick which levels to practise in the ☰ menu; new installs start with N5 and N4.
 - A kanji is shown. You answer either by **multiple choice** or by **typing its meaning**. For multiple choice you choose **how many options** (2–12) and whether they show the **English meaning** or the **kana reading**.
 - After answering you see the meanings, on/kun readings, a note on **where the kanji came from**, and a random **example sentence** (with a kana reading and a translation). Tap "Another example" for a different one.
 - **Draw it** mode: you're shown the meaning and reading and draw the kanji with your finger, one stroke at a time. Each stroke is checked for place, shape, direction and order. After two misses on a stroke (or when you tap "Show next stroke") a faint guide shows where it goes.
 - **Watch the path**: every answer shows the kanji with numbered strokes. Tap ▶ and a dot traces it in order, with a dotted line where the pen moves between strokes, so each kanji can be remembered as one continuous path (like the pattern of a PIN on a keypad).
-- **Kanji map** (🗺️ button): a lakeside city, loosely shaped like Tampere, where every kanji has a fixed home. Näsijärvi is to the north and Pyhäjärvi to the south, with the Tammerkoski rapids running between them. The Pyynikki ridge is to the west, the railway runs north–south through the station, and the tram runs along Hämeenkatu out to Hervanta. Districts sit where their theme belongs: water kanji on an island in the lake, animals at the Särkänniemi zoo, study kanji at the University, sickness at the Hospital, running at the Ratina stadium, numbers at the Hervanta tech campus. Others group kanji that share a part, like Gates (門) or Words (言). Each district has its own shape and colour. Three modes:
+- **Kanji map** (🗺️ button): a lakeside city, loosely shaped like Tampere, where every kanji has a fixed home. The N5 and N4 kanji live in the city centre; the N3–N1 kanji live out in the suburbs, grouped by radical. Näsijärvi is to the north and Pyhäjärvi to the south, with the Tammerkoski rapids running between them. The Pyynikki ridge is to the west, the railway runs north–south through the station, and the tram runs along Hämeenkatu out to Hervanta. Districts sit where their theme belongs: water kanji on an island in the lake, animals at the Särkänniemi zoo, study kanji at the University, sickness at the Hospital, running at the Ratina stadium, numbers at the Hervanta tech campus. Others group kanji that share a part, like Gates (門) or Words (言). The suburbs follow the same idea, one theme per radical:
+  - *Lielahti* (west shore of Näsijärvi): 氵 water in the Harbour, Marina, Beach and Pier; 糸 thread at the old mill.
+  - *Teivo* (racetrack, far west): 馬 horses, 足 and 走 feet, 車 carts, 力 strength, 刂 blades and weapons.
+  - *Tesoma*: 亻 people, 女 women, 子 children, 衣 and 巾 cloth.
+  - *Airport* (Pirkkala, south of Pyhäjärvi): 辶 roads and 彳 going, 羽 wings and 鳥 birds, and the weather station with 日, 月 and ⻗ rain.
+  - *Pirkkala fields*: 艹 plants, 禾 and 米 grain, 田 and 土 fields, animals, 酉 the brewery.
+  - *Hervanta*: 言 words at the campus library, 金 metals in the lab, 石 and 火 at the quarry, 宀 and 門 homes in the blocks, 貝 money at the mall, 口 mouths on the plaza.
+  - *Kauppi*: 木 trees in the forest, ⺮ bamboo, and the body (⺼, 目, 頁, 疒) at the hospital.
+  - *Messukylä*: 心 and 忄 feelings around the old church, 礻 shrines.
+  - *Rantaperkiö*: 扌 hands at the works, 阝 hills.
+  - Kanji whose radical has no theme live in "odds and ends" districts sorted by stroke count (e.g. *2–4 strokes*), spread over the suburbs.
+
+  Inside each suburb district, N3 kanji come first, then N2, then N1. Each district has its own shape and colour. Three modes:
   - *Explore*: drag, pinch or zoom, and tap a kanji to see it, watch its path or draw it.
   - *Find it*: a kanji is shown, the map is blank, and you tap where it lives. If you're wrong, an arrow shows the route from your guess to its real home.
   - *What's here?*: a blank spot is marked and you pick (or draw) the kanji that lives there.
@@ -84,11 +96,12 @@ Add an object to `data/kanji.json`:
 ```
 
 - `meanings[0]` is the main meaning, and the first two appear on the multiple-choice button. Typing any meaning counts as correct.
-- `level` is the JLPT level (`N5` or `N4`) from Jonathan Waller's lists, which Jisho.org also uses. 耳 is the one exception: it is listed under N3 there but was on the old official Level 4 list, so it stays with the N4 set.
+- `level` is the JLPT level (`N5`–`N1`) from Jonathan Waller's lists, which Jisho.org also uses. 耳 is the one exception: it is listed under N3 there but was on the old official Level 4 list, so it stays with the N4 set.
 - With kana choices, the button shows the first on reading and the first kun reading, so put the most common ones first.
 - In kun readings, `.` separates the okurigana (`あ.く` is shown as `あ(く)`).
 - Run `python3 tools/build_strokes.py` to fetch its stroke paths from KanjiVG into `data/strokes.json`.
 - Give it a home in `data/map.json`: add it to the end of a row, or as a new row, in a fitting district. Don't move kanji that are already placed; their place is what you've memorised. `npm test` checks that every district stays on dry land, off the tracks and the river, and clear of its neighbours. If a district grows into something, move the whole district (its `x`, `y`), never single kanji.
+- On/kun readings for the N3–N1 kanji follow the official Jōyō table (rare readings last). Each example's kana line was generated with MeCab + UniDic and then checked by hand; single-kanji words MeCab tends to misread (米, 箱, 額…) were fixed.
 - Then run `npm test`. It checks for duplicates, readings in the wrong script, examples that don't contain the kanji, kanji left in the kana line, and so on.
 
 ### Checking against dictionaries
@@ -111,5 +124,7 @@ It prints anything that doesn't match for a person to look at. Some hits are fin
 Origin notes follow commonly cited etymologies. Where scholars disagree or a popular explanation is only a memory aid, the note says so.
 
 ## Credits
+
+Readings, meanings and component notes for the N3–N1 kanji were checked against [KANJIDIC2](https://www.edrdg.org/wiki/index.php/KANJIDIC_Project) (EDRDG licence) and [Kanjium](https://github.com/mifunetoshiro/kanjium) (CC BY-SA 4.0); the origin notes and example sentences are written for this app.
 
 Stroke paths come from [KanjiVG](https://kanjivg.tagaini.net) by Ulrich Apel and contributors, under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). `data/strokes.json` is a derived work under the same licence.

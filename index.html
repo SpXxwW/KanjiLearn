@@ -123,10 +123,14 @@
     <button id="back-btn" type="button" class="btn secondary back">← Back to quiz</button>
 
     <h2>Kanji to practise</h2>
-    <div class="segmented">
-      <label><input type="checkbox" name="level" value="N5"><span>JLPT N5</span></label>
-      <label><input type="checkbox" name="level" value="N4"><span>JLPT N4</span></label>
+    <div class="segmented levels">
+      <label><input type="checkbox" name="level" value="N5"><span>N5</span></label>
+      <label><input type="checkbox" name="level" value="N4"><span>N4</span></label>
+      <label><input type="checkbox" name="level" value="N3"><span>N3</span></label>
+      <label><input type="checkbox" name="level" value="N2"><span>N2</span></label>
+      <label><input type="checkbox" name="level" value="N1"><span>N1</span></label>
     </div>
+    <p id="level-counts" class="muted note"></p>
 
     <h2>Answer mode</h2>
     <div class="segmented three" role="radiogroup">
