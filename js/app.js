@@ -1,5 +1,7 @@
-import { buildChoices, checkAnswer, choiceLabel, formatKun, pickNext } from './quiz.js';
+import { buildChoices, checkAnswer, choiceLabel, formatKun, kanaLabel, pickNext } from './quiz.js';
 import { loadLearned, loadSettings, saveLearned, saveSettings } from './storage.js';
+import { DrawPad, playStrokes, renderKanji, makeSvg } from './tracer.js';
+import { createMap } from './mapscreen.js';
 
 const RECENT_SIZE = 5;
 
@@ -7,6 +9,10 @@ const $ = (id) => document.getElementById(id);
 
 const state = {
   kanji: [],
+  strokes: {},
+  map: null,
+  pad: null,
+  stopPlay: null,
   learned: loadLearned(),
   settings: loadSettings(),
   current: null,
@@ -41,6 +47,8 @@ function renderSession() {
 // ---- Quiz ----
 
 function nextQuestion() {
+  stopPath();
+  state.pad = null;
   state.current = pickNext(unlearned(), state.recent);
   state.answered = false;
   $('reveal').hidden = true;
@@ -57,16 +65,23 @@ function nextQuestion() {
   }
 
   state.recent = [...state.recent, state.current.kanji].slice(-RECENT_SIZE);
-  $('kanji').textContent = state.current.kanji;
   renderAnswerArea();
   window.scrollTo(0, 0);
 }
 
 function renderAnswerArea() {
-  const typing = state.settings.mode === 'type';
-  $('choices').hidden = typing;
+  const { mode } = state.settings;
+  const typing = mode === 'type';
+  const drawing = mode === 'draw';
+  $('choices').hidden = mode !== 'choice';
   $('type-form').hidden = !typing;
-  if (typing) {
+  $('draw-area').hidden = !drawing;
+  $('kanji').hidden = drawing;
+  $('prompt').hidden = !drawing;
+  $('kanji').textContent = state.current.kanji;
+  if (drawing) {
+    renderDrawing();
+  } else if (typing) {
     const input = $('type-input');
     input.value = '';
     input.focus({ preventScroll: true });
@@ -88,6 +103,73 @@ function renderChoices() {
     return btn;
   });
   $('choices').replaceChildren(...buttons);
+}
+
+// ---- Draw mode: meaning + reading shown, the kanji is drawn by finger ----
+
+function renderDrawing() {
+  const k = state.current;
+  $('prompt-meaning').textContent = k.meanings.slice(0, 3).join(', ');
+  $('prompt-kana').textContent = kanaLabel(k);
+  state.pad = new DrawPad($('pad-holder'), state.strokes[k.kanji], { onDone: finishDrawing });
+  $('hint-btn').disabled = false;
+  $('draw-giveup').disabled = false;
+}
+
+function finishDrawing({ hints, misses }) {
+  $('hint-btn').disabled = true;
+  $('draw-giveup').disabled = true;
+  if (state.answered) return;
+  const n = state.current.kanji;
+  if (hints > 0) {
+    reveal(false, `Drawn with help on ${hints} stroke${hints > 1 ? 's' : ''}. Watch the path below and try ${n} again later.`);
+  } else if (misses > 0) {
+    reveal(true, `Correct! (${misses} stroke${misses > 1 ? 's' : ''} needed a second try)`);
+  } else {
+    reveal(true, 'Perfect! Drawn from memory.');
+  }
+}
+
+function giveUpDrawing() {
+  if (state.answered || !state.pad) return;
+  state.pad.finishForUser();
+  $('hint-btn').disabled = true;
+  $('draw-giveup').disabled = true;
+  reveal(false, 'Here is the answer:');
+  watchPath();
+}
+
+// ---- Stroke path on the answer card ----
+
+function renderPath() {
+  stopPath();
+  const paths = state.strokes[state.current.kanji];
+  const svg = makeSvg('path-svg');
+  $('reveal-path').replaceChildren(svg);
+  renderKanji(svg, paths, { numbers: true });
+  $('stroke-count').textContent = `${paths.length} stroke${paths.length > 1 ? 's' : ''}`;
+}
+
+function watchPath() {
+  stopPath();
+  const svg = $('reveal-path').querySelector('svg');
+  const paths = state.strokes[state.current.kanji];
+  $('watch-btn').textContent = '■ Stop';
+  state.stopPlay = playStrokes(svg, paths, { onDone: () => {
+    state.stopPlay = null;
+    $('watch-btn').textContent = '▶ Watch again';
+  } });
+}
+
+function stopPath() {
+  state.stopPlay?.();
+  state.stopPlay = null;
+  $('watch-btn').textContent = '▶ Watch the path';
+}
+
+function toggleWatch() {
+  if (state.stopPlay) stopPath();
+  else watchPath();
 }
 
 function answerChoice(picked, choice) {
@@ -129,6 +211,7 @@ function reveal(correct, verdict) {
   $('onyomi').textContent = k.on.join('、') || '–';
   $('kunyomi').textContent = k.kun.map(formatKun).join('、') || '–';
   $('origin').textContent = k.origin;
+  renderPath();
 
   state.exampleIndex = Math.floor(Math.random() * k.examples.length);
   renderExample();
@@ -168,16 +251,43 @@ function toggleLearned() {
   renderStats();
 }
 
-// ---- Menu ----
+// ---- Screens: quiz, menu and map. Menu and map push a history entry so the
+// Android back button / swipe returns to the quiz instead of leaving the app.
 
-function openMenu() {
-  history.pushState({ menu: true }, '');
-  showMenu();
+function openScreen(name) {
+  if (history.state?.screen) history.replaceState({ screen: name }, '');
+  else history.pushState({ screen: name }, '');
+  showScreen(name);
 }
 
+function showScreen(name) {
+  const leavingMap = !$('map-screen').hidden && name !== 'map';
+  $('quiz-screen').hidden = name !== 'quiz';
+  $('menu-screen').hidden = name !== 'menu';
+  $('map-screen').hidden = name !== 'map';
+  document.body.classList.toggle('on-map', name === 'map');
+  $('map-btn').classList.toggle('on', name === 'map');
+  if (leavingMap) state.map?.hide();
+  if (name === 'menu') showMenu();
+  else if (name === 'map') {
+    stopPath();
+    window.scrollTo(0, 0);
+    document.documentElement.style.setProperty('--topbar-h', `${document.querySelector('.topbar').offsetHeight}px`);
+    state.map.show();
+  } else {
+    if (!state.current) nextQuestion();
+    else renderStats();
+  }
+}
+
+function closeScreen() {
+  if (history.state?.screen) history.back(); // popstate does the rest
+  else showScreen('quiz');
+}
+
+// ---- Menu ----
+
 function showMenu() {
-  $('quiz-screen').hidden = true;
-  $('menu-screen').hidden = false;
   for (const radio of document.querySelectorAll('input[name="mode"]')) {
     radio.checked = radio.value === state.settings.mode;
   }
@@ -193,20 +303,9 @@ function showMenu() {
   window.scrollTo(0, 0);
 }
 
-function closeMenu() {
-  if (history.state?.menu) history.back(); // popstate does the rest
-  else hideMenu();
-}
-
-function hideMenu() {
-  $('menu-screen').hidden = true;
-  $('quiz-screen').hidden = false;
-  if (!state.current) nextQuestion();
-  else renderStats();
-}
-
 function renderChoiceSettings() {
   $('choice-settings').hidden = state.settings.mode !== 'choice';
+  $('draw-note').hidden = state.settings.mode !== 'draw';
   $('choice-count-value').textContent = `(${state.settings.choiceCount})`;
 }
 
@@ -278,9 +377,17 @@ function bindEvents() {
   $('next-btn').addEventListener('click', nextQuestion);
   $('learned-btn').addEventListener('click', toggleLearned);
   $('ex-next').addEventListener('click', nextExample);
-  $('menu-btn').addEventListener('click', openMenu);
-  $('done-menu').addEventListener('click', openMenu);
-  $('back-btn').addEventListener('click', closeMenu);
+  $('menu-btn').addEventListener('click', () => ($('menu-screen').hidden ? openScreen('menu') : closeScreen()));
+  $('map-btn').addEventListener('click', () => {
+    if (!state.map) return; // data didn't load
+    if ($('map-screen').hidden) openScreen('map');
+    else closeScreen();
+  });
+  $('done-menu').addEventListener('click', () => openScreen('menu'));
+  $('back-btn').addEventListener('click', closeScreen);
+  $('hint-btn').addEventListener('click', () => state.pad?.hint());
+  $('draw-giveup').addEventListener('click', giveUpDrawing);
+  $('watch-btn').addEventListener('click', toggleWatch);
   $('unmark-all').addEventListener('click', unmarkAll);
   for (const radio of document.querySelectorAll('input[name="mode"]')) {
     radio.addEventListener('change', (e) => changeSetting('mode', e.target.value));
@@ -292,18 +399,29 @@ function bindEvents() {
   for (const box of document.querySelectorAll('input[name="level"]')) {
     box.addEventListener('change', changeLevels);
   }
-  // Android back button / swipe closes the menu instead of leaving the app.
-  window.addEventListener('popstate', () => {
-    if (!$('menu-screen').hidden) hideMenu();
-  });
+  window.addEventListener('popstate', () => showScreen(history.state?.screen ?? 'quiz'));
 }
 
 async function init() {
   bindEvents();
   try {
-    const res = await fetch('data/kanji.json');
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    state.kanji = await res.json();
+    const [kanji, strokes, map] = await Promise.all(
+      ['data/kanji.json', 'data/strokes.json', 'data/map.json'].map(async (url) => {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.json();
+      }),
+    );
+    state.kanji = kanji;
+    state.strokes = strokes.strokes;
+    state.map = createMap(map, {
+      entries: () => state.kanji,
+      active: () => active().map((k) => k.kanji),
+      unlearned: () => unlearned().map((k) => k.kanji),
+      strokes: (kanji) => state.strokes[kanji],
+      settings: state.settings,
+      saveSettings: () => saveSettings(state.settings),
+    });
   } catch {
     $('card').hidden = true;
     $('load-error').hidden = false;
