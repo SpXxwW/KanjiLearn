@@ -7,7 +7,7 @@ A small, free, ad-free kanji quiz for your phone.
 - After answering you see the meanings, on/kun readings, a note on **where the kanji came from**, and a random **example sentence** (with a kana reading and a translation). Tap "Another example" for a different one.
 - **Draw it** mode: you're shown the meaning and reading and draw the kanji with your finger, one stroke at a time. Each stroke is checked for place, shape, direction and order. After two misses on a stroke (or when you tap "Show next stroke") a faint guide shows where it goes.
 - **Watch the path**: every answer shows the kanji with numbered strokes. Tap ▶ and a dot traces it in order, with a dotted line where the pen moves between strokes, so each kanji can be remembered as one continuous path (like the pattern of a PIN on a keypad).
-- **Kanji map** (🗺️ button): a city where every kanji has a fixed home. Kanji that share a part are neighbours, so the Water district holds 氵 kanji and the Gates district holds 門 kanji. Three modes:
+- **Kanji map** (🗺️ button): a lakeside city, loosely shaped like Tampere, where every kanji has a fixed home. Näsijärvi is to the north and Pyhäjärvi to the south, with the Tammerkoski rapids running between them. The Pyynikki ridge is to the west, the railway runs north–south through the station, and the tram runs along Hämeenkatu out to Hervanta. Districts sit where their theme belongs: water kanji on an island in the lake, animals at the Särkänniemi zoo, study kanji at the University, sickness at the Hospital, running at the Ratina stadium, numbers at the Hervanta tech campus. Others group kanji that share a part, like Gates (門) or Words (言). Each district has its own shape and colour. Three modes:
   - *Explore*: drag, pinch or zoom, and tap a kanji to see it, watch its path or draw it.
   - *Find it*: a kanji is shown, the map is blank, and you tap where it lives. If you're wrong, an arrow shows the route from your guess to its real home.
   - *What's here?*: a blank spot is marked and you pick (or draw) the kanji that lives there.
@@ -32,10 +32,11 @@ js/storage.js         saves learned kanji + settings in localStorage
 js/strokes.js         stroke paths -> points, and checking a drawn stroke
 js/tracer.js          draw pad and "watch the path" animation
 js/map.js             kanji map layout (where each kanji lives)
+js/city.js            draws the city: lakes, rapids, railway, tram, districts
 js/mapscreen.js       the map screen: pan/zoom, explore and the map quizzes
 data/kanji.json       the kanji, origins and example sentences
 data/strokes.json     stroke paths from KanjiVG (built by tools/build_strokes.py)
-data/map.json         the kanji map: districts and each kanji's spot
+data/map.json         the kanji city: scenery, districts and each kanji's spot
 sw.js                 offline cache
 manifest.webmanifest  home-screen app settings
 tests/                node tests for the logic and the data file
@@ -87,7 +88,7 @@ Add an object to `data/kanji.json`:
 - With kana choices, the button shows the first on reading and the first kun reading, so put the most common ones first.
 - In kun readings, `.` separates the okurigana (`あ.く` is shown as `あ(く)`).
 - Run `python3 tools/build_strokes.py` to fetch its stroke paths from KanjiVG into `data/strokes.json`.
-- Give it a home in `data/map.json`: add it to the end of a row in a fitting district (up to 5 per row, 3 rows per district). Don't move kanji that are already placed; their place is what you've memorised.
+- Give it a home in `data/map.json`: add it to the end of a row, or as a new row, in a fitting district. Don't move kanji that are already placed; their place is what you've memorised. `npm test` checks that every district stays on dry land, off the tracks and the river, and clear of its neighbours. If a district grows into something, move the whole district (its `x`, `y`), never single kanji.
 - Then run `npm test`. It checks for duplicates, readings in the wrong script, examples that don't contain the kanji, kanji left in the kana line, and so on.
 
 ### Checking against dictionaries

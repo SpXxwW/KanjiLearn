@@ -10,10 +10,20 @@
   --good-bg: #e3f3e8;
   --bad: #b23a32;
   --bad-bg: #fbe5e3;
-  --street: #e4ded3;
-  --block-sat: 45%;
-  --block-light: 90%;
-  --block-edge: 72%;
+  --land: #ece5d6;
+  --forest: #cfe0bf;
+  --water: #a9cfe6;
+  --shore: #8bbbd8;
+  --foam: #f4fbff;
+  --water-text: #3d6f8f;
+  --street: #fbf8f1;
+  --street-edge: #d8cfbe;
+  --rail: #4a4540;
+  --tram: #e0a400;
+  --area-text: rgba(80, 70, 55, 0.28);
+  --block-sat: 58%;
+  --block-light: 85%;
+  --block-edge: 62%;
   --block-text: 30%;
   --radius: 14px;
   --ja: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
@@ -33,7 +43,17 @@
     --good-bg: #1d3326;
     --bad: #f08a80;
     --bad-bg: #3a201d;
-    --street: #0f0e0d;
+    --land: #1c1b19;
+    --forest: #1f2a1c;
+    --water: #16303f;
+    --shore: #24465a;
+    --foam: #4f7a92;
+    --water-text: #7fa9c2;
+    --street: #2c2a26;
+    --street-edge: #3a3732;
+    --rail: #bdb5a8;
+    --tram: #d9a21a;
+    --area-text: rgba(230, 220, 200, 0.18);
     --block-sat: 22%;
     --block-light: 19%;
     --block-edge: 32%;
@@ -334,7 +354,7 @@ body.on-map .stats { visibility: hidden; }
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  background: var(--street);
+  background: var(--land);
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
@@ -344,31 +364,37 @@ body.on-map .stats { visibility: hidden; }
 .map-world { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
 .map-world.glide { transition: transform 0.35s ease; }
 
-.district {
-  position: absolute;
-  border-radius: 18px;
-  background: hsl(var(--hue) var(--block-sat) var(--block-light));
-  border: 2px solid hsl(var(--hue) 40% var(--block-edge));
-  overflow: hidden;
+.city { position: absolute; left: 0; top: 0; display: block; }
+.city .land { fill: var(--land); }
+.city .forest { fill: var(--forest); }
+.city .lake { fill: var(--water); stroke: var(--shore); stroke-width: 3; }
+.city .island { fill: var(--land); stroke: var(--shore); stroke-width: 3; }
+.city .river { fill: none; stroke: var(--water); stroke-width: 34; stroke-linecap: round; }
+.city .rapids { fill: none; stroke: var(--foam); stroke-width: 3; stroke-dasharray: 6 22; stroke-linecap: round; }
+.city .street-casing { fill: none; stroke: var(--street-edge); stroke-width: 30; stroke-linecap: round; }
+.city .street { fill: none; stroke: var(--street); stroke-width: 26; stroke-linecap: round; }
+.city .rail-bed { fill: none; stroke: var(--land); stroke-width: 18; }
+.city .rail { fill: none; stroke: var(--rail); stroke-width: 9; }
+.city .rail-ties { fill: none; stroke: var(--land); stroke-width: 4; stroke-dasharray: 12 12; }
+.city .tram-casing { fill: none; stroke: var(--land); stroke-width: 13; stroke-linecap: round; stroke-linejoin: round; }
+.city .tram { fill: none; stroke: var(--tram); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+
+.city .district-edge { fill: hsl(var(--hue) 38% var(--block-edge)); stroke: hsl(var(--hue) 38% var(--block-edge)); stroke-width: 14; stroke-linejoin: round; }
+.city .district-fill { fill: hsl(var(--hue) var(--block-sat) var(--block-light)); stroke: hsl(var(--hue) var(--block-sat) var(--block-light)); stroke-width: 9; stroke-linejoin: round; }
+.city .district-name {
+  font: 700 17px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  fill: hsl(var(--hue) 45% var(--block-text));
 }
-.district .landmark {
-  position: absolute;
-  right: 6px;
-  bottom: -18px;
-  font-size: 120px;
-  line-height: 1;
-  color: hsl(var(--hue) 40% var(--block-edge));
-  opacity: 0.45;
-  pointer-events: none;
-}
-.district-name {
-  position: absolute;
-  left: 14px;
-  top: 8px;
-  font-weight: 700;
-  font-size: 17px;
-  color: hsl(var(--hue) 45% var(--block-text));
-}
+.city .district-mark { font-family: var(--ja); font-weight: 400; }
+
+.city text { paint-order: stroke; stroke-linejoin: round; }
+.city .label { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; text-anchor: middle; stroke: var(--land); stroke-width: 5; }
+.city .label-water { font-size: 46px; font-style: italic; fill: var(--water-text); stroke: var(--water); letter-spacing: 0.08em; }
+.city .label-river { font-size: 20px; font-style: italic; fill: var(--water-text); stroke: var(--water); }
+.city .label-area { font-size: 40px; font-weight: 700; fill: var(--area-text); letter-spacing: 0.06em; }
+.city .label-street { font-size: 15px; font-weight: 600; fill: var(--muted); stroke: var(--street); }
+.city .label-landmark { font-size: 15px; font-weight: 700; fill: var(--text); }
+.city .landmark-icon { font-size: 30px; text-anchor: middle; }
 
 .tile {
   position: absolute;
