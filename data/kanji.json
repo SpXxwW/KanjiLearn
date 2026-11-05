@@ -2314,7 +2314,7 @@
     "kanji": "回", "level": "N3", "meanings": ["times", "turn round", "revolve", "time", "round"], "on": ["カイ", "エ"], "kun": ["まわ.る", "まわ.す"],
     "origin": "A spiral or a shape going round and round.",
     "examples": [
-      { "jp": "一日に三回薬を飲みます。", "kana": "いちにちにくすりをのみます。", "en": "I take medicine three times a day." },
+      { "jp": "一日に三回薬を飲みます。", "kana": "いちにちにさんかいくすりをのみます。", "en": "I take medicine three times a day." },
       { "jp": "こまが回っている。", "kana": "こまがまわっている。", "en": "The top is spinning." }
     ]
   },
@@ -12443,7 +12443,7 @@
     "origin": "力 (strength) + 熏 (sound クン; old form 勳).",
     "examples": [
       { "jp": "祖父は勲章をもらった。", "kana": "そふはくんしょうをもらった。", "en": "My grandfather received a decoration." },
-      { "jp": "功勲をたたえた。", "kana": "こうくんをたたえた。", "en": "They honoured his great service." }
+      { "jp": "勲章を胸につけた。", "kana": "くんしょうをむねにつけた。", "en": "He pinned the medal on his chest." }
     ]
   },
   {
@@ -15914,7 +15914,7 @@
     "kanji": "弐", "level": "N1", "meanings": ["two (in documents)", "two", "II", "second"], "on": ["ニ"], "kun": [],
     "origin": "弋 + 二 (old form 貳): used for 二 in documents so it can't be changed.",
     "examples": [
-      { "jp": "金弐万円也。", "kana": "なり。", "en": "The sum of 20,000 yen." },
+      { "jp": "金弐万円也。", "kana": "きんにまんえんなり。", "en": "The sum of 20,000 yen." },
       { "jp": "弐番目の箱を開けた。", "kana": "にばんめのはこをあけた。", "en": "I opened the second box." }
     ]
   },
