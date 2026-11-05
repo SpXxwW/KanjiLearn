@@ -62,7 +62,7 @@ Any static file server works, e.g. `python3 -m http.server 8080`. Opening `index
 
 On iPhone, use the home-screen version. Safari can clear saved data for websites you haven't visited in a while, but apps added to the home screen keep it.
 
-Updates: after you push a change, the app picks it up the next time it's opened (the time after that if it was already open).
+Updates: after you push a change (and GitHub Pages has deployed it, about a minute), the app finds the new version the next time it's opened and reloads itself onto it within a few seconds. If you're in the middle of a quiz it shows a "Reload" button instead. When releasing, bump `CACHE` in `sw.js` (e.g. `kanjilearn-v5` → `v6`); that's what tells installed apps there's a new version.
 
 ## Adding kanji
 

@@ -402,6 +402,27 @@ function bindEvents() {
   window.addEventListener('popstate', () => showScreen(history.state?.screen ?? 'quiz'));
 }
 
+// When a new version has been deployed, the new service worker takes over
+// in the background. Reload onto it right away if the app has only just
+// opened; otherwise offer a button, so a quiz in progress isn't lost.
+function watchForUpdates() {
+  if (!('serviceWorker' in navigator)) return;
+  const hadWorker = Boolean(navigator.serviceWorker.controller);
+  const opened = Date.now();
+  let reloading = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!hadWorker || reloading) return; // first install: nothing old to replace
+    if (Date.now() - opened < 15000 && state.session.total === 0) {
+      reloading = true;
+      location.reload();
+    } else {
+      $('update-bar').hidden = false;
+    }
+  });
+  navigator.serviceWorker.register('sw.js').then((reg) => reg.update()).catch(() => {});
+  $('update-btn').addEventListener('click', () => location.reload());
+}
+
 async function init() {
   bindEvents();
   try {
@@ -429,7 +450,7 @@ async function init() {
   }
   nextQuestion();
 
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+  watchForUpdates();
   // Ask the browser not to evict our saved progress when space runs low.
   navigator.storage?.persist?.();
 }
