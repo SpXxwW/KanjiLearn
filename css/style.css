@@ -458,3 +458,18 @@ body.on-map .stats { visibility: hidden; }
 
 .glyph-choices { grid-template-columns: repeat(3, 1fr); }
 .glyph-choice { font-size: 1.9rem; min-height: 60px; }
+
+/* ---- Update notice ---- */
+
+.update-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  font-size: 0.9rem;
+}
+.update-bar span { flex: 1; }

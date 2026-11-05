@@ -1,7 +1,14 @@
 // Offline support. Serves cached files instantly and refreshes them in the
-// background, so updates (new kanji, fixes) show up on the next app launch.
-// Bump the version when the list of files below changes.
-const CACHE = 'kanjilearn-v4';
+// background. Bump the version on every release: the new worker then
+// downloads all files fresh, and the page reloads itself onto the new
+// version (see js/app.js).
+const CACHE = 'kanjilearn-v5';
+
+// Always ask the server (it answers "not modified" cheaply when nothing
+// changed). Without this the browser's own HTTP cache, which GitHub Pages
+// lets keep files for 10 minutes, could hand back the old version and it
+// would be stored as the new one.
+const fresh = (url) => fetch(url, { cache: 'no-cache' });
 
 const FILES = [
   './',
@@ -25,7 +32,11 @@ const FILES = [
 ];
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(FILES)));
+  event.waitUntil(caches.open(CACHE).then((cache) => Promise.all(FILES.map(async (file) => {
+    const response = await fresh(file);
+    if (!response.ok) throw new Error(`${file}: HTTP ${response.status}`);
+    await cache.put(file, response);
+  }))));
   self.skipWaiting();
 });
 
@@ -43,7 +54,7 @@ self.addEventListener('fetch', (event) => {
 
   event.respondWith(caches.open(CACHE).then(async (cache) => {
     const cached = await cache.match(request);
-    const refresh = fetch(request)
+    const refresh = fresh(request.url)
       .then((response) => {
         if (response.ok) cache.put(request, response.clone());
         return response;
