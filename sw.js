@@ -1,7 +1,7 @@
 // Offline support. Serves cached files instantly and refreshes them in the
 // background, so updates (new kanji, fixes) show up on the next app launch.
 // Bump the version when the list of files below changes.
-const CACHE = 'kanjilearn-v2';
+const CACHE = 'kanjilearn-v3';
 
 const FILES = [
   './',
@@ -10,7 +10,13 @@ const FILES = [
   'js/app.js',
   'js/quiz.js',
   'js/storage.js',
+  'js/strokes.js',
+  'js/tracer.js',
+  'js/map.js',
+  'js/mapscreen.js',
   'data/kanji.json',
+  'data/strokes.json',
+  'data/map.json',
   'manifest.webmanifest',
   'icons/icon-192.png',
   'icons/icon-512.png',

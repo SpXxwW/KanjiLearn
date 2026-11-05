@@ -19,12 +19,18 @@
   <header class="topbar">
     <h1>KanjiLearn</h1>
     <p id="stats" class="stats"></p>
+    <button id="map-btn" class="icon-btn" type="button" aria-label="Kanji map">🗺️</button>
     <button id="menu-btn" class="icon-btn" type="button" aria-label="Menu">☰</button>
   </header>
 
   <main id="quiz-screen" class="screen">
     <div id="card" class="card">
       <div id="kanji" class="kanji" lang="ja"></div>
+      <div id="prompt" class="prompt" hidden>
+        <p class="prompt-label">Draw the kanji for</p>
+        <p id="prompt-meaning" class="prompt-meaning"></p>
+        <p id="prompt-kana" class="prompt-kana" lang="ja"></p>
+      </div>
       <p id="session" class="session"></p>
     </div>
 
@@ -39,11 +45,26 @@
       </div>
     </form>
 
+    <div id="draw-area" class="draw-area" hidden>
+      <div id="pad-holder"></div>
+      <div class="row">
+        <button id="draw-giveup" type="button" class="btn secondary">I don't know</button>
+        <button id="hint-btn" type="button" class="btn secondary">Show next stroke</button>
+      </div>
+    </div>
+
     <section id="reveal" class="reveal" hidden aria-live="polite">
       <p id="verdict" class="verdict"></p>
       <div class="answer-head">
         <span id="reveal-kanji" class="reveal-kanji" lang="ja"></span>
         <h2 id="meanings" class="meanings"></h2>
+      </div>
+      <div class="path-box">
+        <div id="reveal-path" class="path-holder"></div>
+        <div class="path-side">
+          <p id="stroke-count" class="muted"></p>
+          <button id="watch-btn" type="button" class="btn small secondary">▶ Watch the path</button>
+        </div>
       </div>
       <dl class="readings">
         <dt>On</dt><dd id="onyomi" lang="ja"></dd>
@@ -76,6 +97,23 @@
     <p id="load-error" class="load-error" hidden>Couldn't load the kanji list. Check your connection and reload.</p>
   </main>
 
+  <section id="map-screen" class="screen map" hidden>
+    <div class="segmented three map-modes" role="radiogroup" aria-label="Map mode">
+      <label><input type="radio" name="map-mode" value="explore"><span>Explore</span></label>
+      <label><input type="radio" name="map-mode" value="find"><span>Find it</span></label>
+      <label><input type="radio" name="map-mode" value="whats"><span>What's here?</span></label>
+    </div>
+    <div id="map-viewport" class="map-viewport">
+      <div id="map-world" class="map-world"></div>
+      <div class="map-zoom">
+        <button id="zoom-in" type="button" class="icon-btn" aria-label="Zoom in">+</button>
+        <button id="zoom-out" type="button" class="icon-btn" aria-label="Zoom out">−</button>
+        <button id="zoom-fit" type="button" class="icon-btn" aria-label="Show whole map">⤢</button>
+      </div>
+    </div>
+    <div id="map-panel" class="map-panel" aria-live="polite"></div>
+  </section>
+
   <section id="menu-screen" class="screen menu" hidden>
     <button id="back-btn" type="button" class="btn secondary back">← Back to quiz</button>
 
@@ -86,10 +124,12 @@
     </div>
 
     <h2>Answer mode</h2>
-    <div class="segmented" role="radiogroup">
+    <div class="segmented three" role="radiogroup">
       <label><input type="radio" name="mode" value="choice"><span>Multiple choice</span></label>
       <label><input type="radio" name="mode" value="type"><span>Type it</span></label>
+      <label><input type="radio" name="mode" value="draw"><span>Draw it</span></label>
     </div>
+    <p id="draw-note" class="muted note" hidden>You're shown the meaning and reading, and you draw the kanji stroke by stroke with your finger. Each stroke is checked for place, direction and order.</p>
 
     <div id="choice-settings">
       <h2><label for="choice-count">Number of choices</label> <span id="choice-count-value" class="muted"></span></h2>

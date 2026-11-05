@@ -6,7 +6,12 @@ const SETTINGS_KEY = 'kanjilearn.settings.v1';
 export const LEVELS = ['N5', 'N4'];
 const CHOICE_COUNTS = { min: 2, max: 12 };
 
-const DEFAULT_SETTINGS = { mode: 'choice', choiceCount: 10, choiceStyle: 'en', levels: LEVELS };
+export const MODES = ['choice', 'type', 'draw'];
+export const MAP_MODES = ['explore', 'find', 'whats'];
+
+const DEFAULT_SETTINGS = {
+  mode: 'choice', choiceCount: 10, choiceStyle: 'en', levels: LEVELS, mapMode: 'explore',
+};
 
 function read(key, fallback) {
   try {
@@ -41,6 +46,8 @@ export function loadSettings() {
     ? Math.min(Math.max(count, CHOICE_COUNTS.min), CHOICE_COUNTS.max)
     : DEFAULT_SETTINGS.choiceCount;
   if (!['en', 'kana'].includes(settings.choiceStyle)) settings.choiceStyle = 'en';
+  if (!MODES.includes(settings.mode)) settings.mode = DEFAULT_SETTINGS.mode;
+  if (!MAP_MODES.includes(settings.mapMode)) settings.mapMode = DEFAULT_SETTINGS.mapMode;
   const levels = Array.isArray(settings.levels) ? settings.levels.filter((l) => LEVELS.includes(l)) : [];
   settings.levels = levels.length ? levels : LEVELS;
   return settings;

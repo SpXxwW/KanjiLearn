@@ -5,6 +5,12 @@ A small, free, ad-free kanji quiz for your phone.
 - Covers the **JLPT N5 and N4** kanji (247 in all). Pick which levels to practise in the ☰ menu.
 - A kanji is shown. You answer either by **multiple choice** or by **typing its meaning**. For multiple choice you choose **how many options** (2–12) and whether they show the **English meaning** or the **kana reading**.
 - After answering you see the meanings, on/kun readings, a note on **where the kanji came from**, and a random **example sentence** (with a kana reading and a translation). Tap "Another example" for a different one.
+- **Draw it** mode: you're shown the meaning and reading and draw the kanji with your finger, one stroke at a time. Each stroke is checked for place, shape, direction and order. After two misses on a stroke (or when you tap "Show next stroke") a faint guide shows where it goes.
+- **Watch the path**: every answer shows the kanji with numbered strokes. Tap ▶ and a dot traces it in order, with a dotted line where the pen moves between strokes, so each kanji can be remembered as one continuous path (like the pattern of a PIN on a keypad).
+- **Kanji map** (🗺️ button): a city where every kanji has a fixed home. Kanji that share a part are neighbours, so the Water district holds 氵 kanji and the Gates district holds 門 kanji. Three modes:
+  - *Explore*: drag, pinch or zoom, and tap a kanji to see it, watch its path or draw it.
+  - *Find it*: a kanji is shown, the map is blank, and you tap where it lives. If you're wrong, an arrow shows the route from your guess to its real home.
+  - *What's here?*: a blank spot is marked and you pick (or draw) the kanji that lives there.
 - **Mark as learned** and the kanji won't be asked again. Unmark it any time from the ☰ menu.
 - Works offline and keeps your progress on the device. No account or server.
 
@@ -23,7 +29,13 @@ css/style.css         styles (light + dark mode)
 js/app.js             screens and buttons
 js/quiz.js            quiz logic: answer checking, choices, picking the next kanji
 js/storage.js         saves learned kanji + settings in localStorage
+js/strokes.js         stroke paths -> points, and checking a drawn stroke
+js/tracer.js          draw pad and "watch the path" animation
+js/map.js             kanji map layout (where each kanji lives)
+js/mapscreen.js       the map screen: pan/zoom, explore and the map quizzes
 data/kanji.json       the kanji, origins and example sentences
+data/strokes.json     stroke paths from KanjiVG (built by tools/build_strokes.py)
+data/map.json         the kanji map: districts and each kanji's spot
 sw.js                 offline cache
 manifest.webmanifest  home-screen app settings
 tests/                node tests for the logic and the data file
@@ -74,6 +86,8 @@ Add an object to `data/kanji.json`:
 - `level` is the JLPT level (`N5` or `N4`) from Jonathan Waller's lists, which Jisho.org also uses. 耳 is the one exception: it is listed under N3 there but was on the old official Level 4 list, so it stays with the N4 set.
 - With kana choices, the button shows the first on reading and the first kun reading, so put the most common ones first.
 - In kun readings, `.` separates the okurigana (`あ.く` is shown as `あ(く)`).
+- Run `python3 tools/build_strokes.py` to fetch its stroke paths from KanjiVG into `data/strokes.json`.
+- Give it a home in `data/map.json`: add it to the end of a row in a fitting district (up to 5 per row, 3 rows per district). Don't move kanji that are already placed; their place is what you've memorised.
 - Then run `npm test`. It checks for duplicates, readings in the wrong script, examples that don't contain the kanji, kanji left in the kana line, and so on.
 
 ### Checking against dictionaries
@@ -94,3 +108,7 @@ curl -o .venv/kanji-data.json https://raw.githubusercontent.com/davidluzgouveia/
 It prints anything that doesn't match for a person to look at. Some hits are fine (a sentence can have two valid readings), so it is a review aid, not a test. It takes several minutes.
 
 Origin notes follow commonly cited etymologies. Where scholars disagree or a popular explanation is only a memory aid, the note says so.
+
+## Credits
+
+Stroke paths come from [KanjiVG](https://kanjivg.tagaini.net) by Ulrich Apel and contributors, under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). `data/strokes.json` is a derived work under the same licence.
