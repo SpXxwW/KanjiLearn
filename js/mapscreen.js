@@ -4,12 +4,13 @@
 //  - What's here?: a spot is marked; say which kanji lives there.
 // In the two quiz modes the tiles are blank, so recall comes from place.
 
-import { distanceInTiles, layoutMap, placeChoices, TILE, tileCenter } from './map.js';
+import { drawCity } from './city.js';
+import { direction, distanceInTiles, layoutMap, placeChoices, PITCH, TILE, tileCenter } from './map.js';
 import { formatKun, kanaLabel, pickNext } from './quiz.js';
 import { DrawPad, makeSvg, playStrokes, renderKanji } from './tracer.js';
 
 const $ = (id) => document.getElementById(id);
-const MIN_SCALE = 0.25;
+const MIN_SCALE = 0.1;
 const MAX_SCALE = 2.5;
 const RECENT_SIZE = 8;
 
@@ -45,14 +46,7 @@ export function createMap(mapData, ctx) {
   function build() {
     world.style.width = `${layout.width}px`;
     world.style.height = `${layout.height}px`;
-    for (const d of layout.districts) {
-      const block = h('div', { class: 'district' },
-        h('span', { class: 'landmark', lang: 'ja' }, d.landmark),
-        h('span', { class: 'district-name' }, d.name));
-      block.style.cssText = `left:${d.x}px;top:${d.y}px;width:${d.w}px;height:${d.h}px;--hue:${(d.col * 61 + d.row * 137) % 360}`;
-      block.title = d.hint;
-      world.append(block);
-    }
+    world.append(drawCity(mapData, layout));
     for (const place of layout.places.values()) {
       const tile = h('button', { type: 'button', class: 'tile', lang: 'ja' }, place.kanji);
       tile.dataset.kanji = place.kanji;
@@ -81,7 +75,7 @@ export function createMap(mapData, ctx) {
     const vh = viewport.clientHeight;
     const w = layout.width * view.scale;
     const hgt = layout.height * view.scale;
-    const margin = 80;
+    const margin = 0;
     view.x = Math.min(Math.max(view.x, vw - w - margin), margin);
     view.y = Math.min(Math.max(view.y, vh - hgt - margin), margin);
     if (w < vw) view.x = (vw - w) / 2;
@@ -119,6 +113,14 @@ export function createMap(mapData, ctx) {
     const x2 = Math.max(...ps.map((p) => p.x + TILE)) + 30;
     const y2 = Math.max(...ps.map((p) => p.y + TILE)) + 30;
     fit({ x, y, w: x2 - x, h: y2 - y }, maxScale);
+  }
+
+  // A kanji's district with some of the city around it, so the landmarks
+  // that lead there stay in view.
+  function fitAround(kanji) {
+    const d = layout.places.get(kanji).district;
+    const m = PITCH * 2.5;
+    fit({ x: d.x - m, y: d.y - m, w: d.w + m * 2, h: d.h + m * 2 }, 0.9);
   }
 
   // Keep the view where it is, but slide so this tile is comfortably visible.
@@ -254,6 +256,9 @@ export function createMap(mapData, ctx) {
 
   // ---- Panel helpers ----
 
+  // "Market Hall, City centre"; areas named like their district are said once.
+  const home = (d) => (d.area && d.area !== d.name ? `${d.name}, ${d.area}` : d.name);
+
   function stopAnimation() {
     stopPlay?.();
     stopPlay = null;
@@ -270,7 +275,7 @@ export function createMap(mapData, ctx) {
       h('div', {},
         h('p', { class: 'map-card-meaning' }, entry.meanings.slice(0, 3).join(', ')),
         h('p', { class: 'map-card-readings', lang: 'ja' }, [entry.on.join('、'), entry.kun.map(formatKun).join('、')].filter(Boolean).join(' ｜ ')),
-        h('p', { class: 'muted map-card-home' }, `Lives in ${place.district.name} · ${place.district.hint}`)));
+        h('p', { class: 'muted map-card-home' }, `Lives in ${home(place.district)} · ${place.district.hint}`)));
   }
 
   // Stroke picture with "watch" and "draw" buttons.
@@ -313,7 +318,8 @@ export function createMap(mapData, ctx) {
     resetTiles();
     if (message) {
       setPanel(h('p', { class: 'map-help' },
-        'Every kanji has a fixed home. Neighbours share a part: the Water district is all 氵, the Gates all 門. ',
+        'Every kanji has a fixed home in this lakeside city. Water kanji live on the island, study kanji at the University, ',
+        'animals at the Zoo. Use the lakes, the rapids, the railway (striped) and the tram (yellow) to find your way. ',
         'Drag to move, pinch or use + − to zoom, and tap a kanji to see it.'));
     }
   }
@@ -386,7 +392,7 @@ export function createMap(mapData, ctx) {
     mark(target, 'shown', 'good');
     let verdict;
     if (right) {
-      verdict = `Yes! ${target} lives in ${place.district.name}.`;
+      verdict = `Yes! ${target} lives in ${home(place.district)}.`;
       bringIntoView(target);
     } else if (guess) {
       mark(guess, 'shown', 'bad');
@@ -395,12 +401,12 @@ export function createMap(mapData, ctx) {
       const away = distanceInTiles(gp, place);
       const where = gp.district === place.district
         ? `${away} tile${away > 1 ? 's' : ''} away, in the same district`
-        : `in ${place.district.name}, ${away} tiles away. Follow the arrow`;
+        : `in ${home(place.district)}, ${away} tiles ${direction(gp, place)} of there. Follow the arrow`;
       verdict = `That spot is ${guess}. ${target} lives ${where}.`;
       fitPlaces([guess, target], 1);
     } else {
-      verdict = `${target} lives in ${place.district.name}: ${place.district.hint}.`;
-      fitPlaces([target], 1);
+      verdict = `${target} lives in ${home(place.district)}: ${place.district.hint}.`;
+      fitAround(target);
     }
     setPanel(
       h('p', { class: `verdict ${right ? 'good' : 'bad'}` }, verdict),
@@ -426,11 +432,11 @@ export function createMap(mapData, ctx) {
     const draw = h('button', { type: 'button', class: 'link-btn' }, '✍ Draw it instead');
     draw.addEventListener('click', () => drawWhats());
     setPanel(
-      h('p', { class: 'map-ask-q' }, `What lives at the marked spot in ${layout.places.get(target).district.name}?`),
+      h('p', { class: 'map-ask-q' }, `What lives at the marked spot in ${home(layout.places.get(target).district)}?`),
       h('div', { class: 'choices glyph-choices', id: 'map-choices' }, ...choices),
       draw,
       scoreLine());
-    fitPlaces([target], 1);
+    fitAround(target);
   }
 
   function drawWhats() {
@@ -439,7 +445,7 @@ export function createMap(mapData, ctx) {
     const giveUp = h('button', { type: 'button', class: 'btn secondary' }, "I don't know");
     const hint = h('button', { type: 'button', class: 'btn secondary' }, 'Show next stroke');
     setPanel(
-      h('p', { class: 'map-ask-q' }, `Draw what lives at the marked spot in ${layout.places.get(target).district.name}.`),
+      h('p', { class: 'map-ask-q' }, `Draw what lives at the marked spot in ${home(layout.places.get(target).district)}.`),
       holder,
       h('div', { class: 'row' }, giveUp, hint));
     const pad = new DrawPad(holder, ctx.strokes(target), {
@@ -463,11 +469,11 @@ export function createMap(mapData, ctx) {
     }
     if (!right) {
       btn.classList.add('wrong');
-      const home = layout.places.get(kanji);
+      const where = layout.places.get(kanji);
       mark(kanji, 'shown', 'bad');
       drawRoute(question.kanji, kanji);
       fitPlaces([question.kanji, kanji], 1);
-      finishWhats(false, `It's ${question.kanji}. ${kanji} lives in ${home.district.name}. Follow the arrow.`, false);
+      finishWhats(false, `It's ${question.kanji}. ${kanji} lives in ${home(where.district)}. Follow the arrow.`, false);
     } else {
       finishWhats(true, `Yes! ${question.kanji} lives here.`, false);
     }
@@ -516,7 +522,8 @@ export function createMap(mapData, ctx) {
     // The viewport only has a size once the screen is visible.
     requestAnimationFrame(() => {
       if (firstShow) {
-        fitAll();
+        // Open on the city centre: the rapids, Hämeenkatu and the station.
+        fit({ x: 11 * PITCH, y: 9 * PITCH, w: 21 * PITCH, h: 22 * PITCH }, 1, false);
         firstShow = false;
       }
       start();
