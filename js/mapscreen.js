@@ -370,9 +370,27 @@ export function createMap(mapData, ctx) {
         h('span', { class: 'map-ask-kanji', lang: 'ja' }, entry.kanji),
         h('div', {},
           h('p', { class: 'map-ask-q' }, 'Where does this kanji live?'),
-          h('p', { class: 'muted' }, `${entry.meanings.slice(0, 2).join(', ')} · `, h('span', { lang: 'ja' }, kanaLabel(entry))))),
+          infoPeek(entry))),
       h('div', { class: 'row' }, giveUp),
       scoreLine());
+  }
+
+  // Meaning and reading start hidden behind an eye, so you can first try to
+  // find the kanji from its shape alone.
+  function infoPeek(entry) {
+    const text = h('span', { class: 'map-peek-text', hidden: true },
+      `${entry.meanings.slice(0, 2).join(', ')} · `, h('span', { lang: 'ja' }, kanaLabel(entry)));
+    const veil = h('span', { class: 'map-peek-veil' }, 'Meaning and reading hidden');
+    const eye = h('button', { type: 'button', class: 'eye-btn', 'aria-label': 'Show meaning and reading', 'aria-pressed': 'false' }, '👁');
+    eye.addEventListener('click', () => {
+      const showing = text.hidden;
+      text.hidden = !showing;
+      veil.hidden = showing;
+      eye.classList.toggle('on', showing);
+      eye.setAttribute('aria-pressed', String(showing));
+      eye.setAttribute('aria-label', showing ? 'Hide meaning and reading' : 'Show meaning and reading');
+    });
+    return h('p', { class: 'muted map-peek' }, eye, veil, text);
   }
 
   function guessPlace(kanji) {

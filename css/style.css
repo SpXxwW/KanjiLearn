@@ -455,6 +455,20 @@ body.on-map .stats { visibility: hidden; }
 .map-card-readings { font-size: 0.95rem; }
 .map-card-home { font-size: 0.85rem; }
 .map-ask-q { font-weight: 700; }
+.map-peek { display: flex; align-items: center; gap: 8px; }
+.map-peek-veil { font-style: italic; }
+.eye-btn {
+  flex: none;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.eye-btn.on { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
 
 .map-tools { display: flex; gap: 14px; align-items: flex-start; }
 .map-path { width: 150px; flex: none; }
