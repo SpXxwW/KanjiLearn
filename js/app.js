@@ -1,5 +1,5 @@
 import { buildChoices, checkAnswer, choiceLabel, formatKun, kanaLabel, pickNext } from './quiz.js';
-import { loadLearned, loadSettings, saveLearned, saveSettings } from './storage.js';
+import { LEVELS, loadLearned, loadSettings, saveLearned, saveSettings } from './storage.js';
 import { DrawPad, playStrokes, renderKanji, makeSvg } from './tracer.js';
 import { createMap } from './mapscreen.js';
 
@@ -297,6 +297,8 @@ function showMenu() {
   for (const box of document.querySelectorAll('input[name="level"]')) {
     box.checked = state.settings.levels.includes(box.value);
   }
+  const counts = LEVELS.map((level) => `${level}: ${state.kanji.filter((k) => k.level === level).length}`);
+  $('level-counts').textContent = `Kanji per level: ${counts.join(' · ')}`;
   $('choice-count').value = state.settings.choiceCount;
   renderChoiceSettings();
   renderLearnedList();

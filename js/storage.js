@@ -3,14 +3,16 @@
 const LEARNED_KEY = 'kanjilearn.learned.v1';
 const SETTINGS_KEY = 'kanjilearn.settings.v1';
 
-export const LEVELS = ['N5', 'N4'];
+export const LEVELS = ['N5', 'N4', 'N3', 'N2', 'N1'];
+// New users start with the two beginner levels; the rest are a tap away.
+const DEFAULT_LEVELS = ['N5', 'N4'];
 const CHOICE_COUNTS = { min: 2, max: 12 };
 
 export const MODES = ['choice', 'type', 'draw'];
 export const MAP_MODES = ['explore', 'find', 'whats'];
 
 const DEFAULT_SETTINGS = {
-  mode: 'choice', choiceCount: 10, choiceStyle: 'en', levels: LEVELS, mapMode: 'explore',
+  mode: 'choice', choiceCount: 10, choiceStyle: 'en', levels: DEFAULT_LEVELS, mapMode: 'explore',
 };
 
 function read(key, fallback) {
@@ -49,7 +51,7 @@ export function loadSettings() {
   if (!MODES.includes(settings.mode)) settings.mode = DEFAULT_SETTINGS.mode;
   if (!MAP_MODES.includes(settings.mapMode)) settings.mapMode = DEFAULT_SETTINGS.mapMode;
   const levels = Array.isArray(settings.levels) ? settings.levels.filter((l) => LEVELS.includes(l)) : [];
-  settings.levels = levels.length ? levels : LEVELS;
+  settings.levels = levels.length ? levels : DEFAULT_LEVELS;
   return settings;
 }
 

@@ -1,5 +1,5 @@
 // Draws the kanji city's scenery as one SVG: lakes, the rapids, the ridge,
-// streets, railway, tram lines, landmarks and the district shapes. Tiles
+// streets, the airport runway, railway, tram lines, landmarks and the district shapes. Tiles
 // (the kanji themselves) are separate buttons placed on top by mapscreen.js.
 
 import { PAD, PITCH } from './map.js';
@@ -66,6 +66,11 @@ export function drawCity(map, layout) {
     const d = smoothPath(street.points.map(px));
     el('path', { class: 'street-casing', d }, svg);
     el('path', { class: 'street', d }, svg);
+  }
+  for (const runway of f.runways ?? []) {
+    const d = smoothPath(runway.points.map(px));
+    el('path', { class: 'runway', d }, svg);
+    el('path', { class: 'runway-mark', d }, svg);
   }
   for (const line of f.railways) {
     const d = smoothPath(line.map(px));

@@ -18,6 +18,7 @@
   --water-text: #3d6f8f;
   --street: #fbf8f1;
   --street-edge: #d8cfbe;
+  --runway: #a9a49a;
   --rail: #4a4540;
   --tram: #e0a400;
   --area-text: rgba(80, 70, 55, 0.28);
@@ -51,6 +52,7 @@
     --water-text: #7fa9c2;
     --street: #2c2a26;
     --street-edge: #3a3732;
+    --runway: #4a4741;
     --rail: #bdb5a8;
     --tram: #d9a21a;
     --area-text: rgba(230, 220, 200, 0.18);
@@ -285,6 +287,8 @@ h2, h3 { margin: 0; }
 
 .icon-btn.on { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
 .segmented.three { grid-template-columns: 1fr 1fr 1fr; }
+.segmented.levels { grid-template-columns: repeat(5, 1fr); }
+.segmented.levels span { padding: 10px 2px; }
 .segmented.three span { padding: 10px 4px; font-size: 0.92rem; }
 .note { margin: 8px 0 0; font-size: 0.9rem; }
 
@@ -373,6 +377,8 @@ body.on-map .stats { visibility: hidden; }
 .city .rapids { fill: none; stroke: var(--foam); stroke-width: 3; stroke-dasharray: 6 22; stroke-linecap: round; }
 .city .street-casing { fill: none; stroke: var(--street-edge); stroke-width: 30; stroke-linecap: round; }
 .city .street { fill: none; stroke: var(--street); stroke-width: 26; stroke-linecap: round; }
+.city .runway { fill: none; stroke: var(--runway); stroke-width: 44; stroke-linecap: square; }
+.city .runway-mark { fill: none; stroke: var(--street); stroke-width: 3; stroke-dasharray: 26 22; }
 .city .rail-bed { fill: none; stroke: var(--land); stroke-width: 18; }
 .city .rail { fill: none; stroke: var(--rail); stroke-width: 9; }
 .city .rail-ties { fill: none; stroke: var(--land); stroke-width: 4; stroke-dasharray: 12 12; }

@@ -2,7 +2,7 @@
 // background. Bump the version on every release: the new worker then
 // downloads all files fresh, and the page reloads itself onto the new
 // version (see js/app.js).
-const CACHE = 'kanjilearn-v5';
+const CACHE = 'kanjilearn-v6';
 
 // Always ask the server (it answers "not modified" cheaply when nothing
 // changed). Without this the browser's own HTTP cache, which GitHub Pages
